@@ -5,19 +5,18 @@ Name:	Louise Flou
 Email:	louise@flou.eu
 Skype:	louisewflou
 
-<<<<<<< HEAD
 Name:	
 Email:	
 Skype:	
-Name:Marika Moreau	
-Email:89marika.moreau@gmail.com	
-=======
+Name:   Marika Moreau	
+Email:  89marika.moreau@gmail.com	
+Skype:
+
 Name:	Alexander Masud	
 Email:	alexandermasud@gmail.com
 Skype:	alexandermasud
 Name:	
 Email:	
->>>>>>> origin/master
 Skype:	
 Name:	
 Email:	
