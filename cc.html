@@ -15,19 +15,23 @@
         
         <style>
   .jumbotron {
-      background-color: #f4511e;
+      background-color: #dbdbdb;
       color: #fff;
       margin-bottom: 5px;
       
   }
+    .table-condensed {
+        font-size: 10px !important;
+    }
         </style>
         
     </head>
     <body>
 
         <div class="jumbotron text-center">
-          <h1>CharacterKey</h1> 
-          <p>Advanced Character Creator - saving your time for more RPG!</p> <br>
+            <h1>CharacterKey<img src="img/ck.png" alt="CK" width="80px"></h1>
+            
+            <p>Advanced Character Creator - saving your time for more RPG!</p> <br>
         </div>
 
         <nav class="navbar">
@@ -61,158 +65,198 @@
           </div>
         </nav>        
 
-        <div class="container" >
-            <h1>Attributes</h1>
-                <table class="table table-hover">
-                    <thead>    
-                        <tr>
-                            <th>Physical</th>
-                            <th>Score</th>
-                            <th>Cost</th>
-                            <th>Dice</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Agility</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>Fortitude</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>Might</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                    </tbody>
-                    <thead>
-                        <tr>
-                            <th>Social</th>
-                            <th>Score</th>
-                            <th>Cost</th>
-                            <th>Dice</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Deception</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>Presence</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>Persuation</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>  
-                        </tr>
-                    </tbody>    
-                    <thead>
-                        <tr>
-                            <th>Mental</th>
-                            <th>Score</th>
-                            <th>Cost</th>
-                            <th>Dice</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Learning</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Logic</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Perception</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Will</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                    </tbody>
-                    <thead>
-                        <tr>
-                            <th>Supernatural</th>
-                            <th>Score</th>
-                            <th>Cost</th>
-                            <th>Dice</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Alteration</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Creation</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Energy</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Entropy</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Influence</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Movement</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Prescience</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Protection</td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td> 
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="container">
+            
+            
+            <div class="row">
+                <h1>Attributes</h1>
+                
+                <div class="col-sm-2">
+                    <table class="table table-condensed table-bordered">
+                        <thead class="thead-inverse">
+                            <th>Total Points</th>
+                            <th>Points Spent</th>
+                        </thead>
+                        <tbody class="tbody-right">
+                            <td>40</td>
+                            <td>0</td>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>    
+                            <tr>
+                                <th><span class="glyphicon glyphicon-scale"></span> Physical</th>
+                                <th>Score</th>
+                                <th>Cost</th>
+                                <th>Dice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Agility</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Fortitude</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Might</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!--end col3-->
+                <div class="col-sm-4">
+                    <table class="table table-bordered table-striped table-hover">    
+                        <thead>
+                            <tr>
+                                <th><span class="glyphicon glyphicon-comment"></span> Social</th>
+                                <th>Score</th>
+                                <th>Cost</th>
+                                <th>Dice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Deception</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Presence</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Persuation</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>  
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div><!--end col3-->
+                <div class="col-sm-4">
+                    <table class="table table-bordered table-striped table-hover">        
+                            <thead>
+                                <tr>
+                                    <th><span class="glyphicon glyphicon-education"></span> Mental</th>
+                                    <th>Score</th>
+                                    <th>Cost</th>
+                                    <th>Dice</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Learning</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td> 
+                                </tr>
+                                <tr>
+                                    <td>Logic</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td> 
+                                </tr>
+                                <tr>
+                                    <td>Perception</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td> 
+                                </tr>
+                                <tr>
+                                    <td>Will</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                </div><!--end col3-->
+                   
+            </div><!--end row-->
+            <div class="row">
+                <div class="col-sm-4">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th><span class="glyphicon glyphicon-star"></span> Supernatural</th>
+                                <th>Score</th>
+                                <th>Cost</th>
+                                <th>Dice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alteration</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td> 
+                            </tr>
+                            <tr>
+                                <td>Creation</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td> 
+                            </tr>
+                            <tr>
+                                <td>Energy</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td> 
+                            </tr>
+                            <tr>
+                                <td>Entropy</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td> 
+                            </tr>
+                            <tr>
+                                <td>Influence</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td> 
+                            </tr>
+                            <tr>
+                                <td>Movement</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td> 
+                            </tr>
+                            <tr>
+                                <td>Prescience</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td> 
+                            </tr>
+                            <tr>
+                                <td>Protection</td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+                        
+                
             </div>
         
         
