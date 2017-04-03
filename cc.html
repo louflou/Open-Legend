@@ -91,7 +91,7 @@
                     <table class="table table-bordered table-striped table-hover">
                         <thead>
                             <th><img src="img/guard.png" width="22px">Guard</th>
-                            <th><a href="#info_toughness" data-toggle="collapse">Toughness</a></th>
+                            <th>Toughness</th>
                             <th><img src="img/resolve.png" width="22px">Resolve</th>
                             <th><img src="img/wealth.png" width="22px">Wealth</th>
                             <th class="text-center"><img src="img/speed.png" width="22px">Speed</th>
@@ -105,9 +105,6 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <div id="info_toughness" class="collapse">
-                <span class="glyphicon glyphicon-info-sign"></span> Lorem ipsum dolor sit amet...
             </div>
             
             
@@ -124,19 +121,20 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Agility</td>
+                                <td><a href="#info_agility" data-toggle="collapse">Agility</a></td>
+                                
                                 <td> </td>
                                 <td> </td>
                                 <td> </td>
                             </tr>
                             <tr>
-                                <td>Fortitude</td>
+                                <td><a href="#info_fortitude" data-toggle="collapse">Fortitude</a></td>
                                 <td> </td>
                                 <td> </td>
                                 <td> </td>
                             </tr>
                             <tr>
-                                <td>Might</td>
+                                <td><a href="#info_might" data-toggle="collapse">Might</a></td>
                                 <td> </td>
                                 <td> </td>
                                 <td> </td>
@@ -144,10 +142,26 @@
                         </tbody>
                     </table>
                 </div><!--end col3-->
-            
-                <!---------------------------Speed & Wealth --------------------------------->
                 
-                <!---------------------------Speed & Wealth  --------------------------------->
+                <!--------------------------------------- Info section (collapsed) ------------------------------------>
+                <div class="col-sm-2"> 
+                    <div id="info_agility" class="collapse">
+                        
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Agility</h5>
+                        Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket
+                    </div>
+                    <div id="info_fortitude" class="collapse">
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Fortitude</h5>
+                        Resist poison, shrug off pain, survive in a desert, wear heavy armor
+                    </div>
+                    <div id="info_might" class="collapse">
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Might</h5>
+                        Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission
+                    </div>
+                    
+                </div>
+                <!--------------------------------------- End info section (collapsed) --------------------------------->
+
                 
             </div><!--end row-->
             
@@ -164,19 +178,19 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Deception</td>
+                                <td><a href="#info_deception" data-toggle="collapse">Deception</a></td>
                                 <td> </td>
                                 <td> </td>
                                 <td> </td>
                             </tr>
                             <tr>
-                                <td>Presence</td>
+                                <td><a href="#info_presence" data-toggle="collapse">Presence</a></td>
                                 <td> </td>
                                 <td> </td>
                                 <td> </td>
                             </tr>
                             <tr>
-                                <td>Persuation</td>
+                                <td><a href="#info_persuasion" data-toggle="collapse">Persuasion</a></td>
                                 <td> </td>
                                 <td> </td>
                                 <td> </td>  
@@ -184,6 +198,27 @@
                         </tbody>  
                     </table>
                 </div><!--end col3-->
+                
+                <!--------------------------------------- Info section (collapsed) ------------------------------------>
+                <div class="col-sm-2"> 
+                    <div id="info_deception" class="collapse">
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Deception</h5>
+                        Tell a lie, bluff at cards, disguise yourself, spread rumors, swindle a sucker
+                    </div>
+                    <div id="info_presence" class="collapse">
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Presence</h5>
+                        Give a speech, sing a song, inspire an army, exert your force of personality, have luck smile upon you
+                    </div>
+                    <div id="info_persuasion" class="collapse">
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Persuasion</h5>
+                        Negotiate a deal, convince someone, haggle a good price, pry information
+                    </div>
+                    
+                </div>
+                <!--------------------------------------- End info section (collapsed) --------------------------------->
+                
+                
+                
             </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -198,25 +233,25 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Learning</td>
+                                    <td><a href="#info_learning" data-toggle="collapse">Learning</a></td>
                                     <td> </td>
                                     <td> </td>
                                     <td> </td> 
                                 </tr>
                                 <tr>
-                                    <td>Logic</td>
+                                    <td><a href="#info_logic" data-toggle="collapse">Logic</a></td>
                                     <td> </td>
                                     <td> </td>
                                     <td> </td> 
                                 </tr>
                                 <tr>
-                                    <td>Perception</td>
+                                    <td><a href="#info_perception" data-toggle="collapse">Perception</a></td>
                                     <td> </td>
                                     <td> </td>
                                     <td> </td> 
                                 </tr>
                                 <tr>
-                                    <td>Will</td>
+                                    <td><a href="#info_will" data-toggle="collapse">Will</a></td>
                                     <td> </td>
                                     <td> </td>
                                     <td> </td> 
@@ -224,7 +259,33 @@
                             </tbody>
                         </table>
                 </div><!--end col3-->
-                   
+                
+                 <!--------------------------------------- Info section (collapsed) ------------------------------------>
+                <div class="col-sm-2"> 
+                    <div id="info_learning" class="collapse">
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Learning</h5>
+                        Recall facts about history, arcane magic, the natural world, etc.
+                    </div>
+                    <div id="info_logic" class="collapse">
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Logic</h5>
+                        Solve riddles, decipher a code, improvise a tool, understand the enemy’s strategy, find a loophole
+                    </div>
+                    <div id="info_perception" class="collapse">
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Perception</h5>
+                        Sense ulterior motives, track someone, catch a gut feeling, spot a hidden foe, find a secret door
+                    </div>
+                    <div id="info_will" class="collapse">
+                        <h5><span class="glyphicon glyphicon-info-sign"></span> Will</h5>
+                        Maintain your resolve, overcome adversity, resist torture, stay awake on watch, stave off insanity
+                    </div>
+                    
+                </div>
+                
+                <!--------------------------------------- End info section (collapsed) --------------------------------->
+                
+                
+                
+                
             </div><!--end row-->
             <div class="row">
                 <div class="col-sm-4">
