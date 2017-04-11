@@ -21,5 +21,8 @@
         background-color: #f9f9f9;
     }
           
-
+.dis-fl {
+    display: flex;
+    flex-wrap: wrap;
+}
 
