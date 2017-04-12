@@ -10,9 +10,8 @@ h1,
 h2 {
 	font-weight: bold !important;
 }
-h3 {
+h5 {
     color: white !important;
-    text-align: center;
 }
 p {
 	font-size: 16px !important;
