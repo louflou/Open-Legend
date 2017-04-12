@@ -9,6 +9,7 @@ h2 {
 }
 h3 {
     color: white !important;
+    text-align: center;
 }
 p {
 	font-size: 16px !important;
@@ -69,15 +70,8 @@ p {
 	margin-bottom: 30px;
 	font-family: sans-serif;
 }
-input_sm {
-    width: 50px !important; 
-}
-
 .panel-body {
     border-bottom:1px solid #ddd;
-}
-.form-tiny {
-    width:30% !important;
 }
 .my-input {
     display: table-cell !important;
