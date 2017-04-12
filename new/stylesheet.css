@@ -1,11 +1,14 @@
 body {
 	background: #3E4649 !important;
-	color: #f7f7f7 !important;
+	//color: #f7f7f7 !important;
 	font-family: 'Montserrat', sans-serif !important;
 }
 h1,
 h2 {
 	font-weight: bold !important;
+}
+h3 {
+    color: white !important;
 }
 p {
 	font-size: 16px !important;
@@ -65,4 +68,26 @@ p {
 .call-to-action p {
 	margin-bottom: 30px;
 	font-family: sans-serif;
+}
+input_sm {
+    width: 50px !important; 
+}
+
+.panel-body {
+    border-bottom:1px solid #ddd;
+}
+.form-tiny {
+    width:30% !important;
+}
+.my-input {
+    display: table-cell !important;
+    width:100% !important;
+    border:none !important;
+}
+.my-input:hover {
+    background-color:aliceblue;
+}
+.row-green {
+    background-color: darkslategrey !important;
+    padding:20px 0;
 }
