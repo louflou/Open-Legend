@@ -44,7 +44,7 @@
         
         <div class="row row-green">
             <div class="container">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                 <!-------- PHYSICAL ATTRIBUTE SCORE VALUE INPUT -------------------------------->
                 <h3>PHYSICAL</h3>
                     <div class="panel-group" id="accordion">
@@ -85,8 +85,7 @@
                                 </div>
                                 <div id="clps-fortitude" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Your character's dexterity and movement. For example dodge attacks, move with stealth, perform acrobatics, shoot a bow or pick a pocket. 
-
+                                        <p>Your character's ability to keep going. For example resist poisons, shrug off pain, survive in a desert or wear heavy armor.
                                         </p>
                                     </div>
                                 </div>
@@ -113,7 +112,7 @@
                                 </div>
                                 <div id="clps-might" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Your character's dexterity and movement. For example dodge attacks, move with stealth, perform acrobatics, shoot a bow or pick a pocket. 
+                                        <p>Your character's strength. For example swing a maul, jump, break down a door or wrestle a foe to submission. 
                                         </p>
                                     </div>
                                 </div>
@@ -134,9 +133,9 @@
                             </div>
                     </div>
                 </div><!--end col group-->
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     
-                <!-------------- PHYSICAL ATTRIBUTE SCORE VALUE INPUT ------------------------------>
+                <!-------------- SOCIAL ATTRIBUTE SCORE VALUE INPUT ------------------------------>
                 <h3>SOCIAL</h3>
                     <div class="panel-group" id="accordion2">
                             <div class="panel panel-default">
@@ -148,7 +147,7 @@
                                 </div>
                                 <div id="clps-deception" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Your character's dexterity and movement. For example dodge attacks, move with stealth, perform acrobatics, shoot a bow or pick a pocket. 
+                                        <p>Your character's ability to fool others. For example: Tell a lie, bluff at cards, disguise yourself, spread rumors or swindle a sucker.
                                         </p>
                                     </div>
                                 </div>
@@ -176,8 +175,7 @@
                                 </div>
                                 <div id="clps-presence" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Your character's dexterity and movement. For example dodge attacks, move with stealth, perform acrobatics, shoot a bow or pick a pocket. 
-
+                                        <p>Your character's influence on others. For example give a speech, sing a song, exert your force of personality or have luck smile upon you.
                                         </p>
                                     </div>
                                 </div>
@@ -204,7 +202,7 @@
                                 </div>
                                 <div id="clps-persuasion" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Your character's dexterity and movement. For example dodge attacks, move with stealth, perform acrobatics, shoot a bow or pick a pocket. 
+                                        <p>Your character's ability to convince others. For example negotiate a deal, haggle, convince someone or pry information.
                                         </p>
                                     </div>
                                 </div>
@@ -225,6 +223,125 @@
                             </div>
                     </div><!--end panelgroup-->
                 </div><!--end col group-->
+                
+                <div class="col-sm-3">
+                    
+                <!-------------- MENTAL ATTRIBUTE SCORE VALUE INPUT ------------------------------>
+                <h3>MENTAL</h3>
+                    <div class="panel-group" id="accordion3">
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#clps-learning">Learning</a>
+                                    </h4>
+                                </div>
+                                <div id="clps-learning" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>How well read your character is. Recall facts about history, arcane magic, the natural world etc.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-learning" placeholder="Your score..." />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#clps-logic">Logic</a>
+                                    </h4>
+                                </div>
+                                <div id="clps-logic" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Your character's deduction skills. For example solve riddles, decipher a code, improvise a tool, understand strategies and find loopholes. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-logic" placeholder="Your score..." />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#clps-perception">Perception</a></h4>
+                                </div>
+                                <div id="clps-perception" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>How attentive is your character? Used for sensing ulterior motives, tracking, gut feeling and spotting hidden objects and people. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-perception" placeholder="Your score..." />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#clps-will">Will</a></h4>
+                                </div>
+                                <div id="clps-will" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Your character's will power. For example maintain resolve, overcome adversity, resist torture, stay awake on watch and staying of insanity. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-will" placeholder="Your score..." />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div><!--end panelgroup-->
+                </div>
+                
             </div><!--end container-->
             
         </div><!------end GREEN CONTAINER FLUID---->
