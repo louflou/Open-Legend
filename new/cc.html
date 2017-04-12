@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="img/ck(white).png" alt="CK" width="25px"></a>
+              <a class="navbar-brand" href="#"><img src="icon/ck(white).png" alt="CK" width="25px"></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
@@ -580,7 +580,7 @@
                 </div>
             
             
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <header>
                     EQUIPMENT
                 </header>
@@ -593,34 +593,69 @@
                             <!-- Default panel contents -->
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion5" href="#clps-weapons">Weapons</a>
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-armor">ARMOR</a> / <a href="#clps-weapons">WEAPONS</a> / <a href="#clps-other">OTHER</a>
                                 </h4>
                             </div>
                             <div id="clps-armor" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     
-                                    <!----------- MINIMALSITIC FORM ---------->
+                                    
                                     <header>ARMOR</header>
-                                    <p>Different types of armor provides a bonus to your Guard defense. The type indicates whether the armor is light, medium, or heavy. </p>
-                                    <p>Bonus for:</p>
-                                        <table class="table">
-                                            <tr>
-                                                <th>Light armor</th>
-                                                <th>Medium armor</th>
-                                                <th>Heavy harmor</th>
-                                            </tr>
-                                            <tr>
-                                                <td>+1</td>
-                                                <td>+2</td>
-                                                <td>+3</td>
-                                            </tr>
-                                        </table>    
-                                    
-                                    
-                                    <a href="#">Wealth Level</a> is an indication of how expensive the armor is to purchase. See the Wealth section earlier in this chapter for an explanation of how that works.</p>
-                                <p><a href="#">Defense Bonus</a> indicates the bonus that your character gains to their Guard defense. </p><p><a href="#">Speed Penalty</a> indicates the reduction in speed that your character suffers due to the bulkiness and weight of the armor.
-                                    </p>
-                                    
+                                    <p>Different types of armor provides a certain amount of bonus to your Guard defense. The type indicates whether the armor is light, medium, or heavy. Each require the character to have certain score of fortitude.  </p>
+                                         
+                                    <table class="table table-condensed">
+                                        <tr>
+                                            <th>Examples</th>
+                                            <th>Type</th>
+                                            <th>Wealth Level</th>
+                                            <th>Required Fortitude</th>
+                                            <th>Defense Bonus</th>
+                                            <th>Speed Penalty</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Leather Armor,<br>Steelsilk,<br>Padded Armor</td>
+                                            <td>Light</td>
+                                            <td>1</td>	
+                                            <td>0</td>	
+                                            <td>1</td>	
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Armored Trench Coat,<br>Electropolymer Armor</td>
+                                            <td>Medium</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chainmail,<br>Kevlar Vest, <br>Breastplate</td>
+                                            <td>Medium</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yoroi Armor, <br>Plate Mail, <br>Riot Suit</td>
+                                            <td>Heavy</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Power Armor, <br>Elven Plate Mail</td>
+                                            <td>Heavy</td>
+                                            <td>4</td>
+                                            <td>1</td>
+                                            <td>3</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                    </table>
+
+                                    <!----------- MINIMALSITIC FORM ---------->
                                     <form id="form" class="topBefore">
                                         <input id="name" type="text" placeholder="NAME">
                                         <input id="email" type="text" placeholder="E-MAIL">
@@ -633,13 +668,37 @@
                             <!-- Table -->
                             <table class="table table-bordered">
                                 <thead>
-                                    <th><a data-toggle="collapse" data-parent="accordion5" href="#clps-armor">Armor</a></th>
+                                    <th>Armor</th>
                                     <th>Weapons</th>
                                     <th>Other</th>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>0</td>
+                                        <td>
+                                            <div class="form-group">
+                                                <select>
+                                                    <optgroup label="Light">
+                                                        <option>Leather Armor</option>
+                                                        <option>Steelsilk</option>
+                                                        <option>Padded Armor</option>
+                                                    </optgroup>
+                                                    <optgroup label="Medium">
+                                                        <option>Armored Trench Coat</option>
+                                                        <option>Electropolymer Armor</option>
+                                                        <option>Chainmail</option>
+                                                        <option>Kevlar Vest</option>
+                                                        <option>Breastplate</option>
+                                                    </optgroup>
+                                                    <optgroup label="Heavy">
+                                                        <option>Yoroi Armor</option>
+                                                        <option>Plate Mail</option>
+                                                        <option>Riot Suit</option>
+                                                        <option>Power Armor</option>
+                                                        <option>Elven Plate Mail</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>                           
+                                        </td>
                                         <td>0</td>
                                         <td>0</td>
                                     </tr>
