@@ -3,7 +3,6 @@
     <head>
         <!-- checkbox css and script -->
         <link href="grey.css" rel="stylesheet">
-        <script src="icheck.js"></script>
         
         <!-- home made css file -->
         <link rel="stylesheet" href="stylesheet.css">
@@ -23,10 +22,9 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 
-        <!-- (Optional) Latest compiled and minified JavaScript translation files -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
-
         
+        <!-- min egen javascriptfil -->
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-static-top">
@@ -81,17 +79,17 @@
                             </div>
                         </div>
                         <!-- Table -->
-                        <table class="table table-bordered tbl">
+                        <table class="table table-bordered tbl attr-table">
                             <thead>
                                 <th>Score</th>
                                 <th>Cost</th>
                                 <th>Dice</th>
                             </thead>
                             <tbody>
-                                <td><input type="number" class="my-input" id="input-agility" placeholder=" +" />
+                                <td><input type="number" class="my-input attr-score" id="input-agility" placeholder=" +" />
                                 </td>
-                                <td>0</td>
-                                <td>0</td>
+                                <td><input type="number" class="my-input attr-cost" disabled></td>
+                                <td><input type="text" class="my-input attr-dice" disabled></td>
                             </tbody>
                         </table>
                     </div>
@@ -1027,15 +1025,23 @@
                                             <form class="form-group">
                                                 <select class="selectpicker" multiple>
                                                     <optgroup label="1 point">
-                                                        <option>Area Manipulation (I - V)</option>
-                                                        <option>Brutal Intimidation</option>
-                                                        <option>Climbing</option>
-                                                        <option>Combat Momentum</option>
-                                                        <option>Fast Draw</option>
-                                                        <option>Great Leap (I - III)</option>
+                                                        <option data-subtext="">Area Manipulation (I - V)</option>
+                                                        <option data-subtext="">Brutal Intimidation</option>
+                                                        <option data-subtext="">Climbing</option>
+                                                        <option data-subtext="">Combat Momentum</option>
+                                                        <option data-subtext="">Fast Draw</option>
+                                                        <option data-subtext="">Great Leap (I - III)</option>
+                                                        <option data-subtext="">Indomitable Resolve (I - III)</option>
+                                                        <option data-subtext="">Lightning Reflexes (I - V)</option>
+                                                        <option data-subtext="">Master Tracker </option>
+                                                        <option data-subtext="">Longshot</option>
+                                                        <option data-subtext="">Swimming</option>
+                                                        <option data-subtext="">Sworn Enemy (I - IX)</option>
+                                                        <option data-subtext="">Untrackable</option>
+                                                        
                                                     </optgroup>
                                                     <optgroup label="2 points">
-                                                        <option>Attribute Substitution (I - II)</option>
+                                                        <option data-subtext="">Attribute Substitution (I - II)</option>
                                                         <option>Battlefield Opportunist (I - V)</option>
                                                         <option>Battlefield Reflexes</option>
                                                         <option>Breakfall (I - II)</option>
@@ -1049,6 +1055,22 @@
                                                         <option>Fast Tracker</option>
                                                         <option>Ferocious Minions (I - III)</option>
                                                         <option>Fleet of Foot (I - III)</option>
+                                                        <option>Heightened Invocation (I - III)</option>
+                                                        <option>Hospitaler</option>
+                                                        <option>Indomitable Endurance (I - V)</option>
+                                                        <option>Inspiring Champion (I - III)</option>
+                                                        <option>Knowledge (I - III)</option>
+                                                        <option>Mimic</option>
+                                                        <option>Multi-Target Attack Specialist (I - V)</option>
+                                                        <option>Multi-Target Boon Specialist (I - V)</option>
+                                                        <option>Natural Defense (I - III)</option>
+                                                        <option>Overpowering Strike </option>
+                                                        <option>Reactionary Trance</option>
+                                                        <option>Skill Specialization (I - V)</option>
+                                                        <option>Tough as Nails (I - II)</option>
+                                                        <option>Two Weapon Defense</option>
+                                                        <option>Vicious Strike</option>
+                                                        <option>Well-Rounded </option>
                                                     </optgroup>
                                                     <optgroup label="3 points">
                                                         <option>Alternate Form (I - II)</option>
@@ -1069,24 +1091,28 @@
                                                         <option>Extraordinary Focus</option>
                                                         <option>Extraordinary Healing</option>
                                                         <option>Flying</option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        
-                                                        
-                                                        
-                                                        <option>Boon Access (1-9 points)</option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
+                                                        <option>Hallucination</option>
+                                                        <option>Hallucination - Mass</option>
+                                                        <option>Impervious Trance</option>
+                                                        <option>Lethal Strike (I - IX)</option>
+                                                        <option>Martial Focus</option>
+                                                        <option>Multi-Attack Specialist (I - VI)</option>
+                                                        <option>Multi-Bane Specialist</option>
+                                                        <option>Multi-Target Boon Expert</option>
+                                                        <option>Potent Bane</option>
+                                                        <option>Reckless Attack</option>
+                                                        <option>Resilient</option>
+                                                        <option>Sentinel (I - III)</option>
+                                                        <option>Silencing Strike</option>
+                                                        <option>Superior Concentration (I - III)</option>
+                                                        <option>Two Weapon Brute</option>
+                                                        <option>Unending Charm</option>
+                                                        <option>Wealthy</option>
                                                     </optgroup>
+                                                    <optgroup label="1-9 points">
+                                                        <option>Boon Access (1-9 points)</option>
+                                                    </optgroup>
+                                                        
                                                 </select>
                                             </form>
                                         </td>
@@ -1106,7 +1132,6 @@
             
             
         </div><!------end GREEN CONTAINER FLUID---->
-        
         
     </body>
 </html>
