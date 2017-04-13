@@ -12,6 +12,7 @@ h2 {
 h5 {
     color: #999 !important;
     text-align: center;
+    letter-spacing: 3px;
 }
 p {
 	color: #222 !important;
@@ -33,7 +34,7 @@ p {
 	border: 0 !important;
 }
 .dropdown-menu {
-	background: #2E2F31 !important;
+	//background: #2E2F31 !important;
 	border-radius: 0 !important;
 	border: 0 !important;
 }
@@ -80,16 +81,21 @@ p {
     border:none !important;
 }
 .row-green {
-    background-color: #GREEN !important;
     padding:20px 0;
 }
-table tr th{
+.tbl tr th {
     width:30%;
 }
-.simple-data {
-    background-color: aqua;
+.tbl2 thead tr td {
+    text-align:center;
 }
-
+.panel-title {
+    letter-spacing: 2px;
+    text-align: center;
+}
+#hej th {
+    width:20%;
+}
 /* MINIMALISTIC FORM */
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -191,7 +197,6 @@ input {
   color: #726659;
   border: solid 1px #b3aca7;
   border-bottom: none;
-  
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
