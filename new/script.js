@@ -1,16 +1,10 @@
 $(document).ready(function(){
-    $(".attr-table .attr-score").keyup(function(){
-        alert("The text has been changed.");
-        scoreCostDice();
+    $(".attr-table .attr-score").on({
+        change: function(){
+            alert("helloooo");
+            costScoreDice();
+        }
     });
-
-
-    function scoreCostDice(){
-        var score = $(this).val();
-        $(this).hide();
-
-    }
-
 });
 /*
 function scoreCostDice(){
