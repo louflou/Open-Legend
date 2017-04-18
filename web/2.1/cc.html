@@ -1,0 +1,1389 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- checkbox css and script -->
+        <link href="grey.css" rel="stylesheet">
+        
+        <!-- home made css file -->
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+        
+        <!-- CharacterKey JavaScript -->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    
+    <body>
+        
+        <!-- Navigation -->
+        
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="icon/ck(white).png" alt="CK" width="25px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Consulting</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="container-fluid row-green">
+
+            
+            
+            
+            <div class="col-md-3">
+                <header>
+                    ATTRIBUTES
+                </header>
+                
+                <div class="panel-group" id="accordion">
+                    
+                    <!-- PHYSICAL ATTRIBUTE SCORE VALUE INPUT -->
+                    <h5>PHYSICAL</h5>
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#clps-agility">AGILITY</a>
+                            </h4>
+                        </div>
+                        <div id="clps-agility" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Your character's dexterity and movement. For example dodge attacks, move with stealth, perform acrobatics, shoot a bow or pick a pocket. 
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Table -->
+                        <table class="table table-bordered tbl attr-table">
+                            <thead>
+                                <th>Score</th>
+                                <th>Cost</th>
+                                <th>Dice</th>
+                            </thead>
+                            <tbody>
+                                <td>
+                                    <input type="number" class="my-input attr-score" id="input-agility" placeholder=" +">
+                                </td>
+                                <td>
+                                    <input type="number" class="my-input attr-cost" id="agility-cost">
+                                </td>
+                                <td>
+                                    <input type="text" class="my-input attr-dice" id="agility-dice" >
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#clps-fortitude">FORTITUDE</a>
+                            </h4>
+                        </div>
+                        <div id="clps-fortitude" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Your character's ability to keep going. For example resist poisons, shrug off pain, survive in a desert or wear heavy armor.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Table -->
+                        <table class="table table-bordered tbl">
+                            <thead>
+                                <th>Score</th>
+                                <th>Cost</th>
+                                <th>Dice</th>
+                            </thead>
+                            <tbody>
+                                <td><input type="number" class="my-input" id="input-fortitude" placeholder=" +" />
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#clps-might">MIGHT</a></h4>
+                        </div>
+                        <div id="clps-might" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Your character's strength. For example swing a maul, jump, break down a door or wrestle a foe to submission. 
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Table -->
+                        <table class="table table-bordered tbl">
+                            <thead>
+                                <th>Score</th>
+                                <th>Cost</th>
+                                <th>Dice</th>
+                            </thead>
+                            <tbody>
+                                <td><input type="number" class="my-input" id="input-might" placeholder=" +" />
+                                </td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                    <!-- SOCIAL ATTRIBUTE SCORE VALUE INPUT -->    
+                    <h5>SOCIAL</h5>
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-deception">DECEPTION</a>
+                                </h4>
+                            </div>
+                            <div id="clps-deception" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Your character's ability to fool others. For example: Tell a lie, bluff at cards, disguise yourself, spread rumors or swindle a sucker.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Table -->
+                            <table class="table table-bordered tbl">
+                                <thead>
+                                    <th>Score</th>
+                                    <th>Cost</th>
+                                    <th>Dice</th>
+                                </thead>
+                                <tbody>
+                                    <td><input type="number" class="my-input" id="input-deception" placeholder=" +" />
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-presence">PRESENCE</a>
+                                </h4>
+                            </div>
+                            <div id="clps-presence" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Your character's influence on others. For example give a speech, sing a song, exert your force of personality or have luck smile upon you.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Table -->
+                            <table class="table table-bordered tbl">
+                                <thead>
+                                    <th>Score</th>
+                                    <th>Cost</th>
+                                    <th>Dice</th>
+                                </thead>
+                                <tbody>
+                                    <td><input type="number" class="my-input" id="input-presence" placeholder=" +" />
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-persuasion">Persuasion</a></h4>
+                            </div>
+                            <div id="clps-persuasion" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Your character's ability to convince others. For example negotiate a deal, haggle, convince someone or pry information.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Table -->
+                            <table class="table table-bordered tbl">
+                                <thead>
+                                    <th>Score</th>
+                                    <th>Cost</th>
+                                    <th>Dice</th>
+                                </thead>
+                                <tbody>
+                                    <td><input type="number" class="my-input" id="input-persuasion" placeholder=" +" />
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tbody>
+                            </table>
+                        </div>
+                   
+                        <!-- MENTAL ATTRIBUTE SCORE VALUE INPUT -->
+                        <h5>MENTAL</h5>
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-learning">Learning</a>
+                                </h4>
+                            </div>
+                            <div id="clps-learning" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>How well read your character is. Recall facts about history, arcane magic, the natural world etc.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Table -->
+                            <table class="table table-bordered tbl">
+                                <thead>
+                                    <th>Score</th>
+                                    <th>Cost</th>
+                                    <th>Dice</th>
+                                </thead>
+                                <tbody>
+                                    <td><input type="number" class="my-input" id="input-learning" placeholder=" +" />
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-logic">Logic</a>
+                                </h4>
+                            </div>
+                            <div id="clps-logic" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Your character's deduction skills. For example solve riddles, decipher a code, improvise a tool, understand strategies and find loopholes. 
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Table -->
+                            <table class="table table-bordered tbl">
+                                <thead>
+                                    <th>Score</th>
+                                    <th>Cost</th>
+                                    <th>Dice</th>
+                                </thead>
+                                <tbody>
+                                    <td><input type="number" class="my-input" id="input-logic" placeholder=" +" />
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-perception">Perception</a></h4>
+                            </div>
+                            <div id="clps-perception" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>How attentive is your character? Used for sensing ulterior motives, tracking, gut feeling and spotting hidden objects and people. 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Table -->
+                            <table class="table table-bordered tbl">
+                                <thead>
+                                    <th>Score</th>
+                                    <th>Cost</th>
+                                    <th>Dice</th>
+                                </thead>
+                                <tbody>
+                                    <td><input type="number" class="my-input" id="input-perception" placeholder=" +" />
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-will">Will</a></h4>
+                            </div>
+                            <div id="clps-will" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Your character's will power. For example maintain resolve, overcome adversity, resist torture, stay awake on watch and staying of insanity. 
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Table -->
+                            <table class="table table-bordered tbl">
+                                <thead>
+                                    <th>Score</th>
+                                    <th>Cost</th>
+                                    <th>Dice</th>
+                                </thead>
+                                <tbody>
+                                    <td><input type="number" class="my-input" id="input-will" placeholder=" +" />
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tbody>
+                            </table>
+                        </div>
+                
+                        <!-- MENTAL ATTRIBUTE SCORE VALUE INPUT -->
+                        <h5>SUPERNATURAL</h5>
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#clps-alteration">Alteration</a>
+                                    </h4>
+                                </div>
+                                <div id="clps-alteration" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>The ability to change shape, alter molecular structures, transmute one material into another.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered tbl">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-alteration" placeholder=" +" />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                    
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#clps-creation">Creation</a>
+                                    </h4>
+                                </div>
+                                <div id="clps-creation" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Your character's ability to alter the things around them. For example channel higher powers for healing, creation, regeneration, divine might, etc.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered tbl">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-creation" placeholder=" +" />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                    
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#clps-energy">Energy</a></h4>
+                                </div>
+                                <div id="clps-energy" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Your character's ability to control the elements. Create and control the elements: fire, cold, electricity, etc.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered tbl">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-energy" placeholder=" +" />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                    
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#clps-entropy">Entropy</a>
+                                    </h4>
+                                </div>
+                                <div id="clps-entropy" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Your character's ability to remove or give life. For example disintegrate matter, kill with a word, create undead or sicken others. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered tbl">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-entropy" placeholder=" +" />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                    
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#clps-influence">Influence</a>
+                                    </h4>
+                                </div>
+                                <div id="clps-influence" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Your character's ability to connect to other minds. For example control the minds of others, speak telepathically, instill fear, create illusory figments, cloak with invisibility. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered tbl">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-influence" placeholder=" +" />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                        
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#clps-movement">Movement</a>
+                                    </h4>
+                                </div>
+                                <div id="clps-movement" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Your character's influence on movement. For example teleport, fly, hasten or slow.  
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered tbl">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-movement" placeholder=" +" />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                    
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#clps-prescience">Prescience</a></h4>
+                                </div>
+                                <div id="clps-prescience" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Your character's psychic powers. For example see the future, read minds or auras, detect magic or evil, scry, communicate with extraplanar entities.  
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered tbl">
+                                    <thead>
+                                        <th>Score</th>
+                                        <th>Cost</th>
+                                        <th>Dice</th>
+                                    </thead>
+                                    <tbody>
+                                        <td><input type="number" class="my-input" id="input-prescience" placeholder=" +" />
+                                        </td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                    
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#clps-protection">Protection</a>
+                                    </h4>
+                                </div>
+                                <div id="clps-protection" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Your character's special abilities to protect others. For example protect from damage, break supernatural influence, dispel magic, bind demons.  
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <table class="table table-bordered tbl">
+                                    <thead>
+                                        <tr>
+                                            <th>Score</th>
+                                            <th>Cost</th>
+                                            <th>Dice</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="number" class="my-input" id="input-protection" placeholder=" +" />
+                                            </td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div><!--end panelgroup-->
+                </div>
+            
+            
+            
+            <!-- Spelarinformation, alla fält finns, använt samma klasser som övriga koden, behöver snyggas till, gör det som sista moment!!-->
+
+            <div class="col-md-6">
+                <header>
+                    PLAYER INFORMATION
+                </header>
+                <div class="panel-group" id="accordion">
+                    <h5>o</h5>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">o</h4>
+                        </div>
+                        <table class="table table-bordered tbl attr-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Archetype</th>
+                                    <th>Player</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" class="my-input"></td>
+                                    <td><input type="text" class="my-input"></td>
+                                    <td><input type="text" class="my-input"></td>
+                                   
+                                 
+                                </tr>
+                            </tbody>
+                             <thead>
+                                <tr>
+                                  
+                                    <th>Level</th>
+                                    <th>XP</th>
+                                    <th>Description</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  
+                                   
+                                    <td><input type="number" class="my-input" placeholder=" +"></td>
+                                    <td><input type="number" class="my-input" placeholder=" +"></td>
+                                     <td><input type="text" class="my-input"></td>
+                                </tr>
+                            </tbody>
+                            
+                             
+                        </table>
+                    </div>
+                </div>
+            </div>
+	      <!--- Legend points och andra saker som bestämms av spelarens val! -->
+            <div class="col-md-6">
+                
+                <div class="panel-group" id="accordion">
+                    <h5></h5>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">More Info</h4>
+                        </div>
+                        <table class="table table-bordered tbl attr-table">
+                            <thead>
+                                <tr>
+                                    <th>Speed</th>
+                                    <th>Wealth</th>
+                                    <th>Legend Points</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" class="my-input"></td>
+                                    <td><input type="text" class="my-input"></td>
+                                    <td><input type="text" class="my-input"></td>
+                                   
+                                 
+                                </tr>
+                            </tbody>
+                            
+                             
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6">
+                <header>
+                    EQUIPMENT
+                </header>
+                
+                <!-- WEAPONS ATTRIBUTE SCORE VALUE INPUT --->
+                <h5> o</h5>
+                    <div class="panel-group" id="accordion5">
+                        <div class="panel panel-default">
+                            
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion5" href="#clps-armor">ARMOR</a> / <a data-toggle="collapse" data-parent="#accordion5" href="#clps-weapons">WEAPONS</a> / <a href="#clps-other">OTHER</a>
+                                </h4>
+                            </div>
+                            <div id="clps-weapons" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <header>WEAPONS</header>
+                                    <p>The Weapons & Implements table provides information about a wide variety of gear that you will use in combat. It features examples from a wide variety of genres and settings, and you can easily adapt existing weapons to your campaign simply by changing the name and keeping the mechanical statistics. For example, a flamethrower can just as easily become an alchemical acid spitter.</p>
+
+                                    <table class="table">
+                                        <thead>                                  
+                                            <tr>
+                                                <th>Examples</th>
+                                                <th>Category</th>
+                                                <th>WL</th>
+                                                <th>Properties</th>
+                                                <th>Banes</th>
+                                            </tr>
+                                        </thead> 
+                                        <tbody>
+                                            <tr>
+                                                <td>Unarmed Strike</td>
+                                                <td>One-handed Melee</td>
+                                                <td>0</td>
+                                                <td>Forceful, Precise, Swift</td>
+                                                <td>Stunned, Knockdown</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bowie Knife, Shiv, Multi-tool</td>
+                                                <td>One-handed Melee</td>
+                                                <td>2</td>
+                                                <td>Precise, Swift</td>
+                                                <td>Persistent Damage, Disarmed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Scimitar, Short Sword, Machete, Sawblade</td>
+                                                <td>One-handed Melee</td>
+                                                <td>1</td>
+                                                <td>Forceful, Precise</td>
+                                                <td>Persistent Damage, Disarmed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Blow Gun, Dart</td>
+                                                <td>Close Ranged</td>
+                                                <td>1</td>
+                                                <td>Forceful, Precise</td>
+                                                <td>Immobile</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hatchet, Dagger</td>
+                                                <td>Close Ranged, One-handed Melee</td>
+                                                <td>2</td>
+                                                <td>Forceful, Precise, Swift</td>
+                                                <td>Persistent Damage, Disarmed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Longsword, Katana, Falchion</td>
+                                                <td>Versatile Melee</td>
+                                                <td>1</td>
+                                                <td>Forceful, Precise</td>
+                                                <td>Persistent Damage, Disarmed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mace, Baseball Bat, Club, Improvised Weapon, Warhammer</td>
+                                                <td>One-handed Melee</td>
+                                                <td>1</td>
+                                                <td>Forceful</td>
+                                                <td>Knockdown, Stunned, Forced Move</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Greatsword, No-dachi, Claymore, Bastard Sword</td>
+                                                <td>Two-handed Melee</td>
+                                                <td>1</td>
+                                                <td>Forceful, Precise, Heavy</td>
+                                                <td>Forced Move, Knockdown</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Chainsaw</td>
+                                                <td>Two-handed Melee</td>
+                                                <td>1</td>
+                                                <td>Forceful</td>
+                                                <td>Heavy Persistent Damage, Demoralized, Provoked, Fear</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Short Spear</td>
+                                                <td>Versatile Melee, Short Ranged</td>
+                                                <td>1</td>
+                                                <td>Forceful, Precise</td>
+                                                <td>Persistent Damage, Disarmed, Immobile</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sledge Hammer, Maul, Great Axe</td>
+                                                <td>Two-handed Melee</td>
+                                                <td>1</td>
+                                                <td>Forceful, Heavy</td>
+                                                <td>Knockdown, Forced Move, Stunned</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Long Spear</td>
+                                                <td>Two-handed Melee, Close Ranged</td>
+                                                <td>2</td>
+                                                <td>Forceful, Precise, Reach</td>
+                                                <td>Persistent Damage, Disarmed, Immobile</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pitchfork, Staff</td>
+                                                <td>Two-handed Melee</td>
+                                                <td>1</td>
+                                                <td>Forceful</td>
+                                                <td>Knockdown, Immobile, Forced Move</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Glaive, Halberd, Naginata</td>
+                                                <td>Two-handed Melee</td>
+                                                <td>2</td>
+                                                <td>Forceful, Reach</td>
+                                                <td>Knockdown, Immobile, Forced Move</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flamethrower</td>
+                                                <td>Two-handed Melee</td>
+                                                <td>3</td>
+                                                <td>Precise, Slow, Area (5’ / 10’ cone)</td>
+                                                <td>Fear, Persistent Damage</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Laser Gun, Revolver, Handgun</td>
+                                                <td>Close Ranged</td>
+                                                <td>1</td>
+                                                <td>Precise</td>
+                                                <td>Persistent Damage, Slowed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Grenade, Firebomb Elixir</td>
+                                                <td>Close Ranged</td>
+                                                <td>2</td>
+                                                <td>Precise, Expendable, Area (10’ cube)</td>
+                                                <td>Persistent Damage, Knockdown, Forced Move</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Light Crossbow</td>
+                                                <td>Medium Ranged</td>
+                                                <td>1</td>
+                                                <td>Precise</td>
+                                                <td>Persistent Damage, Immobile</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sawed-off Shotgun</td>
+                                                <td>Short Ranged</td>
+                                                <td>2</td>
+                                                <td>Precise, Slow, Area (10’ cone)</td>
+                                                <td>Persistent Damage, Stunned, Forced Move</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shortbow, Pump Shotgun</td>
+                                                <td>Medium Ranged</td>
+                                                <td>1</td>
+                                                <td>Precise</td>
+                                                <td>Slowed, Persistent Damage, Knockdown</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Submachine Gun, M16</td>
+                                                <td>Medium Ranged</td>
+                                                <td>3</td>
+                                                <td>Precise, Area (10’ cube)</td>
+                                                <td>Persistent Damage, Provoked, Demoralized</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heavy Crossbow, Longbow, Rifle</td>
+                                                <td>Long Ranged</td>
+                                                <td>1</td>
+                                                <td>Precise</td>
+                                                <td>Persistent Damage, Slowed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sniper Rifle, Phase Rifle</td>
+                                                <td>Extreme Ranged</td>
+                                                <td>4</td>
+                                                <td>Precise, Slow, Delayed Ready</td>
+                                                <td>Persistent Damage, Slowed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cannon</td>
+                                                <td>Extreme Ranged</td>
+                                                <td>2</td>
+                                                <td>Precise, Slow, Area (15’ square), Delayed Ready, Heavy, Stationary</td>
+                                                <td>Persistent Damage, Forced Move, Stunned</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Small Shield</td>
+                                                <td>One-handed Melee</td>
+                                                <td>2</td>
+                                                <td>Forceful, Defensive 1</td>
+                                                <td>Forced Move, Stunned, Knockdown</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Riot Shield, Tower Shield</td>
+                                                <td>One-handed Melee</td>
+                                                <td>3</td>
+                                                <td>Forceful, Defensive 2</td>
+                                                <td>Forced Move, Stunned, Knockdown</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>                                    
+		
+                                    
+                                    
+                                </div>
+
+                            </div>
+                            
+                            
+                            <div id="clps-armor" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    
+                                    
+                                    <header>ARMOR</header>
+                                    <p>Different types of armor provides a certain amount of bonus to your Guard defense. The type indicates whether the armor is light, medium, or heavy. Each require the character to have certain score of fortitude.  </p>
+                                         
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Examples</th>
+                                                <th>Type</th>
+                                                <th>Wealth Level</th>
+                                                <th>Required Fortitude</th>
+                                                <th>Defense Bonus</th>
+                                                <th>Speed Penalty</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>Leather Armor,<br>Steelsilk,<br>Padded Armor</td>
+                                            <td>Light</td>
+                                            <td>1</td>	
+                                            <td>0</td>	
+                                            <td>1</td>	
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Armored Trench Coat,<br>Electropolymer Armor</td>
+                                            <td>Medium</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chainmail,<br>Kevlar Vest, <br>Breastplate</td>
+                                            <td>Medium</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yoroi Armor, <br>Plate Mail, <br>Riot Suit</td>
+                                            <td>Heavy</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Power Armor, <br>Elven Plate Mail</td>
+                                            <td>Heavy</td>
+                                            <td>4</td>
+                                            <td>1</td>
+                                            <td>3</td>
+                                            <td>0</td>
+                                        </tr>
+
+                                    </table>
+
+                                </div>
+                            </div>
+                            <!-- Table -->
+                            <table class="table table-bordered">
+                                <thead>
+                                    <th>Armor</th>
+                                    <th>Weapon</th>
+                                    <th>Shield</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select class="selectpicker" data-max-options="5" multiple>
+                                                <optgroup label="Light">
+                                                    <option data-subtext=" WL 1">Leather Armor</option>
+                                                    <option data-subtext=" WL 1">Steelsilk</option>
+                                                    <option data-subtext= " WL 1">Padded Armor</option>
+                                                </optgroup>
+                                                <optgroup label="Medium">
+                                                    <option data-subtext= " WL 3">Armored Trench Coat</option>
+                                                    <option data-subtext= " WL 3">Electropolymer Armor</option>
+                                                    <option data-subtext= " WL 2">Chainmail</option>
+                                                    <option data-subtext= " WL 3">Kevlar Vest</option>
+                                                    <option data-subtext= " WL 3">Breastplate</option>
+                                                </optgroup>
+                                                <optgroup label="Heavy">
+                                                    <option data-subtext= " WL 2">Yoroi Armor</option>
+                                                    <option data-subtext= " WL 2">Plate Mail</option>
+                                                    <option data-subtext= " WL 2">Riot Suit</option>
+                                                    <option  data-subtext= " WL 4">Power Armor</option>
+                                                    <option data-subtext= " WL 4">Elven Plate Mail</option>
+                                                </optgroup>
+                                            </select>
+
+                                        </td>
+                                        <td>
+                                            <select class="selectpicker" data-max-options="5" multiple>
+                                                <optgroup label="One-handed Melee">
+                                                    <option data-subtext=" WL 0">Unarmed strike</option>
+                                                    <option data-subtext=" WL 2">Bowie Knife</option>
+                                                    <option data-subtext=" WL 2">Shiv</option>
+                                                    <option data-subtext=" WL 2">Multi-tool</option>
+                                                    <option data-subtext=" WL 1">Scimitar</option>
+                                                    <option data-subtext=" WL 1">Short Sword</option>
+                                                    <option data-subtext=" WL 1">Machete</option>
+                                                    <option data-subtext=" WL 1">Sawblade</option>
+                                                    <option data-subtext=" WL 1">Blow Gun</option>
+                                                    <option data-subtext=" WL 1">Dart</option>
+                                                    <option data-subtext=" WL 2">Hatchet</option>
+                                                    <option data-subtext=" WL 2">Dagger</option>
+                                                    <option data-subtext=" WL 1">Mace</option>
+                                                    <option data-subtext=" WL 1">Baseball Bat</option>
+                                                    <option data-subtext=" WL 1">Club</option>
+                                                    <option data-subtext=" WL 1">Improvised Weapon</option>
+                                                    <option data-subtext=" WL 1">Warhammer</option>
+                                                 </optgroup>   
+                                                    
+                                                <optgroup label="Versitile Melee">    
+                                                    <option data-subtext=" WL 1">Longsword</option>
+                                                    <option data-subtext=" WL 1">Katana</option>
+                                                    <option data-subtext=" WL 1">Falcion</option>
+                                                    <option data-subtext=" WL 1">Short Spear</option>
+                                                </optgroup> 
+                                                
+                                                <optgroup label="Two-handed Melee">
+                                                    <option data-subtext=" WL 1">Greatsword</option>
+                                                    <option data-subtext=" WL 1">No-dachi</option>
+                                                    <option data-subtext=" WL 1">Claymore</option>
+                                                    <option data-subtext=" WL 1">Bastard Sword</option>
+                                                    <option data-subtext=" WL 1">Chainsaw</option>
+                                                    <option data-subtext=" WL 1">Sledge Hammer</option>
+                                                    <option data-subtext=" WL 1">Maul</option>
+                                                    <option data-subtext=" WL 1">Great Axe</option>
+                                                    <option data-subtext=" WL 2">Long Spear</option>
+                                                    <option data-subtext=" WL 1">Pitchfork</option>
+                                                    <option data-subtext=" WL 1">Staff</option>
+                                                    <option data-subtext=" WL 2">Glaive</option>
+                                                    <option data-subtext=" WL 2">Halberd</option>
+                                                    <option data-subtext=" WL 2">Naginata</option>
+                                                    <option data-subtext=" WL 3">Flamethrower</option>
+                                                    <option data-subtext=" WL 2">Small Shield</option>
+                                                    <option data-subtext=" WL 3">Riot Shield</option>
+                                                    <option data-subtext=" WL 3">Tower Shield</option>
+                                                 <optgroup label="Close Ranged">    
+                                                    <option data-subtext=" WL 1">Laser Gun</option>
+                                                    <option data-subtext=" WL 1">Revolver</option>
+                                                    <option data-subtext=" WL 1">Handgun</option>
+                                                    <option data-subtext=" WL 1">Grenade</option>
+                                                    <option data-subtext=" WL 1">Firebomb</option>
+                                                    <option data-subtext=" WL 1">Elexir</option>
+                                                </optgroup> 
+                                                <optgroup label="Medium Ranged">    
+                                                    <option data-subtext=" WL 1">Light Crossbow</option>
+                                                    <option data-subtext=" WL 1">Shortbow</option>
+                                                    <option data-subtext=" WL 1">Pump Shotgun</option>
+                                                    <option data-subtext=" WL 3">Submachine Gun</option>
+                                                    <option data-subtext=" WL 3">M16</option>
+                                                    <option data-subtext=" WL 1">Elexir</option>
+                                                </optgroup> 
+                                                <optgroup label="Long Ranged">    
+                                                    <option data-subtext=" WL 1">Heavy Crossbow</option>
+                                                    <option data-subtext=" WL 1">Longbow</option>
+                                                    <option data-subtext=" WL 1">Rifle</option>
+                                                </optgroup> 
+                                                <optgroup label="Extreme Ranged">    
+                                                    <option data-subtext=" WL 4">Sniper Rifle</option>
+                                                    <option data-subtext=" WL 4">Phase Rifle</option>
+                                                    <option data-subtext=" WL 2">Cannon</option>
+                                                </optgroup> 
+                                                
+                                                    
+                                            </select>
+                                        </td>
+                                        <td>
+                                            Large Shield (defensive 2)
+                                        </td>
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h5> FEATS</h5>
+
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion5" href="#clps-feats">FEATS</a>
+                                </h4>
+                            </div>
+                            <div id="clps-feats" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    
+                                    
+                                    
+                                </div> 
+                            </div>
+                            <table class="table tbl table-bordered">
+                                <tr>
+                                    <thead>
+                                        <th>Feats</th>
+                                        <th>Cost</th>
+                                        <th>Prerequisite</th>
+                                    </thead>
+                                </tr>
+                                <tr>    
+                                    <tbody>
+                                        <td>
+                                            <form class="form-group">
+                                                <select class="selectpicker" multiple>
+                                                    <optgroup label="1 point">
+                                                        <option data-subtext="">Area Manipulation (I - V)</option>
+                                                        <option data-subtext="">Brutal Intimidation</option>
+                                                        <option data-subtext="">Climbing</option>
+                                                        <option data-subtext="">Combat Momentum</option>
+                                                        <option data-subtext="">Fast Draw</option>
+                                                        <option data-subtext="">Great Leap (I - III)</option>
+                                                        <option data-subtext="">Indomitable Resolve (I - III)</option>
+                                                        <option data-subtext="">Lightning Reflexes (I - V)</option>
+                                                        <option data-subtext="">Master Tracker </option>
+                                                        <option data-subtext="">Longshot</option>
+                                                        <option data-subtext="">Swimming</option>
+                                                        <option data-subtext="">Sworn Enemy (I - IX)</option>
+                                                        <option data-subtext="">Untrackable</option>
+                                                        
+                                                    </optgroup>
+                                                    <optgroup label="2 points">
+                                                        <option data-subtext="">Attribute Substitution (I - II)</option>
+                                                        <option>Battlefield Opportunist (I - V)</option>
+                                                        <option>Battlefield Reflexes</option>
+                                                        <option>Breakfall (I - II)</option>
+                                                        <option>Combat Follow-through</option>
+                                                        <option>Companion (I - III)</option>
+                                                        <option>Craft Mundane Item (I - II)</option>
+                                                        <option>Defensive Reflexes (I - IX)</option>
+                                                        <option>Diehard</option>
+                                                        <option>Energy Resistance (I - IV)</option>
+                                                        <option>Evasive Footwork</option>
+                                                        <option>Fast Tracker</option>
+                                                        <option>Ferocious Minions (I - III)</option>
+                                                        <option>Fleet of Foot (I - III)</option>
+                                                        <option>Heightened Invocation (I - III)</option>
+                                                        <option>Hospitaler</option>
+                                                        <option>Indomitable Endurance (I - V)</option>
+                                                        <option>Inspiring Champion (I - III)</option>
+                                                        <option>Knowledge (I - III)</option>
+                                                        <option>Mimic</option>
+                                                        <option>Multi-Target Attack Specialist (I - V)</option>
+                                                        <option>Multi-Target Boon Specialist (I - V)</option>
+                                                        <option>Natural Defense (I - III)</option>
+                                                        <option>Overpowering Strike </option>
+                                                        <option>Reactionary Trance</option>
+                                                        <option>Skill Specialization (I - V)</option>
+                                                        <option>Tough as Nails (I - II)</option>
+                                                        <option>Two Weapon Defense</option>
+                                                        <option>Vicious Strike</option>
+                                                        <option>Well-Rounded </option>
+                                                    </optgroup>
+                                                    <optgroup label="3 points">
+                                                        <option>Alternate Form (I - II)</option>
+                                                        <option>Armor Mastery (I - II)</option>
+                                                        <option>Attack Redirection </option>
+                                                        <option>Attack Specialization (I - IX</option>
+                                                        <option>Bane Focus</option>
+                                                        <option>Battle Trance</option>
+                                                        <option>Battlefield Punisher</option>
+                                                        <option>Boon Focus (I - III)</option>
+                                                        <option>Craft Extraordinary Item (I - III)</option>
+                                                        <option>Crushing Blow</option>
+                                                        <option>Death Blow (I - II)</option>
+                                                        <option>Deathless Trance</option>
+                                                        <option>Defensive Mastery</option>
+                                                        <option>Destructive Trance</option>
+                                                        <option>Extraordinary Defense (I - III)</option>
+                                                        <option>Extraordinary Focus</option>
+                                                        <option>Extraordinary Healing</option>
+                                                        <option>Flying</option>
+                                                        <option>Hallucination</option>
+                                                        <option>Hallucination - Mass</option>
+                                                        <option>Impervious Trance</option>
+                                                        <option>Lethal Strike (I - IX)</option>
+                                                        <option>Martial Focus</option>
+                                                        <option>Multi-Attack Specialist (I - VI)</option>
+                                                        <option>Multi-Bane Specialist</option>
+                                                        <option>Multi-Target Boon Expert</option>
+                                                        <option>Potent Bane</option>
+                                                        <option>Reckless Attack</option>
+                                                        <option>Resilient</option>
+                                                        <option>Sentinel (I - III)</option>
+                                                        <option>Silencing Strike</option>
+                                                        <option>Superior Concentration (I - III)</option>
+                                                        <option>Two Weapon Brute</option>
+                                                        <option>Unending Charm</option>
+                                                        <option>Wealthy</option>
+                                                    </optgroup>
+                                                    <optgroup label="1-9 points">
+                                                        <option>Boon Access (1-9 points)</option>
+                                                    </optgroup>
+                                                        
+                                                </select>
+                                            </form>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tbody>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                        
+                        <!--- PERKS AND FLAWS PANEL GROUP -->
+                        <h5> PEARKS AND FLAWS</h5>
+
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion5" href="#clps-feats">PERKS</a>
+                                </h4>
+                            </div>
+                            <div id="clps-feats" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    
+                                    
+                                    
+                                </div> 
+                            </div>
+                            <table class="table tbl table-bordered">
+                                <tr>
+                                    <thead>
+                                        <th>Perks</th>
+                                    </thead>
+                                </tr>
+                                <tr>    
+                                    <tbody>
+                                        <td>
+                                            <form class="form-group">
+                                                <select class="selectpicker" multiple>
+                                                    <optgroup label="1 point">
+                                                        <option data-subtext="">Ageless</option>
+                                                        <option data-subtext="">Artisan</option>
+                                                        <option data-subtext="">Ascetic</option>
+                                                        <option data-subtext="">Attractive</option>
+                                                        <option data-subtext="">Brute</option>
+                                                        <option data-subtext="">Courageous</option>
+                                                        <option data-subtext="">Crowd Favorite</option>
+                                                        <option data-subtext="">Disease Immunity</option>
+                                                        <option data-subtext="">Divine Agent</option>
+                                                        <option data-subtext="">Divine Insight</option>
+                                                        <option data-subtext="">Ear of the Emperor</option>
+                                                        <option data-subtext="">Extraordinary Presence</option>
+                                                        <option data-subtext="">Fugitive</option>
+                                                        <option data-subtext="">Idol</option>
+                                                        <option data-subtext="">Innocent</option>
+                                                        <option data-subtext="">Jack of All Trades</option>
+                                                        <option data-subtext="">Legendary Bloodline</option>
+                                                        <option data-subtext="">Local Hero</option>
+                                                        <option data-subtext="">Lucky</option>
+                                                        <option data-subtext="">Merchant</option>
+                                                        <option data-subtext="">Nature's Ally</option>
+                                                        <option data-subtext="">Observant</option>
+                                                        <option data-subtext="">Profession</option>
+                                                        <option data-subtext="">Pure-hearted</option>
+                                                        <option data-subtext="">Resilient</option>
+                                                        <option data-subtext="">Scavenger</option>
+                                                        <option data-subtext="">Scent</option>
+                                                        <option data-subtext="">Scolar</option>
+                                                        <option data-subtext="">Silver Tongue</option>
+                                                        <option data-subtext="">Stone Sense</option>
+                                                        <option data-subtext="">Street Rat</option>
+                                                        <option data-subtext="">Upper Class</option>
+                                                        <option data-subtext="">Vagabond</option>
+                                                        <option data-subtext="">Warrior's Code</option>
+                                                        <option data-subtext="">Wisperer of the Wild</option>
+
+
+                                                        
+                                                </select>
+                                            </form>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tbody>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion5" href="#clps-feats">FLAWS</a>
+                                </h4>
+                            </div>
+                            <div id="clps-feats" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    
+                                    
+                                    
+                                </div> 
+                            </div>
+                            <table class="table tbl table-bordered">
+                                <tr>
+                                    <thead>
+                                        <th>Flaws</th>
+                                    </thead>
+                                </tr>
+                                <tr>    
+                                    <tbody>
+                                        <td>
+                                            <form class="form-group">
+                                                <select class="selectpicker" multiple>
+                                                    <optgroup label="1 point">
+                                                        <option data-subtext="">Absent-minded</option>
+                                                        <option data-subtext="">Addiction</option>
+                                                        <option data-subtext="">Ambitious</option>
+                                                        <option data-subtext="">Bloodlust</option>
+                                                        <option data-subtext="">Brash</option>
+                                                        <option data-subtext="">Bravado</option>
+                                                        <option data-subtext="">Cosmetic Deformity</option>
+                                                        <option data-subtext="">Compulsion</option>
+                                                        <option data-subtext="">Cowardly</option>
+                                                        <option data-subtext="">Dimwitted</option>
+                                                        <option data-subtext="">Disabled</option>
+                                                        <option data-subtext="">Greedy</option>
+                                                        <option data-subtext="">Honest</option>
+                                                        <option data-subtext="">Hot Tempered</option>
+                                                        <option data-subtext="">Illiterate</option>
+                                                        <option data-subtext="">Literal Minded</option>
+                                                        <option data-subtext="">Mood Disorderd</option>
+                                                        <option data-subtext="">Naive</option>
+                                                        <option data-subtext="">Overt</option>
+                                                        <option data-subtext="">Overweight</option>
+                                                        <option data-subtext="">Pacifist</option>
+                                                        <option data-subtext="">Phobia</option>
+                                                        <option data-subtext="">Proud</option>
+                                                        <option data-subtext="">Psychotic</option>
+                                                        <option data-subtext="">Short-winded</option>
+                                                        <option data-subtext="">Sick</option>
+                                                        <option data-subtext="">Socially Awkward</option>
+                                                        <option data-subtext="">Stubborn</option>
+                                                        <option data-subtext="">Uncoordinated</option>
+                                                        <option data-subtext="">Vengful</option>
+                                                        <option data-subtext="">Zealous</option>
+                                                        
+
+
+                                                </select>
+                                            </form>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tbody>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                    </div><!--end panelgroup-->
+                
+                
+                
+                </div><!--end col -->  
+            
+            
+            
+        </div><!------end GREEN CONTAINER FLUID---->
+        
+    </body>
+</html>
