@@ -93,10 +93,8 @@ p {
     letter-spacing: 2px;
     text-align: center;
 }
-#hej th {
-    width:20%;
-}
-/* MINIMALISTIC FORM */
+
+/* END MINIMALISTIC FORM */
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #aca49c;

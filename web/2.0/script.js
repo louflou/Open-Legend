@@ -1,30 +1,17 @@
-/*
-$(document).ready(function(){
-    $(".attr-table .attr-score").on({
-        change: function(){
-            alert("helloooo");
-            costScoreDice();
-        }
-    });    
-    
-});
-*/
-
-
 
 $(document).ready(function(){
-    var score = $(".attr-table .attr-score")
+    var score = $(".attr-table .attr-score");
     score.change(function(){
-        $(this).parent().next().children('.attr-cost').val('500');
-                
+        $(this).parent().next().children('.attr-cost').val('500');   
+        
     });
     
-    
-    
 });
 
 
-/*
+/* nedan är vad vi vill göra men fungerar inte.
+
+
 function scoreCostDice(){
     var score = $(this).val();
     var cost = calcCost(score);
