@@ -1,11 +1,29 @@
+/*
 $(document).ready(function(){
     $(".attr-table .attr-score").on({
         change: function(){
             alert("helloooo");
             costScoreDice();
         }
-    });
+    });    
+    
 });
+*/
+
+
+
+$(document).ready(function(){
+    var score = $(".attr-table .attr-score")
+    score.change(function(){
+        $(this).parent().next().children('.attr-cost').val('500');
+                
+    });
+    
+    
+    
+});
+
+
 /*
 function scoreCostDice(){
     var score = $(this).val();
