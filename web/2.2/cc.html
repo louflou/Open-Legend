@@ -697,186 +697,190 @@
             </div>
             <!--end panelgroup-->
         </div>
-
-
+        
+        
+        
 
         <!-- Spelarinformation, alla fält finns, använt samma klasser som övriga koden, behöver snyggas till, gör det som sista moment!!-->
-
-        <div class="col-md-6">
+        <div class="col-sm-4">
             <header>
-                PLAYER INFORMATION
+                PLAYER INFO
             </header>
             <div class="panel-group">
-                <h5>o</h5>
+                <h5>GENREAL</h5>
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4 class="panel-title">o</h4>
+                        <h4 class="panel-title">INFO</h4>
                     </div>
-                    <table class="table table-bordered tbl attr-table">
-                        <thead>
+                    <table class="table table-bordered tbl">
+                        <tbody>
+                            <tr>
+                                <th>Archetype</th>
+                                <td>
+                                    <select class="selectpicker">
+                                        <option>Barbarian</option>
+                                        <option>Ranger</option>
+                                        <option>Monk</option>
+                                        <option>Paladin</option>
+                                        <option>Battle Mage</option>
+                                        <option>Mind Mage</option>
+                                        <option>Assassin</option>
+                                        <option>Cleric</option>
+                                        <option>Druid</option>
+                                        <option>Shadowdancer</option>
+                                        <option>Bard</option>
+                                        <option>Arcane Protector</option>
+                                    </select>
+                                </td>
+                            </tr>
                             <tr>
                                 <th>Name</th>
-                                <th>Archetype</th>
-                                <th>Player</th>
-
+                                <td><input type="text" class="my-input" placeholder="Character's name" /></td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" class="my-input">
-                                </td>
-                                <td>
-                                    <input type="text" class="my-input">
-                                </td>
-                                <td>
-                                    <input type="text" class="my-input">
-                                </td>
-
-
-                            </tr>
-                        </tbody>
-
-
-
-                    </table>
-
-                    <table class="table table-bordered tbl attr-table">
-
-                        <thead>
                             <tr>
                                 <th>Level</th>
-                                <th>XP</th>
-                                <th>Description</th>
-
+                                <td>
+                                    <select class="selectpicker form-control" placeholder="None selected">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </td>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
-
-
+                                <th>XP</th>
+                                <td><input type="number" class="my-input" placeholder="Experience points" /></td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
                                 <td>
-                                    <input type="number" class="my-input" placeholder=" +">
-                                </td>
-                                <td>
-                                    <input type="number" class="my-input" placeholder=" +">
-                                </td>
-                                <td>
-                                    <input type="text" class="my-input">
+                                    <textarea class="form-control"></textarea>  
                                 </td>
                             </tr>
+                            
                         </tbody>
                     </table>
+
                 </div>
             </div>
         </div>
-
-        <div class="col-md-3">
+                
+        <!-- defenses table -->
+        <div class="col-md-5">
             <div class="panel-group">
                 <header>DEFENSES</header>
-                <h5>""</h5>
+                <h5>DEF</h5>
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">Guard</h4>
                     </div>
-                    <table class="table table-bordered tbl attr-table">
+                    
+                    <table class="table  table-bordered tbl">
                         <thead>
-                            <tr>
-                                <th>Total</th>
-
-                                <th>Bonus</th>
-                            </tr>
+                            <th>Defense</th>
+                            <th>Total</th>
+                            <th>Armor</th>
+                            <th>Shield</th>
+                            <th>Attribute</th>
+                            <th>Other</th>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Agility
-                                    <input name="guard_agility" type="text" class="my-input">
-                                </td>
-
-                                <td>Might
-                                    <input name="guard_might" type="text" class="my-input">
-                                </td>
+                                <th>Guard</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td>Armor
-                                    <input name="guard_armor" type="text" class="my-input">
-                                </td>
-
-                                <td>Other
-                                    <input name="guard_other" type="text" class="my-input">
-                                </td>
+                                <th>Toughness</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Resolve</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
+                    
                     </table>
+                    
                 </div>
             </div>
-        </div>
-        <!--- Legend points och andra saker som bestämms av spelarens val! -->
+        
+            <h5>HITPOINTS</h5>
+            <div class="panel panel-default">
+                <!-- Visar Hp och Current Hp för användaren. -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#clps-hitpoints">score</a>
 
-
-        <div class="col-md-6">
-            <div class="panel-group">
-                <h5>o</h5>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">More Info</h4>
+                            </h4>
+                </div>
+                <div id="clps-hitpoints" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>The amount of health that the player character has. It shows the maximum health and the current health. If the characters health is 0 the character dies.
+                        </p>
                     </div>
-                    <table class="table table-bordered tbl attr-table">
-                        <thead>
-                            <tr>
-                                <th>Speed</th>
-                                <th>Wealth</th>
-                                <th>Legend Points</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="text" class="my-input">
-                                </td>
-                                <td>
-                                    <input type="text" class="my-input">
-                                </td>
-                                <td>
-                                    <input type="text" class="my-input">
-                                </td>
-
-
-                            </tr>
-                        </tbody>
-
-
-                    </table>
-
                 </div>
+                <!-- Table -->
+                <table class="table table-bordered tbl attr-table">
+                    <thead>
+                        <tr>
+                            <th>Current Hitpoints</th>
+
+                            <th>Max Hitpoints</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="number" class="my-input attr-score" disabled>
+                            </td>
+
+
+
+                            <td>
+                                <input type="text" class="my-input attr-dice" disabled>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-
-
+        
+        
+        <!--- Legend points och andra saker som bestämms av spelarens val! -->
         <div class="col-md-6">
-            <header>
-                EQUIPMENT
-            </header>
-
             <!-- WEAPONS ATTRIBUTE SCORE VALUE INPUT -->
-            <h5> o</h5>
             <div class="panel-group" id="accordion5">
                 <div class="panel panel-default">
-
                     <!-- Default panel contents -->
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion5" href="#clps-armor">ARMOR</a> / <a data-toggle="collapse" data-parent="#accordion5" href="#clps-weapons">WEAPONS</a> / <a href="#clps-other">SHIELD</a>
-                                </h4>
+                            EQUIPMENT
+                        </h4>
                     </div>
                     <div id="clps-weapons" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <header>WEAPONS</header>
+                            <H5>WEAPONS</H5>
                             <p>The Weapons & Implements table provides information about a wide variety of gear that you will use in combat. It features examples from a wide variety of genres and settings, and you can easily adapt existing weapons to your campaign simply by changing the name and keeping the mechanical statistics. For example, a flamethrower can just as easily become an alchemical acid spitter.</p>
-
                             <table class="table">
-                                <thead>
+                                <thead>                                  
                                     <tr>
                                         <th>Examples</th>
                                         <th>Category</th>
@@ -884,7 +888,7 @@
                                         <th>Properties</th>
                                         <th>Banes</th>
                                     </tr>
-                                </thead>
+                                </thead> 
                                 <tbody>
                                     <tr>
                                         <td>Unarmed Strike</td>
@@ -1069,21 +1073,14 @@
                                         <td>Forced Move, Stunned, Knockdown</td>
                                     </tr>
                                 </tbody>
-                            </table>
-
-
-
+                            </table>                                    
                         </div>
-
                     </div>
-
 
                     <div id="clps-armor" class="panel-collapse collapse">
                         <div class="panel-body">
-
-
-                            <header>ARMOR</header>
-                            <p>Different types of armor provides a certain amount of bonus to your Guard defense. The type indicates whether the armor is light, medium, or heavy. Each require the character to have certain score of fortitude. </p>
+                            <h5>ARMOR</h5>
+                            <p>Different types of armor provides a certain amount of bonus to your Guard defense. The type indicates whether the armor is light, medium, or heavy. Each require the character to have certain score of fortitude.  </p>
 
                             <table class="table table-hover">
                                 <thead>
@@ -1097,18 +1094,15 @@
                                     </tr>
                                 </thead>
                                 <tr>
-                                    <td>Leather Armor,
-                                        <br>Steelsilk,
-                                        <br>Padded Armor</td>
+                                    <td>Leather Armor,<br>Steelsilk,<br>Padded Armor</td>
                                     <td>Light</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>1</td>
+                                    <td>1</td>	
+                                    <td>0</td>	
+                                    <td>1</td>	
                                     <td>0</td>
                                 </tr>
                                 <tr>
-                                    <td>Armored Trench Coat,
-                                        <br>Electropolymer Armor</td>
+                                    <td>Armored Trench Coat,<br>Electropolymer Armor</td>
                                     <td>Medium</td>
                                     <td>3</td>
                                     <td>2</td>
@@ -1116,9 +1110,7 @@
                                     <td>0</td>
                                 </tr>
                                 <tr>
-                                    <td>Chainmail,
-                                        <br>Kevlar Vest,
-                                        <br>Breastplate</td>
+                                    <td>Chainmail,<br>Kevlar Vest, <br>Breastplate</td>
                                     <td>Medium</td>
                                     <td>2</td>
                                     <td>3</td>
@@ -1126,9 +1118,7 @@
                                     <td>0</td>
                                 </tr>
                                 <tr>
-                                    <td>Yoroi Armor,
-                                        <br>Plate Mail,
-                                        <br>Riot Suit</td>
+                                    <td>Yoroi Armor, <br>Plate Mail, <br>Riot Suit</td>
                                     <td>Heavy</td>
                                     <td>2</td>
                                     <td>3</td>
@@ -1136,56 +1126,69 @@
                                     <td>5</td>
                                 </tr>
                                 <tr>
-                                    <td>Power Armor,
-                                        <br>Elven Plate Mail</td>
+                                    <td>Power Armor, <br>Elven Plate Mail</td>
                                     <td>Heavy</td>
                                     <td>4</td>
                                     <td>1</td>
                                     <td>3</td>
                                     <td>0</td>
                                 </tr>
-
                             </table>
-
                         </div>
                     </div>
-                    <!-- Table -->
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Armor</th>
-                                <th>Weapon</th>
-                                <th>Shield</th>
-                            </tr>
 
+                    <div id="clps-items" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h5>ACQUIRING EXTRAORDINARY ITEMS</h5>
+                            <p>Extraordinary items can be acquired in a number of ways. They may be taken from the horde of a fallen enemy, gifted from a patron as a reward for a job well done, purchased from an obscure wandering merchant, or even crafted by a PC using the Craft Extraordinary Item feat.</p>
+                            <p>However, extraordinary items are so powerful that they have the potential to dramatically alter the course of the story and the wielder’s capabilities. As such, they always require the approval of the GM to acquire. The GM can use an item’s wealth level as an indication of the relative strength of an extraordinary item, but the decision to allow a character to acquire such an item should depend on factors such as how much it adds to the story and how it affects the balance of power among all of the PCs.</p>
+                            <h5>EXTRAORDINARY ITEM DESCRIPTIONS</h5>
+                            <p>Extraordinary items are different from weapons, armor, and other gear because they give the wielder access to attributes, banes, and boons that are beyond their current power–or they bolster the attributes, banes, and boons that the wielder can already access. The Extraordinary Items Table outlines a variety of such items spanning many genres. The examples include weapons and gear of powerful magic, alchemy, and technology–and they should provide plenty of inspiration for coming up with your own extraordinary items for your campaign.</p>
+                            <h5>WL (WEALTH LEVEL)</h5>
+                            <p>Indicates the wealth level associated with this extraordinary item. Acquiring the item requires a sufficient wealth level and follows all of the rules for wealth established in the table regarding <a href="#clps-weapons" data-parent="#accordion5" data-toggle="collapse"> Weapons & Equipment.</a></p>
+                            <h5>ATTRIBUTES</h5>
+                            <p>Indicate which attributes, if any, the item can make use of. An item can use an attribute to make attacks, invoke banes and boons, and perform other actions that would reasonably fall within the item’s capabilities. The wielder spends their own actions to use an item’s attributes, but all attribute dice and power levels are determined by the item’s attribute score, not the wielder’s. The wielder’s applicable feats still apply. If the wielder’s attribute is greater than the item’s by one or two points, they may use their own attribute, and the item instead grants advantage 1 on rolls with that attribute. This bonus can only be applied once to a given attribute, regardless of how many items you wield that possess the attribute.</p>
+
+                            <h5>BANES & BOONS</h5>
+                            <p>indicate the banes and boons that the item grants access to. The wielder can use the item to invoke the listed bane or boon. The numeric value is used to determine both the power level and the attribute dice used for the invocation roll. The wielder may choose to invoke at a lower power level than that listed, in which case the attribute dice rolled are not reduced. All of the same rules for items with attributes apply, except in this case the granted access is for the listed banes or boons only.</p>
+                            <p>Properties are the descriptors that make each extraordinary item unique from others. These properties translate to specific game mechanics listed below.</p>
+                        </div>
+                    </div>
+
+                    <!-- Table -->
+                    <table class="table tbl table-bordered">
+                        <thead>
+                            <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-armor">ARMOR</a></th>
+                            <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-weapons">WEAPONS</a></th>
+                            <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-items">ITEMS</a></th>
                         </thead>
                         <tbody>
-                            <tr>
+                            <form>
                                 <td>
                                     <select class="selectpicker" data-max-options="5" multiple>
                                         <optgroup label="Light">
                                             <option data-subtext=" WL 1">Leather Armor</option>
                                             <option data-subtext=" WL 1">Steelsilk</option>
-                                            <option data-subtext=" WL 1">Padded Armor</option>
+                                            <option data-subtext= " WL 1">Padded Armor</option>
                                         </optgroup>
                                         <optgroup label="Medium">
-                                            <option data-subtext=" WL 3">Armored Trench Coat</option>
-                                            <option data-subtext=" WL 3">Electropolymer Armor</option>
-                                            <option data-subtext=" WL 2">Chainmail</option>
-                                            <option data-subtext=" WL 3">Kevlar Vest</option>
-                                            <option data-subtext=" WL 3">Breastplate</option>
+                                            <option data-subtext= " WL 3">Armored Trench Coat</option>
+                                            <option data-subtext= " WL 3">Electropolymer Armor</option>
+                                            <option data-subtext= " WL 2">Chainmail</option>
+                                            <option data-subtext= " WL 3">Kevlar Vest</option>
+                                            <option data-subtext= " WL 3">Breastplate</option>
                                         </optgroup>
                                         <optgroup label="Heavy">
-                                            <option data-subtext=" WL 2">Yoroi Armor</option>
-                                            <option data-subtext=" WL 2">Plate Mail</option>
-                                            <option data-subtext=" WL 2">Riot Suit</option>
-                                            <option data-subtext=" WL 4">Power Armor</option>
-                                            <option data-subtext=" WL 4">Elven Plate Mail</option>
+                                            <option data-subtext= " WL 2">Yoroi Armor</option>
+                                            <option data-subtext= " WL 2">Plate Mail</option>
+                                            <option data-subtext= " WL 2">Riot Suit</option>
+                                            <option  data-subtext= " WL 4">Power Armor</option>
+                                            <option data-subtext= " WL 4">Elven Plate Mail</option>
                                         </optgroup>
                                     </select>
-
                                 </td>
                                 <td>
+
                                     <select class="selectpicker" data-max-options="5" multiple>
                                         <optgroup label="One-handed Melee">
                                             <option data-subtext=" WL 0">Unarmed strike</option>
@@ -1205,15 +1208,13 @@
                                             <option data-subtext=" WL 1">Club</option>
                                             <option data-subtext=" WL 1">Improvised Weapon</option>
                                             <option data-subtext=" WL 1">Warhammer</option>
-                                        </optgroup>
-
-                                        <optgroup label="Versitile Melee">
+                                         </optgroup>   
+                                        <optgroup label="Versitile Melee">    
                                             <option data-subtext=" WL 1">Longsword</option>
                                             <option data-subtext=" WL 1">Katana</option>
                                             <option data-subtext=" WL 1">Falcion</option>
                                             <option data-subtext=" WL 1">Short Spear</option>
-                                        </optgroup>
-
+                                        </optgroup> 
                                         <optgroup label="Two-handed Melee">
                                             <option data-subtext=" WL 1">Greatsword</option>
                                             <option data-subtext=" WL 1">No-dachi</option>
@@ -1233,176 +1234,159 @@
                                             <option data-subtext=" WL 2">Small Shield</option>
                                             <option data-subtext=" WL 3">Riot Shield</option>
                                             <option data-subtext=" WL 3">Tower Shield</option>
-                                            <optgroup label="Close Ranged">
-                                                <option data-subtext=" WL 1">Laser Gun</option>
-                                                <option data-subtext=" WL 1">Revolver</option>
-                                                <option data-subtext=" WL 1">Handgun</option>
-                                                <option data-subtext=" WL 1">Grenade</option>
-                                                <option data-subtext=" WL 1">Firebomb</option>
-                                                <option data-subtext=" WL 1">Elexir</option>
-                                            </optgroup>
-                                            <optgroup label="Medium Ranged">
-                                                <option data-subtext=" WL 1">Light Crossbow</option>
-                                                <option data-subtext=" WL 1">Shortbow</option>
-                                                <option data-subtext=" WL 1">Pump Shotgun</option>
-                                                <option data-subtext=" WL 3">Submachine Gun</option>
-                                                <option data-subtext=" WL 3">M16</option>
-                                                <option data-subtext=" WL 1">Elexir</option>
-                                            </optgroup>
-                                            <optgroup label="Long Ranged">
-                                                <option data-subtext=" WL 1">Heavy Crossbow</option>
-                                                <option data-subtext=" WL 1">Longbow</option>
-                                                <option data-subtext=" WL 1">Rifle</option>
-                                            </optgroup>
-                                            <optgroup label="Extreme Ranged">
-                                                <option data-subtext=" WL 4">Sniper Rifle</option>
-                                                <option data-subtext=" WL 4">Phase Rifle</option>
-                                                <option data-subtext=" WL 2">Cannon</option>
-                                            </optgroup>
-
-
+                                         <optgroup label="Close Ranged">    
+                                            <option data-subtext=" WL 1">Laser Gun</option>
+                                            <option data-subtext=" WL 1">Revolver</option>
+                                            <option data-subtext=" WL 1">Handgun</option>
+                                            <option data-subtext=" WL 1">Grenade</option>
+                                            <option data-subtext=" WL 1">Firebomb</option>
+                                            <option data-subtext=" WL 1">Elexir</option>
+                                        </optgroup> 
+                                        <optgroup label="Medium Ranged">    
+                                            <option data-subtext=" WL 1">Light Crossbow</option>
+                                            <option data-subtext=" WL 1">Shortbow</option>
+                                            <option data-subtext=" WL 1">Pump Shotgun</option>
+                                            <option data-subtext=" WL 3">Submachine Gun</option>
+                                            <option data-subtext=" WL 3">M16</option>
+                                            <option data-subtext=" WL 1">Elexir</option>
+                                        </optgroup> 
+                                        <optgroup label="Long Ranged">    
+                                            <option data-subtext=" WL 1">Heavy Crossbow</option>
+                                            <option data-subtext=" WL 1">Longbow</option>
+                                            <option data-subtext=" WL 1">Rifle</option>
+                                        </optgroup> 
+                                        <optgroup label="Extreme Ranged">    
+                                            <option data-subtext=" WL 4">Sniper Rifle</option>
+                                            <option data-subtext=" WL 4">Phase Rifle</option>
+                                            <option data-subtext=" WL 2">Cannon</option>
+                                        </optgroup> 
                                     </select>
                                 </td>
                                 <td>
-                                    Large Shield (defensive 2)
+                                    Large Shield (def 2)
                                 </td>
-                            </tr>
-
+                            </form>
                         </tbody>
                     </table>
                 </div>
-
-                <h5> FEATS</h5>
-
+                <h5>FEEEEAT!</h5>
                 <div class="panel panel-default">
                     <!-- Default panel contents -->
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion5" href="#clps-feats">FEATS</a>
-                                </h4>
+                            <a data-toggle="collapse" data-parent="#accordion5" href="#clps-feats">FEATS</a>
+                        </h4>
                     </div>
                     <div id="clps-feats" class="panel-collapse collapse">
                         <div class="panel-body">
-
-
-
+                                <!-- INSERT PANEL COLLAPSE FEATS HERE -->
                         </div>
                     </div>
                     <table class="table tbl table-bordered">
-
                         <thead>
-                            <tr>
-                                <th>Feats</th>
-                                <th>Cost</th>
-                                <th>Prerequisite</th>
-                            </tr>
+                            <th>Feats</th>
+                            <th>Cost</th>
+                            <th>Prerequisite</th>
                         </thead>
-
-
                         <tbody>
-                            <tr>
-                                <td>
-                                    <form class="form-group">
-                                        <select class="selectpicker" multiple>
-                                            <optgroup label="1 point">
-                                                <option data-subtext="">Area Manipulation (I - V)</option>
-                                                <option data-subtext="">Brutal Intimidation</option>
-                                                <option data-subtext="">Climbing</option>
-                                                <option data-subtext="">Combat Momentum</option>
-                                                <option data-subtext="">Fast Draw</option>
-                                                <option data-subtext="">Great Leap (I - III)</option>
-                                                <option data-subtext="">Indomitable Resolve (I - III)</option>
-                                                <option data-subtext="">Lightning Reflexes (I - V)</option>
-                                                <option data-subtext="">Master Tracker </option>
-                                                <option data-subtext="">Longshot</option>
-                                                <option data-subtext="">Swimming</option>
-                                                <option data-subtext="">Sworn Enemy (I - IX)</option>
-                                                <option data-subtext="">Untrackable</option>
+                            <td>
+                                <form class="form-group">
+                                    <select class="selectpicker" multiple>
+                                        <optgroup label="1 point">
+                                            <option data-subtext="">Area Manipulation (I - V)</option>
+                                            <option data-subtext="">Brutal Intimidation</option>
+                                            <option data-subtext="">Climbing</option>
+                                            <option data-subtext="">Combat Momentum</option>
+                                            <option data-subtext="">Fast Draw</option>
+                                            <option data-subtext="">Great Leap (I - III)</option>
+                                            <option data-subtext="">Indomitable Resolve (I - III)</option>
+                                            <option data-subtext="">Lightning Reflexes (I - V)</option>
+                                            <option data-subtext="">Master Tracker </option>
+                                            <option data-subtext="">Longshot</option>
+                                            <option data-subtext="">Swimming</option>
+                                            <option data-subtext="">Sworn Enemy (I - IX)</option>
+                                            <option data-subtext="">Untrackable</option>
 
-                                            </optgroup>
-                                            <optgroup label="2 points">
-                                                <option data-subtext="">Attribute Substitution (I - II)</option>
-                                                <option>Battlefield Opportunist (I - V)</option>
-                                                <option>Battlefield Reflexes</option>
-                                                <option>Breakfall (I - II)</option>
-                                                <option>Combat Follow-through</option>
-                                                <option>Companion (I - III)</option>
-                                                <option>Craft Mundane Item (I - II)</option>
-                                                <option>Defensive Reflexes (I - IX)</option>
-                                                <option>Diehard</option>
-                                                <option>Energy Resistance (I - IV)</option>
-                                                <option>Evasive Footwork</option>
-                                                <option>Fast Tracker</option>
-                                                <option>Ferocious Minions (I - III)</option>
-                                                <option>Fleet of Foot (I - III)</option>
-                                                <option>Heightened Invocation (I - III)</option>
-                                                <option>Hospitaler</option>
-                                                <option>Indomitable Endurance (I - V)</option>
-                                                <option>Inspiring Champion (I - III)</option>
-                                                <option>Knowledge (I - III)</option>
-                                                <option>Mimic</option>
-                                                <option>Multi-Target Attack Specialist (I - V)</option>
-                                                <option>Multi-Target Boon Specialist (I - V)</option>
-                                                <option>Natural Defense (I - III)</option>
-                                                <option>Overpowering Strike </option>
-                                                <option>Reactionary Trance</option>
-                                                <option>Skill Specialization (I - V)</option>
-                                                <option>Tough as Nails (I - II)</option>
-                                                <option>Two Weapon Defense</option>
-                                                <option>Vicious Strike</option>
-                                                <option>Well-Rounded </option>
-                                            </optgroup>
-                                            <optgroup label="3 points">
-                                                <option>Alternate Form (I - II)</option>
-                                                <option>Armor Mastery (I - II)</option>
-                                                <option>Attack Redirection </option>
-                                                <option>Attack Specialization (I - IX</option>
-                                                <option>Bane Focus</option>
-                                                <option>Battle Trance</option>
-                                                <option>Battlefield Punisher</option>
-                                                <option>Boon Focus (I - III)</option>
-                                                <option>Craft Extraordinary Item (I - III)</option>
-                                                <option>Crushing Blow</option>
-                                                <option>Death Blow (I - II)</option>
-                                                <option>Deathless Trance</option>
-                                                <option>Defensive Mastery</option>
-                                                <option>Destructive Trance</option>
-                                                <option>Extraordinary Defense (I - III)</option>
-                                                <option>Extraordinary Focus</option>
-                                                <option>Extraordinary Healing</option>
-                                                <option>Flying</option>
-                                                <option>Hallucination</option>
-                                                <option>Hallucination - Mass</option>
-                                                <option>Impervious Trance</option>
-                                                <option>Lethal Strike (I - IX)</option>
-                                                <option>Martial Focus</option>
-                                                <option>Multi-Attack Specialist (I - VI)</option>
-                                                <option>Multi-Bane Specialist</option>
-                                                <option>Multi-Target Boon Expert</option>
-                                                <option>Potent Bane</option>
-                                                <option>Reckless Attack</option>
-                                                <option>Resilient</option>
-                                                <option>Sentinel (I - III)</option>
-                                                <option>Silencing Strike</option>
-                                                <option>Superior Concentration (I - III)</option>
-                                                <option>Two Weapon Brute</option>
-                                                <option>Unending Charm</option>
-                                                <option>Wealthy</option>
-                                            </optgroup>
-                                            <optgroup label="1-9 points">
-                                                <option>Boon Access (1-9 points)</option>
-                                            </optgroup>
-
-                                        </select>
-                                    </form>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                                        </optgroup>
+                                        <optgroup label="2 points">
+                                            <option data-subtext="">Attribute Substitution (I - II)</option>
+                                            <option data-subtext="">Battlefield Opportunist (I - V)</option>
+                                            <option data-subtext="">Battlefield Reflexes</option>
+                                            <option data-subtext="">Breakfall (I - II)</option>
+                                            <option data-subtext="">Combat Follow-through</option>
+                                            <option data-subtext="">Companion (I - III)</option>
+                                            <option data-subtext="">Craft Mundane Item (I - II)</option>
+                                            <option data-subtext="">Defensive Reflexes (I - IX)</option>
+                                            <option data-subtext="">Diehard</option>
+                                            <option data-subtext="">Energy Resistance (I - IV)</option>
+                                            <option data-subtext="">Evasive Footwork</option>
+                                            <option data-subtext="">Fast Tracker</option>
+                                            <option data-subtext="">Ferocious Minions (I - III)</option>
+                                            <option data-subtext="">Fleet of Foot (I - III)</option>
+                                            <option data-subtext="">Heightened Invocation (I - III)</option>
+                                            <option data-subtext="">Hospitaler</option>
+                                            <option data-subtext="">Indomitable Endurance (I - V)</option>
+                                            <option data-subtext="">Inspiring Champion (I - III)</option>
+                                            <option data-subtext="">Knowledge (I - III)</option>
+                                            <option data-subtext="">Mimic</option>
+                                            <option data-subtext="">Multi-Target Attack Specialist (I - V)</option>
+                                            <option data-subtext="">Multi-Target Boon Specialist (I - V)</option>
+                                            <option data-subtext="">Natural Defense (I - III)</option>
+                                            <option data-subtext="">Overpowering Strike </option>
+                                            <option data-subtext="">Reactionary Trance</option>
+                                            <option data-subtext="">Skill Specialization (I - V)</option>
+                                            <option data-subtext="">Tough as Nails (I - II)</option>
+                                            <option data-subtext="">Two Weapon Defense</option>
+                                            <option data-subtext="">Vicious Strike</option>
+                                            <option data-subtext="">Well-Rounded </option>
+                                        </optgroup>
+                                        <optgroup label="3 points">
+                                            <option data-subtext="">Alternate Form (I - II)</option>
+                                            <option data-subtext="">Armor Mastery (I - II)</option>
+                                            <option data-subtext="">Attack Redirection </option>
+                                            <option data-subtext="">Attack Specialization (I - IX</option>
+                                            <option data-subtext="">Bane Focus</option>
+                                            <option data-subtext="">Battle Trance</option>
+                                            <option data-subtext="">Battlefield Punisher</option>
+                                            <option data-subtext="">Boon Focus (I - III)</option>
+                                            <option data-subtext="">Craft Extraordinary Item (I - III)</option>
+                                            <option data-subtext="">Crushing Blow</option>
+                                            <option data-subtext="">Death Blow (I - II)</option>
+                                            <option data-subtext="">Deathless Trance</option>
+                                            <option data-subtext="">Defensive Mastery</option>
+                                            <option data-subtext="">Destructive Trance</option>
+                                            <option data-subtext="">Extraordinary Defense (I - III)</option>
+                                            <option data-subtext="">Extraordinary Focus</option>
+                                            <option data-subtext="">Extraordinary Healing</option>
+                                            <option data-subtext="">Flying</option>
+                                            <option data-subtext="">Hallucination</option>
+                                            <option data-subtext="">Hallucination - Mass</option>
+                                            <option data-subtext="">Impervious Trance</option>
+                                            <option data-subtext="">Lethal Strike (I - IX)</option>
+                                            <option data-subtext="">Martial Focus</option>
+                                            <option data-subtext="">Multi-Attack Specialist (I - VI)</option>
+                                            <option data-subtext="">Multi-Bane Specialist</option>
+                                            <option data-subtext="">Multi-Target Boon Expert</option>
+                                            <option data-subtext="">Potent Bane</option>
+                                            <option data-subtext="">Reckless Attack</option>
+                                            <option data-subtext="">Resilient</option>
+                                            <option data-subtext="">Sentinel (I - III)</option>
+                                            <option data-subtext="">Silencing Strike</option>
+                                            <option data-subtext="">Superior Concentration (I - III)</option>
+                                            <option data-subtext="">Two Weapon Brute</option>
+                                            <option data-subtext="">Unending Charm</option>
+                                            <option data-subtext="">Wealthy</option>
+                                        </optgroup>
+                                        <optgroup label="1-9 points">
+                                            <option data-subtext="">Boon Access (1-9 points)</option>
+                                        </optgroup>
+                                    </select>
+                                </form>
+                            </td>
+                            <td></td>
+                            <td></td>
                         </tbody>
-
                     </table>
-
                 </div>
 
                 
@@ -1449,10 +1433,7 @@
                             <!-- COLLAPSE --- INFO OM VARJE PERK -->
                             <div id="clps-perks" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    
-                                    
                                     <table class="table table-hover">
-                                        
                                         <thead>
                                             <th>PERKS</th>
                                             <th>Description</th>
@@ -1598,10 +1579,10 @@
                                         </tbody>
                                         
                                     </table>
-                                    
-                     
                                 </div> 
                             </div>
+                            
+                        
                             
                             <div id="clps-pf-more" class="panel-collapse collapse">
                                 <div class="panel-body">
@@ -1611,12 +1592,16 @@
                                         
                                         <h5>DESIGNING YOUR OWN PERKS & FLAWS</h5>
                                         <p>The lists provided in this chapter are by no means comprehensive, and you are encouraged to work with your GM to create the perks and flaws that you need to define your character.</p><p>Flaws are very easy to create, as they simply represent situational triggers that hold your character back. Because the PCs decides when their flaws take effect, there is no need to consider balance when creating new flaws.</p><p>Perks, on the other hand, often grant elaborate benefits and even mechanical bonuses. These require you to work closely with your GM to ensure that your perks are balanced with the other perks available to PCs. The first rule to adhere to is that perks should provide non-combat effects, as feats, banes, and boons are the primary means for PCs to boost their combat expertise. Next, try to make your proposed perk limited to a specific type of task or a relatively rare situation. For example, the artisan perk provides expertise for a single craft, and the attractive perk is only beneficial in social situations that rely on physical attractiveness. If your perk is more generally applicable, then the effect should be more limited than other perks. For example, the idol perk makes you trusted by just about anyone, but it is limited to being used once per game session.</p>
+                                        
                                     </div>
+                                
+                     
                                 </div> 
                             </div>
                             
                             <div id="clps-flaws" class="panel-collapse collapse">
                                 <div class="panel-body">
+                                    
                                     <table class="table table-hover">
                                         <thead>
                                             <th>FLAWS</th>
@@ -1691,8 +1676,12 @@
                                                 <th>Mood Disorder</th>
                                                 <td>You suffer from a psychological condition that directly affects your mood, such as depression or anxiety. You get to determine the nature and severity of your mood disorder.</td>
                                             </tr>
+                                            
+                                            
+                                            
                                         </tbody>
                                     </table>
+                                    
                                 </div>
                             </div>
                             
@@ -1702,8 +1691,7 @@
                                     <th>Perks</th>
                                     <th>Flaws</th>
                                 </thead>
-
-                                    
+                                
                                 <tbody>
                                     <td>
                                         <form class="form-group">
@@ -1784,7 +1772,6 @@
                                         </form>
                                     </td>
                                 </tbody>
-
                             </table>
                             
                         </div>
@@ -1803,32 +1790,50 @@
                 <!-- Default panel contents -->
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-banes">BANES</a>
-                                </h4>
+                        <a data-toggle="collapse" data-parent="#accordion5" href="#clps-banes">BANES & BOONS</a>
+                    </h4>
                 </div>
                 <div id="clps-banes" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <header>BANES</header>
-                        <p>
-
-
-
-                            Banes: Negative conditions that your character inflict upon its foes, such as by stunning them, demoralizing them, or setting them on fire.
-                            <br /> VS: What attribute is used when invoking the bane and what attribute the foe uses to defend.
-                            <br /> Dice: The attribute dice.
-                            <br /> Description: Effects of the Bane, for example your foe cannot see anything for 1 turn.
-                            <br /> Special: Special conditions that influences the bane. For example how to remove the bane.
-
-
+                    <div class="panel-body text-justify">
+                        <div class="col-sm-6 ">
+                            <h5>BANES</h5>
+                            <p>Banes are negative conditions that your character inflict upon its foes, such as by stunning them, demoralizing them, or setting them on fire.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5>BOONS</h5>
+                            <p>Boons are helpful effects that assist your character's allies by allowing them to fly, shrug off damage, or move with extraordinary speed.  
                         </p>
+                        </div>
+                        
+                        <!----- Lista med förklaringar till hur man räknar banes & boons ------
+                        
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5>VS</h5> What attribute is used when invoking the Bane or Boon and what attribute the foe uses to defend.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Dice</h5> The attribute dice.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Description</h5> Effects of the Bane or Boon, for example your foe cannot see anything for 1 turn.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Special</h5> Special conditions that influences the Bane or Boon. For example how to remove the bane or wether other character's can be affected by it.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2"></div>
+                        ------------------------------------------------------------------------>
                     </div>
                 </div>
                 <!-- Table -->
                 <table class="table table-bordered tbl">
-
                     <thead>
                         <tr>
-                            <th>Banes</th>
+                            <th>?</th>
+                            <th>Type</th>
                             <th>Vs</th>
                             <th>Dice</th>
                             <th>Description</th>
@@ -1837,6 +1842,25 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <th>BANES</th>
+                            <td>
+                                <input type="text" class="my-input" />
+                            </td>
+                            <td>
+                                <input type="text" class="my-input" />
+                            </td>
+                            <td>
+                                <input type="text" class="my-input" />
+                            </td>
+                            <td>
+                                <input type="text" class="my-input" />
+                            </td>
+                            <td>
+                                <input type="text" class="my-input" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>BOONS</th>
                             <td>
                                 <input type="text" class="my-input" />
                             </td>
@@ -1858,103 +1882,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
-            <!-- BOONS-->
-
-            <div class="panel panel-default">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#clps-boons">BOONS</a>
-                                </h4>
-                </div>
-                <div id="clps-boons" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <header>BOONS</header>
-                        <p>Boons: Helpful effects that assist your character's allies by allowing them to fly, shrug off damage, or move with extraordinary speed.
-                            <br /> VS: What attribute is used when invoking the boon and what attribute the foe uses to defend.
-                            <br /> Dice: The attribute dice.
-                            <br /> Description: Effects of the Boon, for example your foe cannot see anything for 1 turn.
-                            <br /> Special: Special conditions that influences the boon. For example if other character's can be affected by it.
-                        </p>
-                    </div>
-                </div>
-                <!-- Table -->
-                <table class="table table-bordered tbl">
-                    <thead>
-                        <tr>
-                            <th>Banes</th>
-                            <th>Vs</th>
-                            <th>Dice</th>
-                            <th>Description</th>
-                            <th>Special</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-        </div>
-        <div class="col-md-6">
-            <h5>HITPOINTS</h5>
-            <div class="panel panel-default">
-                <!-- Visar Hp och Current Hp för användaren. -->
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#clps-hitpoints">o</a>
-
-                            </h4>
-                </div>
-                <div id="clps-hitpoints" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p>The amount of health that the player character has. It shows the maximum health and the current health. If the characters health is 0 the character dies.
-                        </p>
-                    </div>
-                </div>
-                <!-- Table -->
-                <table class="table table-bordered tbl attr-table">
-                    <thead>
-                        <tr>
-                            <th>Current Hitpoints</th>
-
-                            <th>Max Hitpoints</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="number" class="my-input attr-score" disabled>
-                            </td>
-
-
-
-                            <td>
-                                <input type="text" class="my-input attr-dice" disabled>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        
     </div>
     <!-- end GREEN CONTAINER FLUID -->
 
