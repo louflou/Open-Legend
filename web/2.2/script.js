@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// Körs när sidan laddats klart
-	$(".attr-table .attr-score").on("keyup", score);
+	$(".attr-table .attr-score").on("keyup change", score);
 });
 
 
