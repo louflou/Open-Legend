@@ -92,10 +92,12 @@ function calcDice(score){
 function levelCalc(){
     
     var levelValue = $(this).val();
+    
     var xpValue = levelToXp (levelValue);
     $("#xp-input").val(xpValue);
-    
-    
+    console.log("hej")
+    var totalPoints = leveltoAttributePoints (levelValue);
+    $("#attr-totalt-points").val(totalPoints);
     
 }
 
@@ -128,4 +130,29 @@ function levelToXp (levelValue){
  
 }
 
-// #attr-totalt-points
+function leveltoAttributePoints(levelValue){
+    
+    if (levelValue == 1) {
+        return 40;
+    }else if (levelValue == 2) {
+        return 49;
+    }else if (levelValue == 3) {
+        return 58;
+    }else if (levelValue == 4) {
+        return 67;
+    }else if (levelValue == 5) {
+        return 76;
+    }else if (levelValue == 6) {
+        return 85;
+    }else if (levelValue == 7) {
+        return 94;
+    }else if (levelValue == 8) {
+        return 103;
+    }else if (levelValue == 9) {
+        return 112;
+    }else if (levelValue == 10) {
+        return 121;
+    }
+}
+
+
