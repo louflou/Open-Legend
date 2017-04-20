@@ -2,10 +2,8 @@ $(document).ready(function(){
 	// Körs när sidan laddats klart
     $("#levelValue").on("keyup change", levelCalc);
 	$(".attr-table .attr-score").on("keyup change", scoreCostDice);
-    
-    
+   
 });
-
 
 function updateAttributePoints(){
     var maxAttrPoints = $('#attr-totalt-points').val();
@@ -18,7 +16,6 @@ function updateAttributePoints(){
 }
 
 
-
 function calcSumCost(){
     var sumCost = 0;
     $(".attr-cost").each(function(){
@@ -28,17 +25,13 @@ function calcSumCost(){
     return sumCost;  
 }
 
-
-
-
 function scoreCostDice(){
     var score = $(this).val();
     var cost = calcCost(score);
     var dice = calcDice (score);
     $(this).parent().next().children().first().val(cost);
     $(this).parent().next().next().children().first().val(dice);
-    updateAttributePoints();
-    
+    updateAttributePoints();   
 }
 
 function calcCost(score){
@@ -98,10 +91,8 @@ function levelCalc(){
     console.log("hej")
     var totalPoints = leveltoAttributePoints (levelValue);
     $("#attr-totalt-points").val(totalPoints);
-    
+   
 }
-
-
     
 function levelToXp (levelValue){
     
@@ -126,12 +117,9 @@ function levelToXp (levelValue){
     }else if (levelValue == 10) {
         return 27;
     }
-    
- 
 }
 
 function leveltoAttributePoints(levelValue){
-    
     if (levelValue == 1) {
         return 40;
     }else if (levelValue == 2) {
