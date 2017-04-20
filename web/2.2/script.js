@@ -26,7 +26,15 @@ function calcCost(score){
         return 10;
     }else if (score == 5) {
         return 15;
-    }
+    }else if(score == 6){
+			return 21;
+		}else if(== 7){
+			return 28;
+		}else if(== 8){
+			return 36;
+		}else if(== 9){
+			return 45;
+		}
 }
 
 function calcDice(score){
@@ -42,6 +50,13 @@ function calcDice(score){
         return "1d10";
     }else if (score == 5) {
         return "2d6";
-    }
+    }else if (score == 6) {
+        return "2d8";
+		}else if (score == 7){
+			return "2d10";
+		}else if (score == 8){
+			return "3d8";
+		}else if (score == 9){
+			return "3d10";
+		}
 }
-
