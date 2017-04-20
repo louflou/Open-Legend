@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	// Körs när sidan laddats klart
+    $(".table.level").on("keyup change", levelCalc);
 	$(".attr-table .attr-score").on("keyup change", scoreCostDice);
 
 });
@@ -86,4 +87,6 @@ function calcDice(score){
         return "3d10";
     }
 }
+
+
 
