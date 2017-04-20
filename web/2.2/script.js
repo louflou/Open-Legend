@@ -1,9 +1,13 @@
 $(document).ready(function(){
 	// Körs när sidan laddats klart
     $("#levelValue").on("keyup change", levelCalc);
+<<<<<<< Updated upstream
     // När man ändrar Level i General/info så hamnar värdet i id #levelValue, funktionen level Calc körs.
 	$(".attr-table .attr-score").on("keyup change", scoreCostDice);
     
+=======
+	$(".attr-table .attr-score").on("keyup change", scoreCostDice);    
+>>>>>>> Stashed changes
     
 });
 
@@ -15,9 +19,9 @@ function updateAttributePoints(){
     if(sumCost > maxAttrPoints){
         alert("You don't have enough Attribute Points!");
         $(this).val(prevScore);
+        calcSumCost();
     }
 }
-
 
 
 function calcSumCost(){
