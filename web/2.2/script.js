@@ -13,13 +13,8 @@ function calcSumCost(){
         sumCost += +$(this).val();
     });
     $(".attr-invested").val(sumCost);
-    //$(".attr-table .attr-score").prop("disabled", true);
+    return sumCost;  
 }
-
-
-
-
-
 
 /*
 function updateAttributePoints(cost){
@@ -31,13 +26,18 @@ function updateAttributePoints(cost){
 }
 */
 
+
 function scoreCostDice(){
     var score = $(this).val();
     var cost = calcCost(score);
     var dice = calcDice (score);
+    var sumCost = calcSumCost();
     $(this).parent().next().children().first().val(cost);
     $(this).parent().next().next().children().first().val(dice);
-	calcSumCost()
+    if(sumCost > 40){
+        alert("You don't have enough Attribute Points!");
+    }
+    
     // updateAttributePoints(cost)
 }
 
@@ -103,7 +103,7 @@ function levelCalc(){
     
 function levelToXp (levelValue){
     
-        if (levelValue == 1) {
+    if (levelValue == 1) {
         return "";
     }else if (levelValue == 2) {
         return 3;
