@@ -1,17 +1,18 @@
 $(document).ready(function(){
 	// Körs när sidan laddats klart
-    $("#levelValue").on("keyup change", levelCalc);
-	$(".attr-table .attr-score").on("keyup change", scoreCostDice);
-   
+    $("#levelValue").on("change", levelCalc);
+	$(".attr-table .attr-score").on("change", scoreCostDice);
 });
 
 function updateAttributePoints(){
     var maxAttrPoints = $('#attr-totalt-points').val();
     var prevScore = $(this).data('val');
     var sumCost = calcSumCost();
+    var attrAvailable = maxAttrPoints - sumCost;
+    $('.attr-available').val(attrAvailable);
+    
     if(sumCost > maxAttrPoints){
         alert("You don't have enough Attribute Points!");
-        $(this).val(prevScore);
     }
 }
 
