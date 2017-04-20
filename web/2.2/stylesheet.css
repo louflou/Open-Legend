@@ -81,6 +81,9 @@ p {
     border:none !important;
     height: 20px;
 }
+.my-input[disabled]:hover{
+    background-color: transparent;
+}
 .row-green {
     padding:20px 0;
 }
