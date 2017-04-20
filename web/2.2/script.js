@@ -10,7 +10,6 @@ function score(){
     var dice = calcDice (score);
     $(this).parent().next().children().first().val(cost);
     $(this).parent().next().next().children().first().val(dice);
-	
 	// updateAttributePoints()
 }
 

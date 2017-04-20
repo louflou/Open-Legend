@@ -79,6 +79,7 @@ p {
     display: table-cell !important;
     width:100% !important;
     border:none !important;
+    height: 20px;
 }
 .row-green {
     padding:20px 0;
