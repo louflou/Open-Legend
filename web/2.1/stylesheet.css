@@ -93,6 +93,11 @@ p {
     letter-spacing: 2px;
     text-align: center;
 }
+.panel-collapse{
+    max-height: 500px;
+    overflow:scroll;
+}
+
 
 /* END MINIMALISTIC FORM */
 

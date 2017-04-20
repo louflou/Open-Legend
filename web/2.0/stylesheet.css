@@ -93,6 +93,17 @@ p {
     letter-spacing: 2px;
     text-align: center;
 }
+.btn-center {
+    text-align: center;
+    margin:auto;
+}
+
+.panel-collapse{
+    max-height: 500px;
+    overflow:scroll;
+}
+
+
 
 /* END MINIMALISTIC FORM */
 
