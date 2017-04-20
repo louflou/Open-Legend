@@ -83,9 +83,7 @@ function calcDice(score){
 }
 
 function levelCalc(){
-    
     var levelValue = $(this).val();
-    
     var xpValue = levelToXp (levelValue);
     $("#xp-input").val(xpValue);
     console.log("hej")
