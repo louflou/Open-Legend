@@ -92,10 +92,10 @@ function calcDice(score){
 function levelCalc(){
     
     var levelValue = $(this).val();
-    
     var xpValue = levelToXp (levelValue);
-    console.log (xpValue)
     $("#xp-input").val(xpValue);
+    
+    
     
 }
 
@@ -128,3 +128,4 @@ function levelToXp (levelValue){
  
 }
 
+// #attr-totalt-points
