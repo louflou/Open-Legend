@@ -1,16 +1,42 @@
 $(document).ready(function(){
 	// Körs när sidan laddats klart
-	$(".attr-table .attr-score").on("keyup change", score);
+	$(".attr-table .attr-score").on("keyup change", scoreCostDice);
+
 });
 
 
-function score(){
+function calcSumCost(){
+    var sumCost = 0;
+    $(".attr-cost").each(function(){
+        sumCost += +$(this).val();
+    });
+    $(".attr-invested").val(sumCost);
+    //$(".attr-table .attr-score").prop("disabled", true);
+}
+
+
+
+
+
+
+/*
+function updateAttributePoints(cost){
+    if(sumCost >= 40){
+            alert("SUM IS GRATER THAN MAX VALUE");
+        $(this).parent().next().children().first().val();
+            
+    }
+}
+*/
+
+function scoreCostDice(){
     var score = $(this).val();
     var cost = calcCost(score);
     var dice = calcDice (score);
     $(this).parent().next().children().first().val(cost);
     $(this).parent().next().next().children().first().val(dice);
-	// updateAttributePoints()
+	calcSumCost()
+    // updateAttributePoints(cost)
 }
 
 function calcCost(score){
