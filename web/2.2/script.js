@@ -12,6 +12,7 @@ $(document).ready(function(){
 });
 
 
+<<<<<<< HEAD
 function updateAttributePoints(){
     var maxAttrPoints = $('#attr-totalt-points').val();
     var prevScore = $(this).data('val');
@@ -24,6 +25,8 @@ function updateAttributePoints(){
 }
 
 
+=======
+>>>>>>> parent of afd9725... VIKTOR & LOLA E KRÄNKTA
 function calcSumCost(){
     var sumCost = 0;
     $(".attr-cost").each(function(){
@@ -33,17 +36,31 @@ function calcSumCost(){
     return sumCost;  
 }
 
-
+/*
+function updateAttributePoints(cost){
+    if(sumCost >= 40){
+            alert("SUM IS GRATER THAN MAX VALUE");
+        $(this).parent().next().children().first().val();
+            
+    }
+}
+*/
 
 
 function scoreCostDice(){
+    var prevScore = $(this).data('val');
     var score = $(this).val();
     var cost = calcCost(score);
     var dice = calcDice (score);
+    var sumCost = calcSumCost();
     $(this).parent().next().children().first().val(cost);
     $(this).parent().next().next().children().first().val(dice);
-    updateAttributePoints();
+    if(sumCost > 20){
+        alert("You don't have enough Attribute Points!");
+        $(this).val(prevScore);
+    }
     
+    // updateAttributePoints(cost)
 }
 
 function calcCost(score){
