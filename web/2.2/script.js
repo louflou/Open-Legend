@@ -16,7 +16,7 @@ function score(){
 
 function calcCost(score){
     if(score == 0) {
-        return 0;
+        return "";
     }else if (score == 1) {
         return 1;
     }else if (score == 2) {
