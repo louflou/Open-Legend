@@ -2,6 +2,9 @@ $(document).ready(function(){
 	// Körs när sidan laddats klart
     $("#levelValue").on("change", levelCalc);
 	$(".attr-table .attr-score").on("change", scoreCostDice);
+    $("#levelValue").on("keyup change", levelCalc);
+	$(".attr-table .attr-score").on("keyup change", scoreCostDice);
+
 });
 
 function updateAttributePoints(){
@@ -23,7 +26,7 @@ function calcSumCost(){
         sumCost += +$(this).val();
     });
     $(".attr-invested").val(sumCost);
-    return sumCost;  
+    return sumCost;
 }
 
 function scoreCostDice(){
@@ -32,7 +35,7 @@ function scoreCostDice(){
     var dice = calcDice (score);
     $(this).parent().next().children().first().val(cost);
     $(this).parent().next().next().children().first().val(dice);
-    updateAttributePoints();   
+    updateAttributePoints();
 }
 
 function calcCost(score){
@@ -84,17 +87,21 @@ function calcDice(score){
 }
 
 function levelCalc(){
+
     var levelValue = $(this).val();
+
     var xpValue = levelToXp (levelValue);
     $("#xp-input").val(xpValue);
-    console.log("hej")
+
     var totalPoints = leveltoAttributePoints (levelValue);
     $("#attr-totalt-points").val(totalPoints);
-   
+
+		calcMaxAttrScore(levelValue);
+
 }
-    
+
 function levelToXp (levelValue){
-    
+
     if (levelValue == 1) {
         return "";
     }else if (levelValue == 2) {
@@ -140,4 +147,40 @@ function leveltoAttributePoints(levelValue){
     }else if (levelValue == 10) {
         return 121;
     }
+}
+
+function calcMaxAttrScore(levelValue){
+	if (levelValue == 3){
+		$(".attr-score").attr({
+	 "max" : 6
+ });
+} else if(levelValue == 4){
+	$(".attr-score").attr({
+ "max" : 6
+});
+} else if(levelValue == 5){
+	$(".attr-score").attr({
+ "max" : 7
+});
+}else if(levelValue == 6){
+	$(".attr-score").attr({
+ "max" : 7
+});
+} else if(levelValue == 7){
+	$(".attr-score").attr({
+ "max" : 8
+});
+}else if(levelValue == 8){
+	$(".attr-score").attr({
+ "max" : 8
+ });
+}else if(levelValue == 9){
+	$(".attr-score").attr({
+ "max" : 9
+ });
+}else if(levelValue == 10){
+	$(".attr-score").attr({
+ "max" : 9
+ });
+}
 }
