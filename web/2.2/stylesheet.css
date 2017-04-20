@@ -108,8 +108,8 @@ p {
 .panel-heading a {
     text-transform: uppercase;
 }
-.selectpicker {
-    width:30% !important;
+.guard-cells tr th{
+    width: 16.5%;
 }
 
 
