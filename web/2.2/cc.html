@@ -134,7 +134,7 @@
                         </div>
                     </div>
                     <!-- Table -->
-                    <table class="table table-bordered tbl">
+                    <table class="table table-bordered tbl attr-table">
                         <thead>
                             <tr>
                                 <th>Score</th>
@@ -145,7 +145,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <input min="0" max="9" type="number" class="my-input" id="input-fortitude" placeholder=" +" />
+                                    <input min="0" max="9" type="number" class="my-input attr-score" id="input-fortitude" placeholder=" +" />
                                 </td>
                                  <td>
                                     <input type="number" class="my-input attr-cost">
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                     <!-- Table -->
-                    <table class="table table-bordered tbl">
+                    <table class="table table-bordered tbl attr-table">
 
                         <thead>
                             <tr>
@@ -765,9 +765,9 @@
             </div>
             <!--end panelgroup-->
         </div>
-        
-        
-        
+
+
+
 
         <!-- Spelarinformation, alla fält finns, använt samma klasser som övriga koden, behöver snyggas till, gör det som sista moment!!-->
         <div class="col-sm-4">
@@ -828,17 +828,17 @@
                             <tr>
                                 <th>Description</th>
                                 <td>
-                                    <textarea class="form-control"></textarea>  
+                                    <textarea class="form-control"></textarea>
                                 </td>
                             </tr>
-                            
+
                         </tbody>
                     </table>
 
                 </div>
             </div>
         </div>
-                
+
         <!-- defenses table -->
         <div class="col-md-5">
             <div class="panel-group">
@@ -848,7 +848,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">Guard</h4>
                     </div>
-                    
+
                     <table class="table  table-bordered tbl">
                         <thead class="guard-cells">
                             <tr>
@@ -886,12 +886,12 @@
                                 <td></td>
                             </tr>
                         </tbody>
-                    
+
                     </table>
-                    
+
                 </div>
             </div>
-        
+
             <h5>HITPOINTS</h5>
             <div class="panel panel-default">
                 <!-- Visar Hp och Current Hp för användaren. -->
@@ -930,8 +930,8 @@
                 </table>
             </div>
         </div>
-        
-        
+
+
         <!--- Legend points och andra saker som bestämms av spelarens val! -->
         <div class="col-md-6">
             <!-- WEAPONS ATTRIBUTE SCORE VALUE INPUT -->
@@ -948,13 +948,13 @@
                             <H5>WEAPONS</H5>
                             <p>The Weapons & Implements table provides information about a wide variety of gear that you will use in combat. It features examples from a wide variety of genres and settings, and you can easily adapt existing weapons to your campaign simply by changing the name and keeping the mechanical statistics. For example, a flamethrower can just as easily become an alchemical acid spitter.</p>
                             <table class="table">
-                                <thead>                                  
+                                <thead>
                                         <th>Examples</th>
                                         <th>Category</th>
                                         <th>WL</th>
                                         <th>Properties</th>
                                         <th>Banes</th>
-                                </thead> 
+                                </thead>
                                 <tbody>
                                     <tr>
                                         <td>Unarmed Strike</td>
@@ -1139,7 +1139,7 @@
                                         <td>Forced Move, Stunned, Knockdown</td>
                                     </tr>
                                 </tbody>
-                            </table>                                    
+                            </table>
                         </div>
                     </div>
 
@@ -1162,9 +1162,9 @@
                                 <tr>
                                     <td>Leather Armor,<br>Steelsilk,<br>Padded Armor</td>
                                     <td>Light</td>
-                                    <td>1</td>	
-                                    <td>0</td>	
-                                    <td>1</td>	
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
                                     <td>0</td>
                                 </tr>
                                 <tr>
@@ -1276,13 +1276,13 @@
                                             <option data-subtext=" WL 1">Club</option>
                                             <option data-subtext=" WL 1">Improvised Weapon</option>
                                             <option data-subtext=" WL 1">Warhammer</option>
-                                         </optgroup>   
-                                        <optgroup label="Versitile Melee">    
+                                         </optgroup>
+                                        <optgroup label="Versitile Melee">
                                             <option data-subtext=" WL 1">Longsword</option>
                                             <option data-subtext=" WL 1">Katana</option>
                                             <option data-subtext=" WL 1">Falcion</option>
                                             <option data-subtext=" WL 1">Short Spear</option>
-                                        </optgroup> 
+                                        </optgroup>
                                         <optgroup label="Two-handed Melee">
                                             <option data-subtext=" WL 1">Greatsword</option>
                                             <option data-subtext=" WL 1">No-dachi</option>
@@ -1302,32 +1302,32 @@
                                             <option data-subtext=" WL 2">Small Shield</option>
                                             <option data-subtext=" WL 3">Riot Shield</option>
                                             <option data-subtext=" WL 3">Tower Shield</option>
-                                         <optgroup label="Close Ranged">    
+                                         <optgroup label="Close Ranged">
                                             <option data-subtext=" WL 1">Laser Gun</option>
                                             <option data-subtext=" WL 1">Revolver</option>
                                             <option data-subtext=" WL 1">Handgun</option>
                                             <option data-subtext=" WL 1">Grenade</option>
                                             <option data-subtext=" WL 1">Firebomb</option>
                                             <option data-subtext=" WL 1">Elexir</option>
-                                        </optgroup> 
-                                        <optgroup label="Medium Ranged">    
+                                        </optgroup>
+                                        <optgroup label="Medium Ranged">
                                             <option data-subtext=" WL 1">Light Crossbow</option>
                                             <option data-subtext=" WL 1">Shortbow</option>
                                             <option data-subtext=" WL 1">Pump Shotgun</option>
                                             <option data-subtext=" WL 3">Submachine Gun</option>
                                             <option data-subtext=" WL 3">M16</option>
                                             <option data-subtext=" WL 1">Elexir</option>
-                                        </optgroup> 
-                                        <optgroup label="Long Ranged">    
+                                        </optgroup>
+                                        <optgroup label="Long Ranged">
                                             <option data-subtext=" WL 1">Heavy Crossbow</option>
                                             <option data-subtext=" WL 1">Longbow</option>
                                             <option data-subtext=" WL 1">Rifle</option>
-                                        </optgroup> 
-                                        <optgroup label="Extreme Ranged">    
+                                        </optgroup>
+                                        <optgroup label="Extreme Ranged">
                                             <option data-subtext=" WL 4">Sniper Rifle</option>
                                             <option data-subtext=" WL 4">Phase Rifle</option>
                                             <option data-subtext=" WL 2">Cannon</option>
-                                        </optgroup> 
+                                        </optgroup>
                                     </select>
                                 </td>
                                 <td>
@@ -1462,10 +1462,10 @@
                     </table>
                 </div>
 
-                
+
                         <!--- PERKS AND FLAWS PANEL GROUP -->
                         <!-- här får användaren bara välja 2 perks&flaws (om lvl=1)... annars kan man lägga till under spelets gång. Kankse en alert? eller en begränsning beroende på lvl... -->
-                        
+
                         <h5> PERKS & FLAWS</h5>
 
                         <div class="panel panel-default">
@@ -1475,34 +1475,34 @@
                                     <a data-toggle="collapse" data-parent="#accordion5" href="#clps-pf">PERKS & FLAWS</a>
                                 </h4>
                             </div>
-                           
+
                             <div id="clps-pf" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <div class="col-sm-6 text-justify">
-                                        
+
                                         <div class="text-center">
                                             <a href="#clps-perks" data-toggle="collapse" data-parent="#accordion5" class="btn btn-default"> PERKS</a>
                                         </div><br>
                                         <p>Perks are characteristics that describe very specific skills, attitudes, backgrounds, or opportunities that tend to give your character the upper hand in certain situations. </p><p>For example, maybe you are a noble and thus able to draw favors from powerful political figures, or perhaps you once served as mechanic on a starship and those technical skills still help you out in your adventuring life today.</p>
-                                        
+
                                     </div>
                                     <div class="col-sm-6 text-justify">
                                         <div class="text-center">
                                             <a href="#clps-flaws" data-toggle="collapse" data-parent="#accordion5" class="btn btn-default">FLAWS</a>
                                         </div><br>
                                         <p>Flaws are your Achilles' heel. They are weaknesses that your enemies can exploit or character deficits that always seem to hold you back at just the wrong moment. Maybe you are stubborn as a mule and won't accept a compromise under any circumstances. Perhaps your greed tends to get the best of you, and your love of coin will even trump your loyalty to your friends. Your flaws might even be physical in nature: you're blind, missing an arm, or suffer from a wounded knee that slows you down.</p>
-                                        
+
                                     </div>
-                                    
-                                    
+
+
                                     <!-- Knapp för mer info om perks and flaws -->
                                     <div class="col-sm-12">
                                         <a data-toggle="collapse" data-parent="#accordion5" href="#clps-pf-more" class="pull-right btn btn-default"> More info...</a>
                                     </div>
-                     
-                                </div> 
+
+                                </div>
                             </div>
-                            
+
                             <!-- COLLAPSE - INFO OM VARJE PERK -->
                             <div id="clps-perks" class="panel-collapse collapse">
                                 <div class="panel-body">
@@ -1649,34 +1649,34 @@
                                             <tr>
                                                 <th>Whisperer of the Wild</th>
                                                 <td>Once per game session, you can ask a single “yes” or “no” question of a plant or animal within earshot. The plant or animal automatically trusts you at least enough to answer the question truthfully. You receive the answer by way of an inner sense, and so this ability cannot be used for further two-way communication.</td>
-                                            </tr>    
-                                            
+                                            </tr>
+
                                         </tbody>
-                                        
+
                                     </table>
-                                </div> 
+                                </div>
                             </div>
-                            
-                        
-                            
+
+
+
                             <div id="clps-pf-more" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <div class="col-sm-12">
                                         <h5>AQUIRING PERKS & FLAWS</h5>
                                         <p>At character creation, you may select up to two perks and two flaws, and you do not have to select any. Throughout your adventures, the GM may assign you additional perks and flaws as the natural results of your deeds. For example, if your party spends several months on board a ship, the GM may reward everyone with the profession: sailor perk. Likewise, if you are subjected to horrible chemical burns as part of a laboratory explosion, the GM might assign you the physical deformity flaw to describe your scarred face.</p><p>You too, may decide to adopt new perks or flaws with the GM's approval as your character’s personality and background develop through play. Perhaps a series of encounters with powerful forces leads you to take on the cowardly flaw. Or maybe you spend significant downtime between adventures training with the local weaponsmith and would like to gain the artisan perk. The GM is the final arbiter for deciding when and under what circumstances you may choose new perks and flaws.</p>
-                                        
+
                                         <h5>DESIGNING YOUR OWN PERKS & FLAWS</h5>
                                         <p>The lists provided in this chapter are by no means comprehensive, and you are encouraged to work with your GM to create the perks and flaws that you need to define your character.</p><p>Flaws are very easy to create, as they simply represent situational triggers that hold your character back. Because the PCs decides when their flaws take effect, there is no need to consider balance when creating new flaws.</p><p>Perks, on the other hand, often grant elaborate benefits and even mechanical bonuses. These require you to work closely with your GM to ensure that your perks are balanced with the other perks available to PCs. The first rule to adhere to is that perks should provide non-combat effects, as feats, banes, and boons are the primary means for PCs to boost their combat expertise. Next, try to make your proposed perk limited to a specific type of task or a relatively rare situation. For example, the artisan perk provides expertise for a single craft, and the attractive perk is only beneficial in social situations that rely on physical attractiveness. If your perk is more generally applicable, then the effect should be more limited than other perks. For example, the idol perk makes you trusted by just about anyone, but it is limited to being used once per game session.</p>
-                                        
+
                                     </div>
-                                
-                     
-                                </div> 
+
+
+                                </div>
                             </div>
-                            
+
                             <div id="clps-flaws" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    
+
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
@@ -1753,15 +1753,15 @@
                                                 <th>Mood Disorder</th>
                                                 <td>You suffer from a psychological condition that directly affects your mood, such as depression or anxiety. You get to determine the nature and severity of your mood disorder.</td>
                                             </tr>
-                                            
-                                            
-                                            
+
+
+
                                         </tbody>
                                     </table>
-                                    
+
                                 </div>
                             </div>
-                            
+
                             <table class="table tbl table-bordered">
 
                                 <thead>
@@ -1770,7 +1770,7 @@
                                     <th>Flaws</th>
                                     </tr>
                                 </thead>
-                                
+
                                 <tbody>
                                     <tr>
                                     <td>
@@ -1854,7 +1854,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            
+
                         </div>
             </div>
             <!--end panelgroup-->
@@ -1882,12 +1882,12 @@
                         </div>
                         <div class="col-sm-6">
                             <h5>BOONS</h5>
-                            <p>Boons are helpful effects that assist your character's allies by allowing them to fly, shrug off damage, or move with extraordinary speed.  
+                            <p>Boons are helpful effects that assist your character's allies by allowing them to fly, shrug off damage, or move with extraordinary speed.
                         </p>
                         </div>
-                        
+
                         <!-- Lista med förklaringar till hur man räknar banes & boons
-                        
+
                         <div class="col-sm-2"></div>
                         <div class="col-sm-8">
                             <ul class="list-group">
@@ -1963,7 +1963,7 @@
             </div>
         </div>
 
-        
+
     </div>
     <!-- end GREEN CONTAINER FLUID -->
 
