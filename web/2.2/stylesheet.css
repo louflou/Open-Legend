@@ -113,6 +113,10 @@ p {
     width: 16.5%;
 }
 
+.selectpicker {
+    width:20% !important;
+}
+
 
 /* END MINIMALISTIC FORM */
 
