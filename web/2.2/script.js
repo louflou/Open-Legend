@@ -1,12 +1,15 @@
-$(".attr-table .attr-score").on("keyup change click, scoreDiceCost");
+$(document).ready(function(){
+	// Körs när sidan laddats klart
+	$(".attr-table .attr-score").on("keyup", score);
+});
+
 
 function score(){
-    
     var score = $(this).val();
     var cost = calcCost(score);
-    var dice = calcCost (dice);
-    $(this).parent().next().children().first().val(cost)
-    $(this).parent().next().children().first().val(dice)
+    var dice = calcDice (score);
+    $(this).parent().next().children().first().val(cost);
+    $(this).parent().next().next().children().first().val(dice);
 }
 
 function calcCost(score){
