@@ -116,18 +116,20 @@ p {
 .six-cells tr th{
     width: 16.5%;
 }
+.four-cells tr th {
+    width: 25%;
+}
 .bb-cells tr th {
     width:18%;
 }
-.min-cell {
-    width:5% !important;
-}
+
 .selectpicker {
     width:20% !important;
 }
 .none-value-select {
     color: gainsboro !important;
 }
+
 
 /* END MINIMALISTIC FORM */
 
