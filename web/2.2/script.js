@@ -1,8 +1,9 @@
 $(document).ready(function(){
 	// Körs när sidan laddats klart
-    $(".table.level").on("keyup change", levelCalc);
+    $("#levelValue").on("keyup change", levelCalc);
 	$(".attr-table .attr-score").on("keyup change", scoreCostDice);
-
+    
+    
 });
 
 
@@ -88,5 +89,42 @@ function calcDice(score){
     }
 }
 
+function levelCalc(){
+    
+    var levelValue = $(this).val();
+    
+    var xpValue = levelToXp (levelValue);
+    console.log (xpValue)
+    $("#xp-input").val(xpValue);
+    
+}
 
+
+    
+function levelToXp (levelValue){
+    
+        if (levelValue == 1) {
+        return "";
+    }else if (levelValue == 2) {
+        return 3;
+    }else if (levelValue == 3) {
+        return 6;
+    }else if (levelValue == 4) {
+        return 9;
+    }else if (levelValue == 5) {
+        return 12;
+    }else if (levelValue == 6) {
+        return 15;
+    }else if (levelValue == 7) {
+        return 18;
+    }else if (levelValue == 8) {
+        return 21;
+    }else if (levelValue == 9) {
+        return 24;
+    }else if (levelValue == 10) {
+        return 27;
+    }
+    
+ 
+}
 
