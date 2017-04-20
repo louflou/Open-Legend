@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	// Körs när sidan laddats klart
     $("#levelValue").on("keyup change", levelCalc);
+    // När man ändrar Level i General/info så hamnar värdet i id #levelValue, funktionen level Calc körs.
 	$(".attr-table .attr-score").on("keyup change", scoreCostDice);
     
     
@@ -91,11 +92,14 @@ function calcDice(score){
 
 function levelCalc(){
     
+    // Sparar värdet från #levelValue och kör funktioner för att räkna ut xp och totalpoints, returnerar till #xp-input och #attr-total-points, 
+    
     var levelValue = $(this).val();
+    
     
     var xpValue = levelToXp (levelValue);
     $("#xp-input").val(xpValue);
-    console.log("hej")
+    
     var totalPoints = leveltoAttributePoints (levelValue);
     $("#attr-totalt-points").val(totalPoints);
     
@@ -104,7 +108,7 @@ function levelCalc(){
 
     
 function levelToXp (levelValue){
-    
+    // Tar värdet från levelValue och returnerar korrekt värde till levelToXp
     if (levelValue == 1) {
         return "";
     }else if (levelValue == 2) {
