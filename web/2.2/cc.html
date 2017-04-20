@@ -786,6 +786,7 @@
                                 <th>Archetype</th>
                                 <td>
                                     <select class="selectpicker">
+                                        <option class="none-value-select">Custom</option>
                                         <option>Barbarian</option>
                                         <option>Ranger</option>
                                         <option>Monk</option>
@@ -850,7 +851,7 @@
                     </div>
 
                     <table class="table  table-bordered tbl">
-                        <thead class="guard-cells">
+                        <thead class="six-cells">
                             <tr>
                                 <th>Defense</th>
                                 <th>Total</th>
@@ -1225,114 +1226,114 @@
                     <table class="table tbl table-bordered">
                         <thead>
                             <tr>
-                            <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-armor">ARMOR</a></th>
-                            <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-weapons">WEAPONS</a></th>
-                            <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-items">ITEMS</a></th>
+                                <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-armor">ARMOR</a></th>
+                                <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-weapons">WEAPONS</a></th>
+                                <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-items">ITEMS</a></th>
                             </tr>
                         </thead>
                         <tbody>
                             <form>
                                 <tr>
-                                <td>
-                                    <select class="selectpicker" data-max-options="5" multiple>
-                                        <optgroup label="Light">
-                                            <option data-subtext=" WL 1">Leather Armor</option>
-                                            <option data-subtext=" WL 1">Steelsilk</option>
-                                            <option data-subtext= " WL 1">Padded Armor</option>
-                                        </optgroup>
-                                        <optgroup label="Medium">
-                                            <option data-subtext= " WL 3">Armored Trench Coat</option>
-                                            <option data-subtext= " WL 3">Electropolymer Armor</option>
-                                            <option data-subtext= " WL 2">Chainmail</option>
-                                            <option data-subtext= " WL 3">Kevlar Vest</option>
-                                            <option data-subtext= " WL 3">Breastplate</option>
-                                        </optgroup>
-                                        <optgroup label="Heavy">
-                                            <option data-subtext= " WL 2">Yoroi Armor</option>
-                                            <option data-subtext= " WL 2">Plate Mail</option>
-                                            <option data-subtext= " WL 2">Riot Suit</option>
-                                            <option  data-subtext= " WL 4">Power Armor</option>
-                                            <option data-subtext= " WL 4">Elven Plate Mail</option>
-                                        </optgroup>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select class="selectpicker" data-max-options="5" multiple>
-                                        <optgroup label="One-handed Melee">
-                                            <option data-subtext=" WL 0">Unarmed strike</option>
-                                            <option data-subtext=" WL 2">Bowie Knife</option>
-                                            <option data-subtext=" WL 2">Shiv</option>
-                                            <option data-subtext=" WL 2">Multi-tool</option>
-                                            <option data-subtext=" WL 1">Scimitar</option>
-                                            <option data-subtext=" WL 1">Short Sword</option>
-                                            <option data-subtext=" WL 1">Machete</option>
-                                            <option data-subtext=" WL 1">Sawblade</option>
-                                            <option data-subtext=" WL 1">Blow Gun</option>
-                                            <option data-subtext=" WL 1">Dart</option>
-                                            <option data-subtext=" WL 2">Hatchet</option>
-                                            <option data-subtext=" WL 2">Dagger</option>
-                                            <option data-subtext=" WL 1">Mace</option>
-                                            <option data-subtext=" WL 1">Baseball Bat</option>
-                                            <option data-subtext=" WL 1">Club</option>
-                                            <option data-subtext=" WL 1">Improvised Weapon</option>
-                                            <option data-subtext=" WL 1">Warhammer</option>
-                                         </optgroup>
-                                        <optgroup label="Versitile Melee">
-                                            <option data-subtext=" WL 1">Longsword</option>
-                                            <option data-subtext=" WL 1">Katana</option>
-                                            <option data-subtext=" WL 1">Falcion</option>
-                                            <option data-subtext=" WL 1">Short Spear</option>
-                                        </optgroup>
-                                        <optgroup label="Two-handed Melee">
-                                            <option data-subtext=" WL 1">Greatsword</option>
-                                            <option data-subtext=" WL 1">No-dachi</option>
-                                            <option data-subtext=" WL 1">Claymore</option>
-                                            <option data-subtext=" WL 1">Bastard Sword</option>
-                                            <option data-subtext=" WL 1">Chainsaw</option>
-                                            <option data-subtext=" WL 1">Sledge Hammer</option>
-                                            <option data-subtext=" WL 1">Maul</option>
-                                            <option data-subtext=" WL 1">Great Axe</option>
-                                            <option data-subtext=" WL 2">Long Spear</option>
-                                            <option data-subtext=" WL 1">Pitchfork</option>
-                                            <option data-subtext=" WL 1">Staff</option>
-                                            <option data-subtext=" WL 2">Glaive</option>
-                                            <option data-subtext=" WL 2">Halberd</option>
-                                            <option data-subtext=" WL 2">Naginata</option>
-                                            <option data-subtext=" WL 3">Flamethrower</option>
-                                            <option data-subtext=" WL 2">Small Shield</option>
-                                            <option data-subtext=" WL 3">Riot Shield</option>
-                                            <option data-subtext=" WL 3">Tower Shield</option>
-                                         <optgroup label="Close Ranged">
-                                            <option data-subtext=" WL 1">Laser Gun</option>
-                                            <option data-subtext=" WL 1">Revolver</option>
-                                            <option data-subtext=" WL 1">Handgun</option>
-                                            <option data-subtext=" WL 1">Grenade</option>
-                                            <option data-subtext=" WL 1">Firebomb</option>
-                                            <option data-subtext=" WL 1">Elexir</option>
-                                        </optgroup>
-                                        <optgroup label="Medium Ranged">
-                                            <option data-subtext=" WL 1">Light Crossbow</option>
-                                            <option data-subtext=" WL 1">Shortbow</option>
-                                            <option data-subtext=" WL 1">Pump Shotgun</option>
-                                            <option data-subtext=" WL 3">Submachine Gun</option>
-                                            <option data-subtext=" WL 3">M16</option>
-                                            <option data-subtext=" WL 1">Elexir</option>
-                                        </optgroup>
-                                        <optgroup label="Long Ranged">
-                                            <option data-subtext=" WL 1">Heavy Crossbow</option>
-                                            <option data-subtext=" WL 1">Longbow</option>
-                                            <option data-subtext=" WL 1">Rifle</option>
-                                        </optgroup>
-                                        <optgroup label="Extreme Ranged">
-                                            <option data-subtext=" WL 4">Sniper Rifle</option>
-                                            <option data-subtext=" WL 4">Phase Rifle</option>
-                                            <option data-subtext=" WL 2">Cannon</option>
-                                        </optgroup>
-                                    </select>
-                                </td>
-                                <td>
-                                    Large Shield (def 2)
-                                </td>
+                                    <td>
+                                        <select class="selectpicker" data-max-options="5" multiple>
+                                            <optgroup label="Light">
+                                                <option data-subtext=" WL 1">Leather Armor</option>
+                                                <option data-subtext=" WL 1">Steelsilk</option>
+                                                <option data-subtext= " WL 1">Padded Armor</option>
+                                            </optgroup>
+                                            <optgroup label="Medium">
+                                                <option data-subtext= " WL 3">Armored Trench Coat</option>
+                                                <option data-subtext= " WL 3">Electropolymer Armor</option>
+                                                <option data-subtext= " WL 2">Chainmail</option>
+                                                <option data-subtext= " WL 3">Kevlar Vest</option>
+                                                <option data-subtext= " WL 3">Breastplate</option>
+                                            </optgroup>
+                                            <optgroup label="Heavy">
+                                                <option data-subtext= " WL 2">Yoroi Armor</option>
+                                                <option data-subtext= " WL 2">Plate Mail</option>
+                                                <option data-subtext= " WL 2">Riot Suit</option>
+                                                <option  data-subtext= " WL 4">Power Armor</option>
+                                                <option data-subtext= " WL 4">Elven Plate Mail</option>
+                                            </optgroup>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="selectpicker" data-max-options="5" multiple>
+                                            <optgroup label="One-handed Melee">
+                                                <option data-subtext=" WL 0">Unarmed strike</option>
+                                                <option data-subtext=" WL 2">Bowie Knife</option>
+                                                <option data-subtext=" WL 2">Shiv</option>
+                                                <option data-subtext=" WL 2">Multi-tool</option>
+                                                <option data-subtext=" WL 1">Scimitar</option>
+                                                <option data-subtext=" WL 1">Short Sword</option>
+                                                <option data-subtext=" WL 1">Machete</option>
+                                                <option data-subtext=" WL 1">Sawblade</option>
+                                                <option data-subtext=" WL 1">Blow Gun</option>
+                                                <option data-subtext=" WL 1">Dart</option>
+                                                <option data-subtext=" WL 2">Hatchet</option>
+                                                <option data-subtext=" WL 2">Dagger</option>
+                                                <option data-subtext=" WL 1">Mace</option>
+                                                <option data-subtext=" WL 1">Baseball Bat</option>
+                                                <option data-subtext=" WL 1">Club</option>
+                                                <option data-subtext=" WL 1">Improvised Weapon</option>
+                                                <option data-subtext=" WL 1">Warhammer</option>
+                                             </optgroup>
+                                            <optgroup label="Versitile Melee">
+                                                <option data-subtext=" WL 1">Longsword</option>
+                                                <option data-subtext=" WL 1">Katana</option>
+                                                <option data-subtext=" WL 1">Falcion</option>
+                                                <option data-subtext=" WL 1">Short Spear</option>
+                                            </optgroup>
+                                            <optgroup label="Two-handed Melee">
+                                                <option data-subtext=" WL 1">Greatsword</option>
+                                                <option data-subtext=" WL 1">No-dachi</option>
+                                                <option data-subtext=" WL 1">Claymore</option>
+                                                <option data-subtext=" WL 1">Bastard Sword</option>
+                                                <option data-subtext=" WL 1">Chainsaw</option>
+                                                <option data-subtext=" WL 1">Sledge Hammer</option>
+                                                <option data-subtext=" WL 1">Maul</option>
+                                                <option data-subtext=" WL 1">Great Axe</option>
+                                                <option data-subtext=" WL 2">Long Spear</option>
+                                                <option data-subtext=" WL 1">Pitchfork</option>
+                                                <option data-subtext=" WL 1">Staff</option>
+                                                <option data-subtext=" WL 2">Glaive</option>
+                                                <option data-subtext=" WL 2">Halberd</option>
+                                                <option data-subtext=" WL 2">Naginata</option>
+                                                <option data-subtext=" WL 3">Flamethrower</option>
+                                                <option data-subtext=" WL 2">Small Shield</option>
+                                                <option data-subtext=" WL 3">Riot Shield</option>
+                                                <option data-subtext=" WL 3">Tower Shield</option>
+                                             <optgroup label="Close Ranged">
+                                                <option data-subtext=" WL 1">Laser Gun</option>
+                                                <option data-subtext=" WL 1">Revolver</option>
+                                                <option data-subtext=" WL 1">Handgun</option>
+                                                <option data-subtext=" WL 1">Grenade</option>
+                                                <option data-subtext=" WL 1">Firebomb</option>
+                                                <option data-subtext=" WL 1">Elexir</option>
+                                            </optgroup>
+                                            <optgroup label="Medium Ranged">
+                                                <option data-subtext=" WL 1">Light Crossbow</option>
+                                                <option data-subtext=" WL 1">Shortbow</option>
+                                                <option data-subtext=" WL 1">Pump Shotgun</option>
+                                                <option data-subtext=" WL 3">Submachine Gun</option>
+                                                <option data-subtext=" WL 3">M16</option>
+                                                <option data-subtext=" WL 1">Elexir</option>
+                                            </optgroup>
+                                            <optgroup label="Long Ranged">
+                                                <option data-subtext=" WL 1">Heavy Crossbow</option>
+                                                <option data-subtext=" WL 1">Longbow</option>
+                                                <option data-subtext=" WL 1">Rifle</option>
+                                            </optgroup>
+                                            <optgroup label="Extreme Ranged">
+                                                <option data-subtext=" WL 4">Sniper Rifle</option>
+                                                <option data-subtext=" WL 4">Phase Rifle</option>
+                                                <option data-subtext=" WL 2">Cannon</option>
+                                            </optgroup>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        Large Shield (def 2)
+                                    </td>
                                 </tr>
                             </form>
                         </tbody>
@@ -1911,11 +1912,11 @@
                 </div>
                 <!-- Table -->
                 <table class="table table-bordered tbl">
-                    <thead>
+                    <thead class="bb-cells">
                         <tr>
                             <th>?</th>
                             <th>Type</th>
-                            <th>Vs</th>
+                            <th class="min-cell">Vs</th>
                             <th>Dice</th>
                             <th>Description</th>
                             <th>Special</th>
