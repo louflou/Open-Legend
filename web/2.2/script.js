@@ -28,14 +28,16 @@ function updateAttributePoints(cost){
 
 
 function scoreCostDice(){
+    var prevScore = $(this).data('val');
     var score = $(this).val();
     var cost = calcCost(score);
     var dice = calcDice (score);
     var sumCost = calcSumCost();
     $(this).parent().next().children().first().val(cost);
     $(this).parent().next().next().children().first().val(dice);
-    if(sumCost > 40){
+    if(sumCost > 20){
         alert("You don't have enough Attribute Points!");
+        $(this).val(prevScore);
     }
     
     // updateAttributePoints(cost)
