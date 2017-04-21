@@ -2,10 +2,86 @@ $(document).ready(function(){
 	// Körs när sidan laddats klart
     $("#levelValue").on("change", levelCalc);
 	$(".attr-table .attr-score").on("change", scoreCostDice);
-    $("#levelValue").on("keyup change", levelCalc);
-	$(".attr-table .attr-score").on("keyup change", scoreCostDice);
+    $("#levelValue").on("change", levelCalc);
+	$(".attr-table .attr-score").on("change", scoreCostDice);
+    $("#archetype-select").on("change", updateArchetypeBuild);
 
 });
+
+function updateArchetypeBuild(){
+    var archetype = $('#archetype-select option:selected').val();
+    if(archetype = "barbarian") {
+        $("#input-agility").val(2);
+        $("#input-fortitude").val(4);
+        $("#input-might").val(5);
+        $("#input-perception").val(3);
+        $("#input-will").val(3);
+    }else if(archetype = "ranger"){
+        $("#input-agility").val(5);
+        $("#input-deception").val(2);
+        $("#input-perception").val(4);
+        $("#input-will").val(3);
+        $("#input-influence").val(3);
+    }else if(archetype = "monk"){
+        $("#input-agility").val(5);
+        $("#input-fortitude").val(3);
+        $("#input-perception").val(3);
+        $("#input-will").val(2);
+        $("#input-movement").val(4);
+    }else if(archetype = "paladin"){
+        $("#input-fortitude").val(4);
+        $("#input-presence").val(5);
+        $("#input-learning").val(1);
+        $("#input-perception").val(1);
+        $("#input-will").val(3);
+        $("#input-creation").val(3);
+        $("#input-prescience").val(1);
+    }else if(archetype = "battle-mage"){
+        $("#input-agility").val(3);
+        $("#input-fortitude").val(1);
+        $("#input-might").val(1);
+        $("#input-presence").val(1);
+        $("#input-persuasion").val(1);
+        $("#input-learning").val(2);
+        $("#input-logic").val(2);
+        $("#input-perception").val(2);
+        $("#input-will").val(3);
+        $("#input-energy").val(5);
+    }else if(archetype = "mind-mage"){
+        $("#input-agility").val(3);
+        $("#input-presence").val(2);
+        $("#input-persuasion").val(1);
+        $("#input-learning").val(3);
+        $("#input-logic").val(2);
+        $("#input-will").val(3);
+        $("#input-influence").val(5);        
+    }else if(archetype = "assassin"){
+        $("#input-agility").val(5);
+        $("#input-fortitude").val(1);
+        $("#input-deception").val(3);
+        $("#input-presence").val(3);
+        $("#input-persuasion").val(3);
+        $("#input-perception").val(3);
+    }else if(archetype = "cleric"){
+        $("#input-fortitude").val(2);
+        $("#input-might").val(3);
+        $("#input-presence").val(1);
+        $("#input-persuasion").val(1);
+        $("#input-learning").val(1);
+        $("#input-will").val(2);
+        $("#input-protection").val(4);
+        $("#input-creation").val(5);        
+    }else if(archetype = "druid"){
+        $("#input-agility").val(1);
+        $("#input-fortitude").val(3);
+        $("#input-might").val(1);
+        $("#input-perception").val(2);
+        $("#input-will").val(2);
+        $("#input-alteration").val(4);
+        $("#input-creation").val(3);
+        $("#input-influence").val(4); 
+    }
+}
 
 function updateAttributePoints(){
     var maxAttrPoints = $('#attr-totalt-points').val();
@@ -13,12 +89,10 @@ function updateAttributePoints(){
     var sumCost = calcSumCost();
     var attrAvailable = maxAttrPoints - sumCost;
     $('.attr-available').val(attrAvailable);
-    
     if(sumCost > maxAttrPoints){
         alert("You don't have enough Attribute Points!");
     }
 }
-
 
 function calcSumCost(){
     var sumCost = 0;
@@ -87,21 +161,16 @@ function calcDice(score){
 }
 
 function levelCalc(){
-
     var levelValue = $(this).val();
-
     var xpValue = levelToXp (levelValue);
     $("#xp-input").val(xpValue);
-
     var totalPoints = leveltoAttributePoints (levelValue);
     $("#attr-totalt-points").val(totalPoints);
-
-		calcMaxAttrScore(levelValue);
+    calcMaxAttrScore(levelValue);
 
 }
 
 function levelToXp (levelValue){
-
     if (levelValue == 1) {
         return "";
     }else if (levelValue == 2) {
