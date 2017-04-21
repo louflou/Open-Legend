@@ -8,162 +8,6 @@ $(document).ready(function(){
 
 });
 
-function updateArchetypeBuild(){
-    var archetype = $('#archetype-select option:selected').val();
-    if(archetype = "barbarian") {
-        $("#input-agility").val(2);
-        $("#input-fortitude").val(4);
-        $("#input-might").val(5);
-        $("#input-perception").val(3);
-        $("#input-will").val(3);
-    }else if(archetype = "ranger"){
-        $("#input-agility").val(5);
-        $("#input-deception").val(2);
-        $("#input-perception").val(4);
-        $("#input-will").val(3);
-        $("#input-influence").val(3);
-    }else if(archetype = "monk"){
-        $("#input-agility").val(5);
-        $("#input-fortitude").val(3);
-        $("#input-perception").val(3);
-        $("#input-will").val(2);
-        $("#input-movement").val(4);
-    }else if(archetype = "paladin"){
-        $("#input-fortitude").val(4);
-        $("#input-presence").val(5);
-        $("#input-learning").val(1);
-        $("#input-perception").val(1);
-        $("#input-will").val(3);
-        $("#input-creation").val(3);
-        $("#input-prescience").val(1);
-    }else if(archetype = "battle-mage"){
-        $("#input-agility").val(3);
-        $("#input-fortitude").val(1);
-        $("#input-might").val(1);
-        $("#input-presence").val(1);
-        $("#input-persuasion").val(1);
-        $("#input-learning").val(2);
-        $("#input-logic").val(2);
-        $("#input-perception").val(2);
-        $("#input-will").val(3);
-        $("#input-energy").val(5);
-    }else if(archetype = "mind-mage"){
-        $("#input-agility").val(3);
-        $("#input-presence").val(2);
-        $("#input-persuasion").val(1);
-        $("#input-learning").val(3);
-        $("#input-logic").val(2);
-        $("#input-will").val(3);
-        $("#input-influence").val(5);        
-    }else if(archetype = "assassin"){
-        $("#input-agility").val(5);
-        $("#input-fortitude").val(1);
-        $("#input-deception").val(3);
-        $("#input-presence").val(3);
-        $("#input-persuasion").val(3);
-        $("#input-perception").val(3);
-    }else if(archetype = "cleric"){
-        $("#input-fortitude").val(2);
-        $("#input-might").val(3);
-        $("#input-presence").val(1);
-        $("#input-persuasion").val(1);
-        $("#input-learning").val(1);
-        $("#input-will").val(2);
-        $("#input-protection").val(4);
-        $("#input-creation").val(5);        
-    }else if(archetype = "druid"){
-        $("#input-agility").val(1);
-        $("#input-fortitude").val(3);
-        $("#input-might").val(1);
-        $("#input-perception").val(2);
-        $("#input-will").val(2);
-        $("#input-alteration").val(4);
-        $("#input-creation").val(3);
-        $("#input-influence").val(4); 
-    }
-    
-}
-
-function updateAttributePoints(){
-    var maxAttrPoints = $('#attr-totalt-points').val();
-    var prevScore = $(this).data('val');
-    var sumCost = calcSumCost();
-    var attrAvailable = maxAttrPoints - sumCost;
-    $('.attr-available').val(attrAvailable);
-    if(sumCost > maxAttrPoints){
-        alert("You don't have enough Attribute Points!");
-    }
-}
-
-function calcSumCost(){
-    var sumCost = 0;
-    $(".attr-cost").each(function(){
-        sumCost += +$(this).val();
-    });
-    $(".attr-invested").val(sumCost);
-    return sumCost;
-}
-
-function scoreCostDice(){
-    var score = $(this).val();
-    
-    var cost = calcCost(score);
-    $(this).parent().next().children().first().val(cost);
-    
-    var dice = calcDice (score);
-    $(this).parent().next().next().children().first().val(dice);
-    
-    updateAttributePoints();
-}
-
-function calcCost(score){
-    if(score == 0) {
-        return "";
-    }else if (score == 1) {
-        return 1;
-    }else if (score == 2) {
-        return 3;
-    }else if (score == 3) {
-        return 6;
-    }else if (score == 4) {
-        return 10;
-    }else if (score == 5) {
-        return 15;
-    }else if (score == 6){
-        return 21;
-    }else if (score == 7){
-        return 28;
-    }else if (score == 8){
-        return 36;
-    }else if (score == 9){
-        return 45;
-    }
-}
-
-function calcDice(score){
-    if (score == 0) {
-        return "";
-    }else if (score == 1) {
-        return "1d4";
-    }else if (score == 2) {
-        return "1d6";
-    }else if (score == 3) {
-        return "1d8";
-    }else if (score == 4) {
-        return "1d10";
-    }else if (score == 5) {
-        return "2d6";
-    }else if (score == 6) {
-        return "2d8";
-    }else if (score == 7) {
-        return "2d10";
-    }else if (score == 8) {
-        return "3d8";
-    }else if (score == 9) {
-        return "3d10";
-    }
-}
-
 function levelCalc(){
     var levelValue = $(this).val();
     
@@ -174,7 +18,6 @@ function levelCalc(){
     $("#attr-totalt-points").val(totalPoints);
     
     calcMaxAttrScore(levelValue);
-
 }
 
 function levelToXp (levelValue){
@@ -260,3 +103,167 @@ function calcMaxAttrScore(levelValue){
         });
     }
 }
+
+
+function scoreCostDice(){
+    var score = $(this).val();
+    
+    var cost = calcCost(score);
+    $(this).parent().next().children().first().val(cost);
+    
+    var dice = calcDice (score);
+    $(this).parent().next().next().children().first().val(dice);
+    
+    updateAttributePoints();
+}
+
+function calcCost(score){
+    if(score == 0) {
+        return "";
+    }else if (score == 1) {
+        return 1;
+    }else if (score == 2) {
+        return 3;
+    }else if (score == 3) {
+        return 6;
+    }else if (score == 4) {
+        return 10;
+    }else if (score == 5) {
+        return 15;
+    }else if (score == 6){
+        return 21;
+    }else if (score == 7){
+        return 28;
+    }else if (score == 8){
+        return 36;
+    }else if (score == 9){
+        return 45;
+    }
+}
+
+function calcDice(score){
+    if (score == 0) {
+        return "";
+    }else if (score == 1) {
+        return "1d4";
+    }else if (score == 2) {
+        return "1d6";
+    }else if (score == 3) {
+        return "1d8";
+    }else if (score == 4) {
+        return "1d10";
+    }else if (score == 5) {
+        return "2d6";
+    }else if (score == 6) {
+        return "2d8";
+    }else if (score == 7) {
+        return "2d10";
+    }else if (score == 8) {
+        return "3d8";
+    }else if (score == 9) {
+        return "3d10";
+    }
+}
+
+function calcSumCost(){
+    var sumCost = 0;
+    $(".attr-cost").each(function(){
+        sumCost += +$(this).val();
+    });
+    $(".attr-invested").val(sumCost);
+    return sumCost;
+}
+
+function updateAttributePoints(){
+    var prevScore = $(this).data('val');
+
+    var maxAttrPoints = $('#attr-totalt-points').val();
+    var attrAvailable = maxAttrPoints - sumCost;
+    $('.attr-available').val(attrAvailable);
+    
+    var sumCost = calcSumCost();
+    if(sumCost > maxAttrPoints){
+        alert("You don't have enough Attribute Points!");
+    }
+}
+
+
+
+
+function updateArchetypeBuild(){
+    var archetype = $('#archetype-select option:selected').val();
+    if(archetype = "barbarian") {
+        $("#input-agility").val(2);
+        $("#input-fortitude").val(4);
+        $("#input-might").val(5);
+        $("#input-perception").val(3);
+        $("#input-will").val(3);
+    }else if(archetype = "ranger"){
+        $("#input-agility").val(5);
+        $("#input-deception").val(2);
+        $("#input-perception").val(4);
+        $("#input-will").val(3);
+        $("#input-influence").val(3);
+    }else if(archetype = "monk"){
+        $("#input-agility").val(5);
+        $("#input-fortitude").val(3);
+        $("#input-perception").val(3);
+        $("#input-will").val(2);
+        $("#input-movement").val(4);
+    }else if(archetype = "paladin"){
+        $("#input-fortitude").val(4);
+        $("#input-presence").val(5);
+        $("#input-learning").val(1);
+        $("#input-perception").val(1);
+        $("#input-will").val(3);
+        $("#input-creation").val(3);
+        $("#input-prescience").val(1);
+    }else if(archetype = "battle-mage"){
+        $("#input-agility").val(3);
+        $("#input-fortitude").val(1);
+        $("#input-might").val(1);
+        $("#input-presence").val(1);
+        $("#input-persuasion").val(1);
+        $("#input-learning").val(2);
+        $("#input-logic").val(2);
+        $("#input-perception").val(2);
+        $("#input-will").val(3);
+        $("#input-energy").val(5);
+    }else if(archetype = "mind-mage"){
+        $("#input-agility").val(3);
+        $("#input-presence").val(2);
+        $("#input-persuasion").val(1);
+        $("#input-learning").val(3);
+        $("#input-logic").val(2);
+        $("#input-will").val(3);
+        $("#input-influence").val(5);        
+    }else if(archetype = "assassin"){
+        $("#input-agility").val(5);
+        $("#input-fortitude").val(1);
+        $("#input-deception").val(3);
+        $("#input-presence").val(3);
+        $("#input-persuasion").val(3);
+        $("#input-perception").val(3);
+    }else if(archetype = "cleric"){
+        $("#input-fortitude").val(2);
+        $("#input-might").val(3);
+        $("#input-presence").val(1);
+        $("#input-persuasion").val(1);
+        $("#input-learning").val(1);
+        $("#input-will").val(2);
+        $("#input-protection").val(4);
+        $("#input-creation").val(5);        
+    }else if(archetype = "druid"){
+        $("#input-agility").val(1);
+        $("#input-fortitude").val(3);
+        $("#input-might").val(1);
+        $("#input-perception").val(2);
+        $("#input-will").val(2);
+        $("#input-alteration").val(4);
+        $("#input-creation").val(3);
+        $("#input-influence").val(4); 
+    }
+}
+
+
+
