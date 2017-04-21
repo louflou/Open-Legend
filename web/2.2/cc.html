@@ -886,14 +886,14 @@
 
         <!-- defenses table -->
         <div class="col-md-5">
-            <div class="panel-group">
-                <header>DEFENSES</header>
+            <header>DEFENSES</header>
+            <div class="panel-group" id="accordion3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">ARMOR CLASS</h4>
                     </div>
 
-                    <table class="table  table-bordered tbl">
+                    <table class="table table-bordered tbl">
                         <thead class="six-cells">
                             <tr>
                                 <th>Defense</th>
@@ -936,46 +936,7 @@
                    
 
                 </div>
-            </div>
 
-            <h5>HITPOINTS</h5>
-            <div class="panel panel-default">
-                <!-- Visar Hp och Current Hp för användaren. -->
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#clps-hitpoints">score</a>
-                    </h4>
-                </div>
-                <div id="clps-hitpoints" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p>The amount of health that the player character has. It shows the maximum health and the current health. If the characters health is 0 the character dies.
-                        </p>
-                    </div>
-                </div>
-                <!-- Table -->
-                 <table class="table  table-bordered tbl">
-                    <thead class="six-cells">
-                        <tr>
-                            <th>Hit Points</th>
-                            <th>Current</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><input type="number" class="my-input" /></td>
-                            <td><input type="number" class="my-input" /></td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-
-        <!--- Legend points och andra saker som bestämms av spelarens val! -->
-        <div class="col-md-6">
-            <!-- WEAPONS ATTRIBUTE SCORE VALUE INPUT -->
-            <div class="panel-group" id="accordion5">
                 <div class="panel panel-default">
                     <!-- Default panel contents -->
                     <div class="panel-heading">
@@ -1265,9 +1226,9 @@
                     <table class="table tbl table-bordered">
                         <thead>
                             <tr>
-                                <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-armor">ARMOR</a></th>
-                                <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-weapons">WEAPONS</a></th>
-                                <th><a data-toggle="collapse" data-parent="#accordion5" href="#clps-items">ITEMS</a></th>
+                                <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-armor">ARMOR</a></th>
+                                <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-weapons">WEAPONS</a></th>
+                                <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-items">ITEMS</a></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1378,7 +1339,141 @@
                         </tbody>
                     </table>
                 </div>
-                <h5>FEAT</h5>
+                <!-- BANES-->
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion3" href="#clps-banes">BANES & BOONS</a>
+                        </h4>
+                    </div>
+                    <div id="clps-banes" class="panel-collapse collapse">
+                        <div class="panel-body text-justify">
+                            <div class="col-sm-6 ">
+                                <h5>BANES</h5>
+                                <p>Banes are negative conditions that your character inflict upon its foes, such as by stunning them, demoralizing them, or setting them on fire.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>BOONS</h5>
+                                <p>Boons are helpful effects that assist your character's allies by allowing them to fly, shrug off damage, or move with extraordinary speed.
+                            </p>
+                            </div>
+
+                            <!-- Lista med förklaringar till hur man räknar banes & boons
+
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-8">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <h5>VS</h5> What attribute is used when invoking the Bane or Boon and what attribute the foe uses to defend.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h5>Dice</h5> The attribute dice.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h5>Description</h5> Effects of the Bane or Boon, for example your foe cannot see anything for 1 turn.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h5>Special</h5> Special conditions that influences the Bane or Boon. For example how to remove the bane or wether other character's can be affected by it.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2"></div>
+                            -->
+                        </div>
+                    </div>
+                    <!-- Table -->
+                    <table class="table table-bordered tbl">
+                        <thead class="six-cells">
+                            <tr>
+                                <th>?</th>
+                                <th>Type</th>
+                                <th>Vs</th>
+                                <th>Dice</th>
+                                <th>Description</th>
+                                <th>Special</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>BANES</th>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>BOONS</th>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                                <td>
+                                    <input type="text" class="my-input" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+            <br/>
+            <div class="panel panel-default">
+                <!-- Visar Hp och Current Hp för användaren. -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion3" href="#clps-hitpoints">score</a>
+                    </h4>
+                </div>
+                <div id="clps-hitpoints" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>The amount of health that the player character has. It shows the maximum health and the current health. If the characters health is 0 the character dies.
+                        </p>
+                    </div>
+                </div>
+                <!-- Table -->
+                 <table class="table  table-bordered tbl">
+                    <thead class="six-cells">
+                        <tr>
+                            <th>Hit Points</th>
+                            <th>Current</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" class="my-input" /></td>
+                            <td><input type="number" class="my-input" /></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+        <!--- Legend points och andra saker som bestämms av spelarens val! -->
+        <div class="col-md-4">
+            <div class="panel-group" id="accordion5">
                 <div class="panel panel-default">
                     <!-- Default panel contents -->
                     <div class="panel-heading">
@@ -1418,7 +1513,6 @@
                                             <option data-subtext="">Swimming</option>
                                             <option data-subtext="">Sworn Enemy (I - IX)</option>
                                             <option data-subtext="">Untrackable</option>
-
                                         </optgroup>
                                         <optgroup label="2 points">
                                             <option data-subtext="">Attribute Substitution (I - II)</option>
@@ -1905,102 +1999,7 @@
         <!--end col -->
 
         <div class="col-md-6">
-            <!-- BANES-->
-            <h5>BANES & BOONS</h5>
-            <div class="panel panel-default">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion5" href="#clps-banes">BANES & BOONS</a>
-                    </h4>
-                </div>
-                <div id="clps-banes" class="panel-collapse collapse">
-                    <div class="panel-body text-justify">
-                        <div class="col-sm-6 ">
-                            <h5>BANES</h5>
-                            <p>Banes are negative conditions that your character inflict upon its foes, such as by stunning them, demoralizing them, or setting them on fire.</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <h5>BOONS</h5>
-                            <p>Boons are helpful effects that assist your character's allies by allowing them to fly, shrug off damage, or move with extraordinary speed.
-                        </p>
-                        </div>
-
-                        <!-- Lista med förklaringar till hur man räknar banes & boons
-
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-8">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h5>VS</h5> What attribute is used when invoking the Bane or Boon and what attribute the foe uses to defend.
-                                </li>
-                                <li class="list-group-item">
-                                    <h5>Dice</h5> The attribute dice.
-                                </li>
-                                <li class="list-group-item">
-                                    <h5>Description</h5> Effects of the Bane or Boon, for example your foe cannot see anything for 1 turn.
-                                </li>
-                                <li class="list-group-item">
-                                    <h5>Special</h5> Special conditions that influences the Bane or Boon. For example how to remove the bane or wether other character's can be affected by it.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-2"></div>
-                        -->
-                    </div>
-                </div>
-                <!-- Table -->
-                <table class="table table-bordered tbl">
-                    <thead class="six-cells">
-                        <tr>
-                            <th>?</th>
-                            <th>Type</th>
-                            <th>Vs</th>
-                            <th>Dice</th>
-                            <th>Description</th>
-                            <th>Special</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>BANES</th>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>BOONS</th>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                            <td>
-                                <input type="text" class="my-input" />
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            
         </div>
 
 

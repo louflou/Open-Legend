@@ -81,6 +81,7 @@ function updateArchetypeBuild(){
         $("#input-creation").val(3);
         $("#input-influence").val(4); 
     }
+    
 }
 
 function updateAttributePoints(){
@@ -220,36 +221,36 @@ function leveltoAttributePoints(levelValue){
 
 function calcMaxAttrScore(levelValue){
 	if (levelValue == 3){
-		$(".attr-score").attr({
-	 "max" : 6
- });
-} else if(levelValue == 4){
-	$(".attr-score").attr({
- "max" : 6
-});
-} else if(levelValue == 5){
-	$(".attr-score").attr({
- "max" : 7
-});
-}else if(levelValue == 6){
-	$(".attr-score").attr({
- "max" : 7
-});
-} else if(levelValue == 7){
-	$(".attr-score").attr({
- "max" : 8
-});
-}else if(levelValue == 8){
-	$(".attr-score").attr({
- "max" : 8
- });
-}else if(levelValue == 9){
-	$(".attr-score").attr({
- "max" : 9
- });
-}else if(levelValue == 10){
-	$(".attr-score").attr({
- "max" : 9
- });
-}
+        $(".attr-score").attr({
+            "max" : 6
+        });
+    }else if(levelValue == 4){
+	   $(".attr-score").attr({
+            "max" : 6
+        });
+    }else if(levelValue == 5){
+	   $(".attr-score").attr({
+           "max" : 7
+        });
+    }else if(levelValue == 6){
+	   $(".attr-score").attr({
+           "max" : 7
+       });
+    } else if(levelValue == 7){
+	   $(".attr-score").attr({
+           "max" : 8
+       });
+    }else if(levelValue == 8){
+	   $(".attr-score").attr({
+           "max" : 8
+        });
+    }else if(levelValue == 9){
+	   $(".attr-score").attr({
+           "max" : 9
+        });
+    }else if(levelValue == 10){
+	   $(".attr-score").attr({
+           "max" : 9
+        });
+    }
 }
