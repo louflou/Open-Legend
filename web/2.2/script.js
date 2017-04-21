@@ -171,19 +171,19 @@ function calcSumCost(){
 }
 
 function updateAttributePoints(){
-    var prevScore = $(this).data('val');
+    var prevScore = $(this).data("val");
     var maxAttrPoints = $('#attr-totalt-points').val();
     var sumCost = calcSumCost();
     var attrAvailable = maxAttrPoints - sumCost;
     
-    $('.attr-available').val(attrAvailable);
+    $(".attr-available").val(attrAvailable);
     if(sumCost > maxAttrPoints){
-        alert("You don't have enough Attribute Points!");
+        alert("You don't have enough Attributes Points!");
     }
 }
 
 function updateArchetypeBuild(){
-    var archetype = $('#archetype-select option:selected').val();
+    var archetype = $("#archetype-select option:selected").val();
     if(archetype = "barbarian") {
         $("#input-agility").val(2);
         $("#input-fortitude").val(4);
