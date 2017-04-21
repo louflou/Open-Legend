@@ -5,18 +5,15 @@ $(document).ready(function(){
     $("#levelValue").on("change", levelCalc);
 	$(".attr-table .attr-score").on("change", scoreCostDice);
     $("#archetype-select").on("change", updateArchetypeBuild);
-
 });
 
 function levelCalc(){
     var levelValue = $(this).val();
-    
     var xpValue = levelToXp (levelValue);
-    $("#xp-input").val(xpValue);
-    
     var totalPoints = leveltoAttributePoints (levelValue);
-    $("#attr-totalt-points").val(totalPoints);
-    
+
+    $("#xp-input").val(xpValue);
+    $("#attr-totalt-points").val(totalPoints);    
     calcMaxAttrScore(levelValue);
 }
 
@@ -107,13 +104,11 @@ function calcMaxAttrScore(levelValue){
 
 function scoreCostDice(){
     var score = $(this).val();
-    
-    var cost = calcCost(score);
-    $(this).parent().next().children().first().val(cost);
-    
     var dice = calcDice (score);
-    $(this).parent().next().next().children().first().val(dice);
+    var cost = calcCost(score);
     
+    $(this).parent().next().children().first().val(cost);
+    $(this).parent().next().next().children().first().val(dice);   
     updateAttributePoints();
 }
 
@@ -167,6 +162,7 @@ function calcDice(score){
 
 function calcSumCost(){
     var sumCost = 0;
+    
     $(".attr-cost").each(function(){
         sumCost += +$(this).val();
     });
@@ -176,19 +172,15 @@ function calcSumCost(){
 
 function updateAttributePoints(){
     var prevScore = $(this).data('val');
-
     var maxAttrPoints = $('#attr-totalt-points').val();
-    var attrAvailable = maxAttrPoints - sumCost;
-    $('.attr-available').val(attrAvailable);
-    
     var sumCost = calcSumCost();
+    var attrAvailable = maxAttrPoints - sumCost;
+    
+    $('.attr-available').val(attrAvailable);
     if(sumCost > maxAttrPoints){
         alert("You don't have enough Attribute Points!");
     }
 }
-
-
-
 
 function updateArchetypeBuild(){
     var archetype = $('#archetype-select option:selected').val();
