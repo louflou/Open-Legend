@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	// Körs när sidan laddats klart
+	// Körs när sidan laddats klart.
     $("#levelValue").on("change", levelCalc);
 	$(".attr-table .attr-score").on("change", scoreCostDice);
     $("#levelValue").on("change", levelCalc);
@@ -8,6 +8,7 @@ $(document).ready(function(){
 });
 
 function levelCalc(){
+    // Hanterar XP, ATTRIBUTE POINTS & maxvärdet för SCORE utifrån LEVEL.
     var levelValue = $(this).val();
     var xpValue = levelToXp (levelValue);
     var totalPoints = leveltoAttributePoints (levelValue);
@@ -18,6 +19,7 @@ function levelCalc(){
 }
 
 function levelToXp (levelValue){
+    // Returnerar värde för XP utifrån LEVEL.
     if (levelValue == 1) {
         return "";
     }else if (levelValue == 2) {
@@ -42,6 +44,7 @@ function levelToXp (levelValue){
 }
 
 function leveltoAttributePoints(levelValue){
+    // Returnerar värde för ATTRIBUTEPOINTS utifrån LEVEL.
     if (levelValue == 1) {
         return 40;
     }else if (levelValue == 2) {
@@ -66,6 +69,7 @@ function leveltoAttributePoints(levelValue){
 }
 
 function calcMaxAttrScore(levelValue){
+    // Förändrar maxvärdet på SCORE utifrån LEVEL.
 	if (levelValue == 3){
         $(".attr-score").attr({
             "max" : 6
@@ -101,8 +105,8 @@ function calcMaxAttrScore(levelValue){
     }
 }
 
-
 function scoreCostDice(){
+    // Ändrar värdet på COST och DICE utifrån SCORE.
     var score = $(this).val();
     var dice = calcDice (score);
     var cost = calcCost(score);
@@ -113,6 +117,7 @@ function scoreCostDice(){
 }
 
 function calcCost(score){
+    // Returnerar COST utifrån SCORE.
     if(score == 0) {
         return "";
     }else if (score == 1) {
@@ -137,6 +142,7 @@ function calcCost(score){
 }
 
 function calcDice(score){
+    // Returnerar DICE utifrån SCORE.
     if (score == 0) {
         return "";
     }else if (score == 1) {
@@ -161,6 +167,7 @@ function calcDice(score){
 }
 
 function calcSumCost(){
+    // Returnerar summan av alla COST 
     var sumCost = 0;
     
     $(".attr-cost").each(function(){
@@ -171,6 +178,7 @@ function calcSumCost(){
 }
 
 function updateAttributePoints(){
+    // Hämtar TOTAL ATTRIBUTE POINTS och beräknar hur många POINTS som är kvar och hur många som använts.
     var prevScore = $(this).data("val");
     var maxAttrPoints = $('#attr-totalt-points').val();
     var sumCost = calcSumCost();
@@ -183,6 +191,7 @@ function updateAttributePoints(){
 }
 
 function updateArchetypeBuild(){
+    // Hämtar ARCHETYPE och fyller i SCORE i olika ATTRIBUTES.
     var archetype = $("#archetype-select option:selected").val();
     if(archetype = "barbarian") {
         $("#input-agility").val(2);
