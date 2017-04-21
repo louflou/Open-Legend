@@ -106,10 +106,13 @@ function calcSumCost(){
 
 function scoreCostDice(){
     var score = $(this).val();
+    
     var cost = calcCost(score);
-    var dice = calcDice (score);
     $(this).parent().next().children().first().val(cost);
+    
+    var dice = calcDice (score);
     $(this).parent().next().next().children().first().val(dice);
+    
     updateAttributePoints();
 }
 
@@ -163,10 +166,13 @@ function calcDice(score){
 
 function levelCalc(){
     var levelValue = $(this).val();
+    
     var xpValue = levelToXp (levelValue);
     $("#xp-input").val(xpValue);
+    
     var totalPoints = leveltoAttributePoints (levelValue);
     $("#attr-totalt-points").val(totalPoints);
+    
     calcMaxAttrScore(levelValue);
 
 }
