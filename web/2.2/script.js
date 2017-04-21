@@ -199,6 +199,7 @@ function updateArchetypeBuild(){
         $("#input-might").val(5);
         $("#input-perception").val(3);
         $("#input-will").val(3);
+        updateAttributePoints2();
     }else if(archetype = "ranger"){
         $("#input-agility").val(5);
         $("#input-deception").val(2);
@@ -263,8 +264,41 @@ function updateArchetypeBuild(){
         $("#input-alteration").val(4);
         $("#input-creation").val(3);
         $("#input-influence").val(4); 
+    }updateAttributePoints();
+}
+
+function calcSumCost2(){
+    // Returnerar summan av alla COST 
+    var sumCost = 0;
+    
+    $(".attr-cost").each(function(){
+        sumCost += +$(".attr-cost").each(.val());
+    });
+    $(".attr-invested").val(sumCost);
+    return sumCost;
+}
+
+function updateAttributePoints2(){
+    // Hämtar TOTAL ATTRIBUTE POINTS och beräknar hur många POINTS som är kvar och hur många som använts.
+    var prevScore = $(this).data("val");
+    var maxAttrPoints = $('#attr-totalt-points').val();
+    var sumCost = calcSumCost2();
+    var attrAvailable = maxAttrPoints - sumCost;
+    
+    $(".attr-available").val(attrAvailable);
+    if(sumCost > maxAttrPoints){
+        alert("You don't have enough Attributes Points!");
     }
 }
 
+function levelCalc(){
+    // Hanterar XP, ATTRIBUTE POINTS & maxvärdet för SCORE utifrån LEVEL.
+    var levelValue = $(this).val();
+    var xpValue = levelToXp (levelValue);
+    var totalPoints = leveltoAttributePoints (levelValue);
 
+    $("#xp-input").val(xpValue);
+    $("#attr-totalt-points").val(totalPoints);    
+    calcMaxAttrScore(levelValue);
+}
 
