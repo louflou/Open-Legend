@@ -14,7 +14,7 @@ function levelCalc(){
     var totalPoints = leveltoAttributePoints (levelValue);
 
     $("#xp-input").val(xpValue);
-    $("#attr-totalt-points").val(totalPoints);    
+    $("#attr-totalt-points").val(totalPoints);
     calcMaxAttrScore(levelValue);
 }
 
@@ -70,7 +70,11 @@ function leveltoAttributePoints(levelValue){
 
 function calcMaxAttrScore(levelValue){
     // Förändrar maxvärdet på SCORE utifrån LEVEL.
-	if (levelValue == 3){
+	if (levelValue == 2){
+        $(".attr-score").attr({
+            "max" : 5
+        });
+    } else if(levelValue == 3){
         $(".attr-score").attr({
             "max" : 6
         });
@@ -110,9 +114,9 @@ function scoreCostDice(){
     var score = $(this).val();
     var dice = calcDice (score);
     var cost = calcCost(score);
-    
+
     $(this).parent().next().children().first().val(cost);
-    $(this).parent().next().next().children().first().val(dice);   
+    $(this).parent().next().next().children().first().val(dice);
     updateAttributePoints();
 }
 
@@ -167,9 +171,9 @@ function calcDice(score){
 }
 
 function calcSumCost(){
-    // Returnerar summan av alla COST 
+    // Returnerar summan av alla COST
     var sumCost = 0;
-    
+
     $(".attr-cost").each(function(){
         sumCost += +$(this).val();
     });
@@ -183,7 +187,7 @@ function updateAttributePoints(){
     var maxAttrPoints = $('#attr-totalt-points').val();
     var sumCost = calcSumCost();
     var attrAvailable = maxAttrPoints - sumCost;
-    
+
     $(".attr-available").val(attrAvailable);
     if(sumCost > maxAttrPoints){
         alert("You don't have enough Attributes Points!");
@@ -237,7 +241,7 @@ function updateArchetypeBuild(){
         $("#input-learning").val(3);
         $("#input-logic").val(2);
         $("#input-will").val(3);
-        $("#input-influence").val(5);        
+        $("#input-influence").val(5);
     }else if(archetype = "assassin"){
         $("#input-agility").val(5);
         $("#input-fortitude").val(1);
@@ -253,7 +257,7 @@ function updateArchetypeBuild(){
         $("#input-learning").val(1);
         $("#input-will").val(2);
         $("#input-protection").val(4);
-        $("#input-creation").val(5);        
+        $("#input-creation").val(5);
     }else if(archetype = "druid"){
         $("#input-agility").val(1);
         $("#input-fortitude").val(3);
@@ -262,9 +266,6 @@ function updateArchetypeBuild(){
         $("#input-will").val(2);
         $("#input-alteration").val(4);
         $("#input-creation").val(3);
-        $("#input-influence").val(4); 
+        $("#input-influence").val(4);
     }
 }
-
-
-
