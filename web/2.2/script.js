@@ -4,7 +4,8 @@ $(document).ready(function(){
 	$(".attr-table .attr-score").on("change", scoreCostDice);
     $("#levelValue").on("change", levelCalc);
 	$(".attr-table .attr-score").on("change", scoreCostDice);
-    $("#archetype-select").on("change", updateArchetypeBuild);
+    $("#archetype-select").on("change", calcActualSumCost);
+    
 });
 
 function levelCalc(){
@@ -16,6 +17,7 @@ function levelCalc(){
     $("#xp-input").val(xpValue);
     $("#attr-totalt-points").val(totalPoints);    
     calcMaxAttrScore(levelValue);
+    updateAttributePoints();
 }
 
 function levelToXp (levelValue){
@@ -41,7 +43,7 @@ function levelToXp (levelValue){
     }else if (levelValue == 10) {
         return 27;
     }
-}
+}  
 
 function leveltoAttributePoints(levelValue){
     // Returnerar värde för ATTRIBUTEPOINTS utifrån LEVEL.
@@ -169,25 +171,31 @@ function calcDice(score){
 function calcSumCost(){
     // Returnerar summan av alla COST 
     var sumCost = 0;
+    var maxAttrPoints = $('#attr-totalt-points').val();
     
     $(".attr-cost").each(function(){
         sumCost += +$(this).val();
     });
-    $(".attr-invested").val(sumCost);
+    if(sumCost > maxAttrPoints){
+        alert("You have used all of your Attributes Points!");
+        $(this).val(parseInt($(this).val())-1);
+        $(".attr-cost").each(function(){
+        sumCost += +$(this).val();
+        });
+        $(".attr-invested").val(sumCost);
+    }else{
+        $(".attr-invested").val(sumCost);
+    }
     return sumCost;
 }
 
 function updateAttributePoints(){
     // Hämtar TOTAL ATTRIBUTE POINTS och beräknar hur många POINTS som är kvar och hur många som använts.
-    var prevScore = $(this).data("val");
     var maxAttrPoints = $('#attr-totalt-points').val();
     var sumCost = calcSumCost();
     var attrAvailable = maxAttrPoints - sumCost;
-    
     $(".attr-available").val(attrAvailable);
-    if(sumCost > maxAttrPoints){
-        alert("You don't have enough Attributes Points!");
-    }
+    
 }
 
 function updateArchetypeBuild(){
@@ -198,7 +206,7 @@ function updateArchetypeBuild(){
         $("#input-fortitude").val(4);
         $("#input-might").val(5);
         $("#input-perception").val(3);
-        $("#input-will").val(3);
+        $("#input-will").val(3);       
     }else if(archetype = "ranger"){
         $("#input-agility").val(5);
         $("#input-deception").val(2);
