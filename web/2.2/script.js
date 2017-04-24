@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	// Körs när sidan laddats klart.
-    $("#levelValue").on("change", levelCalc);
-	$(".attr-table .attr-score").on("change", scoreCostDice);
+    $("#levelValue").on("change", shrinkVal);
     $("#levelValue").on("change", levelCalc);
 	$(".attr-table .attr-score").on("change", scoreCostDice);
     $("#archetype-select").on("change", calcActualSumCost);
@@ -48,12 +47,16 @@ function levelToXp (levelValue){
 function leveltoAttributePoints(levelValue){
     // Returnerar värde för ATTRIBUTEPOINTS utifrån LEVEL.
     if (levelValue == 1) {
+        shrinkVal();
         return 40;
     }else if (levelValue == 2) {
+        shrinkVal();
         return 49;
     }else if (levelValue == 3) {
+        shrinkVal();
         return 58;
     }else if (levelValue == 4) {
+        shrinkVal();
         return 67;
     }else if (levelValue == 5) {
         return 76;
@@ -67,6 +70,17 @@ function leveltoAttributePoints(levelValue){
         return 112;
     }else if (levelValue == 10) {
         return 121;
+    }
+}
+
+function shrinkVal(){
+    // Ändrar värden i SCORE om maxvärdet är överskridet.
+    var aScore = $(".attr-score").val();
+    var maxVal = $(".attr-score").attr("max");
+    
+    if(aScore > maxVal){
+        alert("score is more than max!")
+        $(".attr-score").val(maxVal);
     }
 }
 
