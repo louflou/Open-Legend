@@ -13,6 +13,7 @@ h5 {
     color: #999 !important;
     text-align: center;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 p {
 	color: #222 !important;
@@ -126,9 +127,11 @@ p {
 .bb-cells tr th {
     width:18%;
 }
-
+select {
+    width: 100%;
+}
 .selectpicker {
-    width:20% !important;
+    width:100% !important;
 }
 .none-value-select {
     color: gainsboro !important;
