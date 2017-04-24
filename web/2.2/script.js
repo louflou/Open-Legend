@@ -130,6 +130,7 @@ function scoreCostDice(){
     $(this).parent().next().children().first().val(cost);
     $(this).parent().next().next().children().first().val(dice);   
     updateAttributePoints();
+    hitPoints();
 }
 
 function calcCost(score){
@@ -286,6 +287,18 @@ function updateArchetypeBuild(){
         $("#input-creation").val(3);
         $("#input-influence").val(4); 
     }
+}
+
+function hitPoints(){
+    // Räknar ut spelarens Hitpoints
+    var sumHp = 0;
+    $(".total-hitpoints").each(function(){
+        sumHp += +$(this).val();
+    });
+    $("#sum-hitpoints").val(sumHp * 2 + 10);
+    
+
+
 }
 
 
