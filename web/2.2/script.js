@@ -7,14 +7,45 @@ $(document).ready(function(){
     
 });
 
+
+function calcWealth(levelValue){
+    if(levelValue == 1){
+        return 2;
+    }else if(levelValue == 2){
+        return 2;
+    }else if(levelValue == 3){
+        return 3;
+    }else if(levelValue == 4){
+        return 4;
+    }else if(levelValue == 5){
+        return 4;
+    }else if(levelValue == 6){
+        return 5;
+    }else if(levelValue == 7){
+        return 6;
+    }else if(levelValue == 8){
+        return 6;
+    }else if(levelValue == 9){
+        return 7;
+    }else if(levelValue == 10){
+        return 8;
+    }
+
+}
+
+
+
+
 function levelCalc(){
     // Hanterar XP, ATTRIBUTE POINTS & maxvärdet för SCORE utifrån LEVEL.
     var levelValue = $(this).val();
     var xpValue = levelToXp (levelValue);
     var totalPoints = leveltoAttributePoints (levelValue);
-
+    var wealthValue = calcWealth(levelValue);
+    
     $("#xp-input").val(xpValue);
     $("#attr-totalt-points").val(totalPoints);    
+    $("#wealth-input").val(wealthValue);
     calcMaxAttrScore(levelValue);
     updateAttributePoints();
 }
@@ -301,7 +332,16 @@ function hitPoints(){
     }
 
 
+
+
+
+
+
 }
+
+
+
+
 
 
 
