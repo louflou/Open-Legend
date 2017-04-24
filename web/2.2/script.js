@@ -292,11 +292,14 @@ function updateArchetypeBuild(){
 function hitPoints(){
     // Räknar ut spelarens Hitpoints
     var sumHp = 0;
-    $(".total-hitpoints").each(function(){
-        sumHp += +$(this).val();
-    });
-    $("#sum-hitpoints").val(sumHp * 2 + 10);
-    
+    if($(".total-hitpoints").val() = 0){
+        $("#sum-hitpoints").val(0);
+    }else{
+        $(".total-hitpoints").each(function(){
+            sumHp += +$(this).val();
+        });
+        $("#sum-hitpoints").val(sumHp * 2 + 10);
+    }
 
 
 }
