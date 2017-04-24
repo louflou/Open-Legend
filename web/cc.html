@@ -653,29 +653,60 @@
             <div class="col-md-3">
                 <header>ATTRIBUTES</header>
                 <div class="panel-group" id="accordion">
-                    <div class="panel-group">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">ATTRIBUTE POINTS</h4>
-                            </div>
-                            <table class="table table-bordered tbl">
-                                <thead>
-                                    <tr>
-                                        <th>Total</th>
-                                        <th>Invested</th>
-                                        <th>Available</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><input class="my-input attr-total" id="attr-totalt-points" value="40" type="number" disabled></td>
-                                        <td><input class="my-input attr-invested" type="number" disabled></td>
-                                        <td><input class="my-input attr-available" type="number" disabled></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#clps-attr">ATTRIBUTE POINTS</a>
+                            </h4>
                         </div>
+
+                        <div id="clps-attr" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Whenever you need to determine the outcome of a meaningful task, you make an action roll using an attribute appropriate to the task. Sometimes, the results of your roll will be very clearly spelled out in the rules, such as when making attacks or invoking banes and boons. Oftentimes, though, you'll want to attempt an action that isn't spelled out explicitly in the rules. </p>
+                                <p>For each attribute, we offer examples of actions classified at three levels based on difficulty and extent of impact on the narrative:</p>
+
+                                <table class="table table-bordered tbl">
+                                    <tr>
+                                        <th>Challenging (CR 15)</th>
+                                        <th>Challenging (CR 15)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Success at the task indicates overcoming a minor challenge or altering the narrative in a way that isn't disruptive.</td>
+                                        <td>Success at the task indicates overcoming a minor challenge or altering the narrative in a way that isn't disruptive.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Heroic (CR 20)</th>
+                                        <th>Epic (CR 25)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Success at the task indicates overcoming a major challenge or altering the narrative in a mildly disruptive way.</td>
+                                        <td>Success at the task indicates overcoming a near impossible challenge or altering the narrative in a very disruptive way.</td>
+                                    </tr>
+                                </table>
+                                
+                                
+                            </div>
+                        </div>
+
+
+                        <table class="table table-bordered tbl">
+                            <thead class="three-cells">
+                                <tr>
+                                    <th>Total</th>
+                                    <th>Invested</th>
+                                    <th>Available</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input class="my-input attr-total" id="attr-totalt-points" value="40" type="number" disabled></td>
+                                    <td><input class="my-input attr-invested" type="number" disabled></td>
+                                    <td><input class="my-input attr-available" type="number" disabled></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+
 
                     <!-- PHYSICAL ATTRIBUTE SCORE VALUE INPUT -->
                     <h5>PHYSICAL</h5>
@@ -694,7 +725,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -730,7 +761,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -766,7 +797,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -805,7 +836,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -843,7 +874,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -879,7 +910,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -918,7 +949,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -954,7 +985,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -991,7 +1022,7 @@
 
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1027,7 +1058,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1066,7 +1097,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1103,7 +1134,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1141,7 +1172,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1179,7 +1210,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1217,7 +1248,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1254,7 +1285,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1291,7 +1322,7 @@
                         </div>
                         <!-- Table -->
                         <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1331,7 +1362,7 @@
                         </div>
                         <!-- Table -->
                        <table class="table table-bordered tbl attr-table">
-                            <thead>
+                            <thead class="three-cells">
                                 <tr>
                                     <th>Score</th>
                                     <th>Cost</th>
@@ -1405,14 +1436,14 @@
                             <div class="panel-body">
                                 <H5>WEAPONS</H5>
                                 <p>The Weapons & Implements table provides information about a wide variety of gear that you will use in combat. It features examples from a wide variety of genres and settings, and you can easily adapt existing weapons to your campaign simply by changing the name and keeping the mechanical statistics. For example, a flamethrower can just as easily become an alchemical acid spitter.</p>
-                                <table class="table">
-                                    <thead>
+                                <table class="table tbl tbl-small table-hover">
+                                    <thead class="small-thead diff-thead">
                                         <tr>
-                                            <th>Examples</th>
-                                            <th>Category</th>
-                                            <th>WL</th>
-                                            <th>Properties</th>
-                                            <th>Banes</th>
+                                            <th width="50%">Examples</th>
+                                            <th >Category</th>
+                                            <th >WL</th>
+                                            <th >Properties</th>
+                                            <th >Banes</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -1605,10 +1636,11 @@
 
                         <div id="clps-armor" class="panel-collapse collapse">
                             <div class="panel-body">
+                                
                                 <h5>ARMOR</h5>
                                 <p>Different types of armor provides a certain amount of bonus to your Guard defense. The type indicates whether the armor is light, medium, or heavy. Each require the character to have certain score of fortitude.</p>
-                                <table class="table table-hover">
-                                    <thead>
+                                <table class="table tbl tbl-small table-hover">
+                                    <thead  class="small-thead">
                                         <tr>
                                             <th>Examples</th>
                                             <th>Type</th>
