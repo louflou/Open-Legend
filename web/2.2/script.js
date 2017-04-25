@@ -3,10 +3,8 @@ $(document).ready(function(){
     $("#levelValue").on("change", shrinkVal);
     $("#levelValue").on("change", levelCalc);
 	$(".attr-table .attr-score").on("change", scoreCostDice);
-    $("#archetype-select").on("change", calcActualSumCost);
-    
+    $("#archetype-select").on("change", updateArchetypeBuild);  
 });
-
 
 function calcWealth(levelValue){
     if(levelValue == 1){
@@ -30,11 +28,7 @@ function calcWealth(levelValue){
     }else if(levelValue == 10){
         return 8;
     }
-
 }
-
-
-
 
 function levelCalc(){
     // Hanterar XP, ATTRIBUTE POINTS & maxvärdet för SCORE utifrån LEVEL.
@@ -155,7 +149,7 @@ function calcMaxAttrScore(levelValue){
 function scoreCostDice(){
     // Ändrar värdet på COST och DICE utifrån SCORE.
     var score = $(this).val();
-    var dice = calcDice (score);
+    var dice = calcDice(score);
     var cost = calcCost(score);
     
     $(this).parent().next().children().first().val(cost);
@@ -252,7 +246,7 @@ function updateArchetypeBuild(){
         $("#input-fortitude").val(4);
         $("#input-might").val(5);
         $("#input-perception").val(3);
-        $("#input-will").val(3);       
+        $("#input-will").val(3);
     }else if(archetype = "ranger"){
         $("#input-agility").val(5);
         $("#input-deception").val(2);
@@ -318,6 +312,7 @@ function updateArchetypeBuild(){
         $("#input-creation").val(3);
         $("#input-influence").val(4); 
     }
+    
 }
 
 function hitPoints(){
@@ -330,11 +325,6 @@ function hitPoints(){
     if(sumHp > 0){
         $("#sum-hitpoints").val(sumHp * 2 + 10);
     }
-
-
-
-
-
 
 }
 
