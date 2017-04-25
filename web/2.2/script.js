@@ -328,13 +328,9 @@ function hitPoints(){
     if(sumHp > 0){
         $("#sum-hitpoints").val(sumHp * 2 + 10);
     }
+}
 
 function calcArmor(){
 	alert("Hej");
 	var selectedArmor = $("#armor-select option:selected").val();
-}
-
-
-
-
 }
