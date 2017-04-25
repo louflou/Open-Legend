@@ -360,3 +360,12 @@ function Armor(){
 		$("#guard-armor").val(3);
     }
 }
+
+function Shield(){
+	var selectedShield = $("#shield-select option:selected").val();
+	if(selectedShield == "Small Shield"){
+		$("#guard-shield").val(1);
+	}else if(selectedShield == "Riot Shield"){
+		$("#guard-shield").val(2);
+	}
+}
