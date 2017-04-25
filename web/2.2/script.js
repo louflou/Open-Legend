@@ -333,7 +333,7 @@ function hitPoints(){
     }
 
 function calcArmor(){
-	
+	var selectedArmor = $("#armor-select option:selected").val();
 }
 
 
