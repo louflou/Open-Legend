@@ -65,8 +65,8 @@
         </nav>
 
         <div class="container-fluid row-green">
-            
-            
+
+
              <!-- NY KOLUMN -->
 
             <div class="col-md-5">
@@ -93,7 +93,7 @@
                                     <tr>
                                         <td><input value="1" min="1" max="10" class="my-input" id="levelValue" type="number"></td>
                                         <td><input type="number" class="my-input" id="xp-input" disabled></td>
-                                        <td><input value="2" type="number" class="my-input" id="wealth-input"></td>
+                                        <td><input value="2" min="1" max="9" type="number" class="my-input" id="wealth-input" disabled></td>
                                         <td><input value="30" type="number" class="my-input" id="speed-input" disabled></td>
                                     </tr>
                                 </tbody>
@@ -146,7 +146,7 @@
                         </div>
                     </div>
             <!--- Legend points och andra saker som bestämms av spelarens val! -->
-            
+
                     <div class="panel panel-default">
                         <!-- Default panel contents -->
                         <div class="panel-heading">
@@ -598,9 +598,9 @@
                                             <option data-subtext="">Wisperer of the Wild</option>
                                         </select>
                                     </td>
-                                
-                                
-                                
+
+
+
                                     <td>
 
                                         <select class="selectpicker" multiple>
@@ -643,10 +643,10 @@
                     </div>
                 </div><!--end panelgroup-->
             </div><!--end col -->
-            
-            
-            
-            
+
+
+
+
             <div class="col-md-3">
                 <header>ATTRIBUTES</header>
                 <div class="panel-group" id="accordion">
@@ -680,8 +680,8 @@
                                         <td>Success at the task indicates overcoming a near impossible challenge or altering the narrative in a very disruptive way.</td>
                                     </tr>
                                 </table>
-                                
-                                
+
+
                             </div>
                         </div>
 
@@ -1390,7 +1390,7 @@
             <div class="col-md-4">
                 <header>DEFENSES</header>
                 <div class="panel-group" id="accordion3">
-                    
+
                     <!-- TABLE HP / HITPOINTS -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -1413,15 +1413,15 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input type="number" class="my-input" id="sum-hitpoints" /></td>
+                                    <td><input value="10" type="number" class="my-input" id="sum-hitpoints" disabled /></td>
                                     <td><input type="number" class="my-input" /></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <br>
-                    
-                    
+
+
                     <div class="panel panel-default">
                         <!-- Default panel contents -->
                         <div class="panel-heading">
@@ -1633,7 +1633,7 @@
 
                         <div id="clps-armor" class="panel-collapse collapse">
                             <div class="panel-body">
-                                
+
                                 <h5>ARMOR</h5>
                                 <p>Different types of armor provides a certain amount of bonus to your Guard defense. The type indicates whether the armor is light, medium, or heavy. Each require the character to have certain score of fortitude.</p>
                                 <table class="table tbl tbl-small table-hover">
@@ -1738,7 +1738,7 @@
                             <tr>
                                 <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-armor">ARMOR</a></th>
                                 <td>
-                                    <select class="selectpicker" data-max-options="5" multiple>
+                                    <select class="selectpicker" id="armor-select" data-max-options="5" multiple>
                                         <optgroup label="LIGHT" data-subtext=" defense bonus: 1 ">
                                             <option data-subtext=" WL 1">Leather Armor</option>
                                             <option data-subtext=" WL 1">Steelsilk</option>
@@ -1837,14 +1837,14 @@
                                     </select>
                                 </td>
                             </tr>
-                                
-                            <tr>    
+
+                            <tr>
                                 <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-items">ITEMS</a></th>
                                 <td>
                                     Large Shield (def 2)
                                 </td>
                             </tr>
-                            
+
                         </table>
                     </div>
 
@@ -1894,7 +1894,7 @@
                             </tbody>
                         </table>
                     </div>
-                    
+
                     <br>
 
                     <!-- BANES-->
@@ -1992,13 +1992,13 @@
                         </table>
                     </div>
 
-                    
 
-                    
+
+
                 </div> <!-- End #accordion3 -->
             </div><!-- End defenses (.col-md-5) -->
 
-            
+
         </div><!-- end GREEN CONTAINER FLUID -->
     </body>
 </html>
