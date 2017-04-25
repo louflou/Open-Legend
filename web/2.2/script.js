@@ -334,11 +334,13 @@ function Armor(){
 	var selectedArmor = $("#armor-select option:selected").val();
 	var armorDefenceValue = 0;
 	if (selectedArmor == "Leather Armor"){
-		armorDefenceValue = 1;
-		$("#guard-armor").val(armorDefenceValue);
-} else if (selectedArmor == "Steelsilk"){
-		armorDefenceValue = 1;
-		$("#guard-armor").val(armorDefenceValue);
-}
+		$("#guard-armor").val(1);
+    }else if (selectedArmor == "Steelsilk"){
+		$("#guard-armor").val(1);
+    }else if (selectedArmor == "Padded Armor"){
+		$("#guard-armor").val(1);
+    }else if (selectedArmor == "Armored Trench Coat"){
+		$("#guard-armor").val(2);
+    }
 
 }
