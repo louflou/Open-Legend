@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#levelValue").on("change", shrinkVal);
     $("#levelValue").on("change", levelCalc);
 	$(".attr-table .attr-score").on("change", scoreCostDice);
-    $("#archetype-select").on("change", updateArchetypeBuild);  
+    $("#archetype-select").on("change", updateArchetypeBuild);
     $(".attr-table .attr-score").on("change", scoreCostDice);
     $("#armor-select").on("change", calcArmor);
 
@@ -315,7 +315,7 @@ function updateArchetypeBuild(){
         $("#input-creation").val(3);
         $("#input-influence").val(4);
     }
-    
+
 }
 
 function hitPoints(){
