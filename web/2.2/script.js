@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 });
 
+
 function calcWealth(levelValue){
     if(levelValue == 1){
         return 2;
@@ -315,7 +316,6 @@ function updateArchetypeBuild(){
         $("#input-creation").val(3);
         $("#input-influence").val(4);
     }
-
 }
 
 function hitPoints(){
@@ -329,7 +329,7 @@ function hitPoints(){
         $("#sum-hitpoints").val(sumHp * 2 + 10);
     }
 }
-
+    
 function Armor(){
 	var selectedArmor = $("#armor-select option:selected").val();
 	if (selectedArmor == "Leather Armor"){
@@ -340,17 +340,24 @@ function Armor(){
 		$("#guard-armor").val(1);
     }else if (selectedArmor == "Armored Trench Coat"){
 		$("#guard-armor").val(2);
-		}else if (selectedArmor == "Electropolymer Armor"){
+    }else if (selectedArmor == "Electropolymer Armor"){
 		$("#guard-armor").val(2);
 	}else if (selectedArmor == "Chainmail"){
-	$("#guard-armor").val(2);
+	   $("#guard-armor").val(2);
 	}else if (selectedArmor == "Kevlar Vest"){
 		$("#guard-armor").val(2);
 	}else if (selectedArmor == "Breastplate"){
 		$("#guard-armor").val(2);
-}else if (selectedArmor == "Yoroi Armor"){
-$("#guard-armor").val(3);
-}else if (selectedArmor == "Plate Mail"){
-$("#guard-armor").val(3);
-
+    }else if (selectedArmor == "Yoroi Armor"){
+        $("#guard-armor").val(3);
+    }else if (selectedArmor == "Plate Mail"){
+        $("#guard-armor").val(3);
+    }else if (selectedArmor == "Riot Suit"){
+		$("#guard-armor").val(3);
+    }else if (selectedArmor == "Power Armor"){
+        $("#guard-armor").val(3);
+    }else if (selectedArmor == "Elven Plate Mail"){
+		$("#guard-armor").val(3);
+    }
 }
+
