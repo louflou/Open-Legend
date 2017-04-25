@@ -340,6 +340,17 @@ function Armor(){
 		$("#guard-armor").val(1);
     }else if (selectedArmor == "Armored Trench Coat"){
 		$("#guard-armor").val(2);
-    }
+		}else if (selectedArmor == "Electropolymer Armor"){
+		$("#guard-armor").val(2);
+	}else if (selectedArmor == "Chainmail"){
+	$("#guard-armor").val(2);
+	}else if (selectedArmor == "Kevlar Vest"){
+		$("#guard-armor").val(2);
+	}else if (selectedArmor == "Breastplate"){
+		$("#guard-armor").val(2);
+}else if (selectedArmor == "Yoroi Armor"){
+$("#guard-armor").val(3);
+}else if (selectedArmor == "Plate Mail"){
+$("#guard-armor").val(3);
 
 }
