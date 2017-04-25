@@ -2,15 +2,11 @@ $(document).ready(function(){
 	// Körs när sidan laddats klart.
     $("#levelValue").on("change", shrinkVal);
     $("#levelValue").on("change", levelCalc);
-<<<<<<< HEAD
 	$(".attr-table .attr-score").on("change", scoreCostDice);
     $("#archetype-select").on("change", updateArchetypeBuild);  
-=======
-		$(".attr-table .attr-score").on("change", scoreCostDice);
-    $("#archetype-select").on("change", calcActualSumCost);
-		$("#armor-select").on("change", calcArmor);
+    $(".attr-table .attr-score").on("change", scoreCostDice);
+    $("#armor-select").on("change", calcArmor);
 
->>>>>>> origin/master
 });
 
 function calcWealth(levelValue){
@@ -333,11 +329,8 @@ function hitPoints(){
         $("#sum-hitpoints").val(sumHp * 2 + 10);
     }
 
-<<<<<<< HEAD
-=======
 function calcArmor(){
 	var selectedArmor = $("#armor-select option:selected").val();
->>>>>>> origin/master
 }
 
 
