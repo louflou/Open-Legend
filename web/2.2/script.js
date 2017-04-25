@@ -332,7 +332,6 @@ function hitPoints(){
 
 function Armor(){
 	var selectedArmor = $("#armor-select option:selected").val();
-	var armorDefenceValue = 0;
 	if (selectedArmor == "Leather Armor"){
 		$("#guard-armor").val(1);
     }else if (selectedArmor == "Steelsilk"){
