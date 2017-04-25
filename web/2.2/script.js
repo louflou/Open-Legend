@@ -6,7 +6,7 @@ $(document).ready(function(){
     $("#archetype-select").on("change", updateArchetypeBuild);
     $(".attr-table .attr-score").on("change", scoreCostDice);
     $("#armor-select").on("change", Armor);
-
+		$("#shield-select").on("change", Shield)
 });
 
 
@@ -329,7 +329,7 @@ function hitPoints(){
         $("#sum-hitpoints").val(sumHp * 2 + 10);
     }
 }
-    
+
 function Armor(){
 	var selectedArmor = $("#armor-select option:selected").val();
 	if (selectedArmor == "Leather Armor"){
@@ -360,4 +360,3 @@ function Armor(){
 		$("#guard-armor").val(3);
     }
 }
-
