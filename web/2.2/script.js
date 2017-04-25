@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$(".attr-table .attr-score").on("change", scoreCostDice);
     $("#archetype-select").on("change", updateArchetypeBuild);
     $(".attr-table .attr-score").on("change", scoreCostDice);
-    $("#armor-select").on("change", calcArmor);
+    $("#armor-select").on("change", Armor);
 
 });
 
@@ -330,7 +330,15 @@ function hitPoints(){
     }
 }
 
-function calcArmor(){
+function Armor(){
 	var selectedArmor = $("#armor-select option:selected").val();
-	
+	var armorDefenceValue = 0;
+	if (selectedArmor == "Leather Armor"){
+		armorDefenceValue = 1;
+		$("#guard-armor").val(armorDefenceValue);
+} else if (selectedArmor == "Steelsilk"){
+		armorDefenceValue = 1;
+		$("#guard-armor").val(armorDefenceValue);
+}
+
 }
