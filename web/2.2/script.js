@@ -2,9 +2,10 @@ $(document).ready(function(){
 	// Körs när sidan laddats klart.
     $("#levelValue").on("change", shrinkVal);
     $("#levelValue").on("change", levelCalc);
-	$(".attr-table .attr-score").on("change", scoreCostDice);
+		$(".attr-table .attr-score").on("change", scoreCostDice);
     $("#archetype-select").on("change", calcActualSumCost);
-    
+		$("#armor-select").on("change", calcArmor);
+
 });
 
 
@@ -42,9 +43,9 @@ function levelCalc(){
     var xpValue = levelToXp (levelValue);
     var totalPoints = leveltoAttributePoints (levelValue);
     var wealthValue = calcWealth(levelValue);
-    
+
     $("#xp-input").val(xpValue);
-    $("#attr-totalt-points").val(totalPoints);    
+    $("#attr-totalt-points").val(totalPoints);
     $("#wealth-input").val(wealthValue);
     calcMaxAttrScore(levelValue);
     updateAttributePoints();
@@ -73,7 +74,7 @@ function levelToXp (levelValue){
     }else if (levelValue == 10) {
         return 27;
     }
-}  
+}
 
 function leveltoAttributePoints(levelValue){
     // Returnerar värde för ATTRIBUTEPOINTS utifrån LEVEL.
@@ -108,7 +109,7 @@ function shrinkVal(){
     // Ändrar värden i SCORE om maxvärdet är överskridet.
     var aScore = $(".attr-score").val();
     var maxVal = $(".attr-score").attr("max");
-    
+
     if(aScore > maxVal){
         alert("score is more than max!")
         $(".attr-score").val(maxVal);
@@ -157,9 +158,9 @@ function scoreCostDice(){
     var score = $(this).val();
     var dice = calcDice (score);
     var cost = calcCost(score);
-    
+
     $(this).parent().next().children().first().val(cost);
-    $(this).parent().next().next().children().first().val(dice);   
+    $(this).parent().next().next().children().first().val(dice);
     updateAttributePoints();
     hitPoints();
 }
@@ -215,10 +216,10 @@ function calcDice(score){
 }
 
 function calcSumCost(){
-    // Returnerar summan av alla COST 
+    // Returnerar summan av alla COST
     var sumCost = 0;
     var maxAttrPoints = $('#attr-totalt-points').val();
-    
+
     $(".attr-cost").each(function(){
         sumCost += +$(this).val();
     });
@@ -241,7 +242,7 @@ function updateAttributePoints(){
     var sumCost = calcSumCost();
     var attrAvailable = maxAttrPoints - sumCost;
     $(".attr-available").val(attrAvailable);
-    
+
 }
 
 function updateArchetypeBuild(){
@@ -252,7 +253,7 @@ function updateArchetypeBuild(){
         $("#input-fortitude").val(4);
         $("#input-might").val(5);
         $("#input-perception").val(3);
-        $("#input-will").val(3);       
+        $("#input-will").val(3);
     }else if(archetype = "ranger"){
         $("#input-agility").val(5);
         $("#input-deception").val(2);
@@ -291,7 +292,7 @@ function updateArchetypeBuild(){
         $("#input-learning").val(3);
         $("#input-logic").val(2);
         $("#input-will").val(3);
-        $("#input-influence").val(5);        
+        $("#input-influence").val(5);
     }else if(archetype = "assassin"){
         $("#input-agility").val(5);
         $("#input-fortitude").val(1);
@@ -307,7 +308,7 @@ function updateArchetypeBuild(){
         $("#input-learning").val(1);
         $("#input-will").val(2);
         $("#input-protection").val(4);
-        $("#input-creation").val(5);        
+        $("#input-creation").val(5);
     }else if(archetype = "druid"){
         $("#input-agility").val(1);
         $("#input-fortitude").val(3);
@@ -316,7 +317,7 @@ function updateArchetypeBuild(){
         $("#input-will").val(2);
         $("#input-alteration").val(4);
         $("#input-creation").val(3);
-        $("#input-influence").val(4); 
+        $("#input-influence").val(4);
     }
 }
 
@@ -331,16 +332,11 @@ function hitPoints(){
         $("#sum-hitpoints").val(sumHp * 2 + 10);
     }
 
-
-
-
-
-
+function calcArmor(){
+	
 }
 
 
 
 
-
-
-
+}
