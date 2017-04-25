@@ -238,12 +238,13 @@ function updateAttributePoints(){
     var sumCost = calcSumCost();
     var attrAvailable = maxAttrPoints - sumCost;
     $(".attr-available").val(attrAvailable);
-
 }
+
 
 function updateArchetypeBuild(){
     // Hämtar ARCHETYPE och fyller i SCORE i olika ATTRIBUTES.
     var archetype = $("#archetype-select option:selected").val();
+    
     if(archetype = "barbarian") {
         $("#input-agility").val(2);
         $("#input-fortitude").val(4);

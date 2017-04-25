@@ -152,6 +152,10 @@ select {
     width:30%;
 }
 
+.tbl .td {
+    padding:0 !important;
+}
+
 /*   Här kommer lite kod om vi vill ha sliders istället för number inputs vid SCORE ....
 
 .range {
