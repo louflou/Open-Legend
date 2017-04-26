@@ -6,7 +6,7 @@ $(document).ready(function(){
     $("#archetype-select").on("change", updateArchetypeBuild);
     $(".attr-table .attr-score").on("change", scoreCostDice);
     $("#armor-select").on("change", Armor);
-		$("#shield-select").on("change", Shield)
+    $("#shield-select").on("change", Shield)
 });
 
 
