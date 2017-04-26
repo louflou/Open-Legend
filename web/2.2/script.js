@@ -367,5 +367,7 @@ function Shield(){
 		$("#guard-shield").val(1);
 	}else if(selectedShield == "Riot Shield"){
 		$("#guard-shield").val(2);
-	}
+	}else if(selectedShield == "Tower Shield"){
+        $("#guard-shield").val(2);
+    }
 }
