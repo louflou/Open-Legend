@@ -8,7 +8,7 @@ $(document).ready(function(){
     $("#armor-select").on("change", Armor);
     $("#shield-select").on("change", Shield);
     $("#input-might").on("change", guardAttr);
-    $("#input-agility").on("change", guradAttr);
+    $("#input-agility").on("change", guardAttr);
 });
 
 
@@ -377,7 +377,6 @@ function Shield(){
 function guardAttr(){
     var guardAgility = $("#input-agility").val();
     var guardMight = $("#input-might").val();
-    var +guradAttrCalc = +guardMight + +guardAgility;
-
-    $("#guard-attr").val(guradAttrCalc);
+    var guardAttrCalc = Number(guardMight) + Number(guardAgility);
+    $("#guard-attr").val(guardAttrCalc);
 }
