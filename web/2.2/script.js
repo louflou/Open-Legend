@@ -355,7 +355,7 @@ function Armor(){
         var currentSpeed = $("#speed-input").val();
         var actualSpeed = currentSpeed - 5;
         $("#speed-input").val(actualSpeed);
-        
+
     }else if (selectedArmor == "Plate Mail"){
         $("#guard-armor").val(3);
     }else if (selectedArmor == "Riot Suit"){
@@ -391,6 +391,18 @@ function calcGuardTotal(){
 	var guardAttributes = $("#guard-attr").val();
 	$("#guard-total").val(10 + Number(guardArmor) + Number(guardShield) + Number(guardAttributes));
 }
+
+function toughnessAttr(){
+	var toughnessFortitude = $("#input-fortitude").val();
+	var toughnessWill = $("#input-will").val();
+	var toughnessAttrCalc = Number(toughnessFortitude) + Number(toughnessWill);
+	$("#toughness-attr").val(toughnessAttrCalc);
+	calcToughnessTotal();
+}
+
+function calcToughnessTotal(){
+	var toughnessAttributes = $("#toughness-attr").val();
+	$("#toughness-total").val(10 + Number(toughnessAttributes));
 
 function wealth(){
     var currentWealth = $('#wealth-input').val();
