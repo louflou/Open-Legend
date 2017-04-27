@@ -384,8 +384,8 @@ function Shield(){
 		$("#guard-shield").val(2);
 		calcGuardTotal();
 	}else if(selectedShield == "Tower Shield"){
-        $("#guard-shield").val(2);
-				calcGuardTotal();
+      $("#guard-shield").val(2);
+			calcGuardTotal();
     }
 }
 
