@@ -332,7 +332,7 @@ function hitPoints(){
             sumHp += +$(this).val();
         });
     if(sumHp > 0){
-        $("#sum-hitpoints").val(sumHp * 2 + 10);
+        $("#sum-hitpoints").val(Number(sumHp) * 2 + 10);
     }
 }
 
@@ -436,3 +436,12 @@ function wealth(){
         $('select[name="weapon-select"].wl3').attr('disabled', true);
     }
 }
+
+/*function calcPerksFlaws(){
+	var perks = [];
+	var flaws = [];
+	for(selected in perks-select)
+	var selectedPerks = $("#perks-select option:selected").val();
+	perks.push(selectedPerks);
+	console.log(perks);
+}*/
