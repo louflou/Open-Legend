@@ -352,6 +352,10 @@ function Armor(){
 		$("#guard-armor").val(2);
     }else if (selectedArmor == "Yoroi Armor"){
         $("#guard-armor").val(3);
+        var currentSpeed = $("#speed-input").val();
+        var actualSpeed = currentSpeed - 5;
+        $("#speed-input").val(actualSpeed);
+        
     }else if (selectedArmor == "Plate Mail"){
         $("#guard-armor").val(3);
     }else if (selectedArmor == "Riot Suit"){
@@ -386,4 +390,11 @@ function calcGuardTotal(){
 	var guardShield = $("#guard-shield").val();
 	var guardAttributes = $("#guard-attr").val();
 	$("#guard-total").val(10 + Number(guardArmor) + Number(guardShield) + Number(guardAttributes));
+}
+
+function wealth(){
+    var currentWealth = $('#wealth-input').val();
+    if(currentWealth < 3){
+        $('select[name="weapon-select"].wl3').attr('disabled', true);
+    }
 }
