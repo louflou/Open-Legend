@@ -11,6 +11,8 @@ $(document).ready(function(){
     $("#input-agility").on("change", guardAttr);
 		$("#input-fortitude").on("change", toughnessAttr);
 		$("#input-will").on("change", toughnessAttr);
+		$("#input-presence").on("change", resolveAttr);
+		$("#input-will").on("change", resolveAttr);
 });
 
 
@@ -360,12 +362,16 @@ function Armor(){
 
     }else if (selectedArmor == "Plate Mail"){
         $("#guard-armor").val(3);
+				calcGuardTotal();
     }else if (selectedArmor == "Riot Suit"){
 		$("#guard-armor").val(3);
+		calcGuardTotal();
     }else if (selectedArmor == "Power Armor"){
         $("#guard-armor").val(3);
+				calcGuardTotal();
     }else if (selectedArmor == "Elven Plate Mail"){
 		$("#guard-armor").val(3);
+		calcGuardTotal();
     }
 }
 
@@ -373,10 +379,13 @@ function Shield(){
 	var selectedShield = $("#shield-select option:selected").val();
 	if(selectedShield == "Small Shield"){
 		$("#guard-shield").val(1);
+		calcGuardTotal();
 	}else if(selectedShield == "Riot Shield"){
 		$("#guard-shield").val(2);
+		calcGuardTotal();
 	}else if(selectedShield == "Tower Shield"){
         $("#guard-shield").val(2);
+				calcGuardTotal();
     }
 }
 
@@ -385,6 +394,7 @@ function guardAttr(){
     var guardMight = $("#input-might").val();
     var guardAttrCalc = Number(guardMight) + Number(guardAgility);
     $("#guard-attr").val(guardAttrCalc);
+		calcGuardTotal();
 }
 
 function calcGuardTotal(){
@@ -405,6 +415,19 @@ function toughnessAttr(){
 function calcToughnessTotal(){
 	var toughnessAttributes = $("#toughness-attr").val();
 	$("#toughness-total").val(10 + Number(toughnessAttributes));
+}
+
+function resolveAttr(){
+	var resolvePresence = $("#input-presence").val();
+	var resolveWill = $("#input-will").val();
+	var resolveAttrCalc = Number(resolvePresence) + Number(resolveWill);
+	$("#resolve-attr").val(resolveAttrCalc);
+	calcResolveTotal();
+}
+
+function calcResolveTotal(){
+	var resolveAttributes = $("#resolve-attr").val();
+	$("#resolve-total").val(10 + Number(resolveAttributes));
 }
 
 function wealth(){
