@@ -380,3 +380,10 @@ function guardAttr(){
     var guardAttrCalc = Number(guardMight) + Number(guardAgility);
     $("#guard-attr").val(guardAttrCalc);
 }
+
+function calcGuardTotal(){
+	var guardArmor = $("#guard-armor").val();
+	var guardShield = $("#guard-shield").val();
+	var guardAttributes = $("#guard-attr").val();
+	$("#guard-total").val(10 + Number(guardArmor) + Number(guardShield) + Number(guardAttributes));
+}
