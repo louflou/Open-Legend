@@ -9,6 +9,8 @@ $(document).ready(function(){
     $("#shield-select").on("change", Shield);
     $("#input-might").on("change", guardAttr);
     $("#input-agility").on("change", guardAttr);
+		$("#input-fortitude").on("change", toughnessAttr);
+		$("#input-will").on("change", toughnessAttr);
 });
 
 
@@ -403,6 +405,7 @@ function toughnessAttr(){
 function calcToughnessTotal(){
 	var toughnessAttributes = $("#toughness-attr").val();
 	$("#toughness-total").val(10 + Number(toughnessAttributes));
+}
 
 function wealth(){
     var currentWealth = $('#wealth-input').val();
