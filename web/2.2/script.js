@@ -6,7 +6,9 @@ $(document).ready(function(){
     $("#archetype-select").on("change", updateArchetypeBuild);
     $(".attr-table .attr-score").on("change", scoreCostDice);
     $("#armor-select").on("change", Armor);
-    $("#shield-select").on("change", Shield)
+    $("#shield-select").on("change", Shield);
+    $("#input-might").on("change", guardAttr);
+    $("#input-agility").on("change", guradAttr);
 });
 
 
@@ -370,4 +372,12 @@ function Shield(){
 	}else if(selectedShield == "Tower Shield"){
         $("#guard-shield").val(2);
     }
+}
+
+function guardAttr(){
+    var guardAgility = $("#input-agility").val();
+    var guardMight = $("#input-might").val();
+    var +guradAttrCalc = +guardMight + +guardAgility;
+
+    $("#guard-attr").val(guradAttrCalc);
 }
