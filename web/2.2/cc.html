@@ -4,13 +4,11 @@
     <head>
         <title>CharacterKey</title>
 
-        <!-- checkbox css and script -->
-        <link href="grey.css" rel="stylesheet">
-
+      
         <!-- home made css file -->
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
 
-        <!-- Latest compiled and minified CSS -->
+        <!-- Latest compiled and minified Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- jQuery library -->
@@ -24,14 +22,19 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
-
+        
+        <!-- Select 2 CSS & JavaScript -->        
+        <link href="css/select2.css" rel="stylesheet" />
+        <script src="js/select2.js"></script>
+        
 
         <!-- CharacterKey JavaScript -->
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
 
     <body>
 
+        
         <!-- Navigation -->
 
         <nav class="navbar navbar-inverse navbar-static-top">
@@ -120,7 +123,7 @@
                                     <tr>
                                         <th>Archetype</th>
                                         <td>
-                                            <select class="selectpicker" id="archetype-select">
+                                            <select id="archetype-select">
                                                 <option class="none-value-select">Custom</option>
                                                 <option value="barbarian">Barbarian</option>
                                                 <option value="ranger">Ranger</option>
@@ -172,97 +175,95 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <form class="form-group">
-                                            <select class="selectpicker" multiple>
-                                                <optgroup label="1 point">
-                                                    <option data-subtext="">Area Manipulation (I - V)</option>
-                                                    <option data-subtext="">Brutal Intimidation</option>
-                                                    <option data-subtext="">Climbing</option>
-                                                    <option data-subtext="">Combat Momentum</option>
-                                                    <option data-subtext="">Fast Draw</option>
-                                                    <option data-subtext="">Great Leap (I - III)</option>
-                                                    <option data-subtext="">Indomitable Resolve (I - III)</option>
-                                                    <option data-subtext="">Lightning Reflexes (I - V)</option>
-                                                    <option data-subtext="">Master Tracker </option>
-                                                    <option data-subtext="">Longshot</option>
-                                                    <option data-subtext="">Swimming</option>
-                                                    <option data-subtext="">Sworn Enemy (I - IX)</option>
-                                                    <option data-subtext="">Untrackable</option>
-                                                </optgroup>
-                                                <optgroup label="2 points">
-                                                    <option data-subtext="">Attribute Substitution (I - II)</option>
-                                                    <option data-subtext="">Battlefield Opportunist (I - V)</option>
-                                                    <option data-subtext="">Battlefield Reflexes</option>
-                                                    <option data-subtext="">Breakfall (I - II)</option>
-                                                    <option data-subtext="">Combat Follow-through</option>
-                                                    <option data-subtext="">Companion (I - III)</option>
-                                                    <option data-subtext="">Craft Mundane Item (I - II)</option>
-                                                    <option data-subtext="">Defensive Reflexes (I - IX)</option>
-                                                    <option data-subtext="">Diehard</option>
-                                                    <option data-subtext="">Energy Resistance (I - IV)</option>
-                                                    <option data-subtext="">Evasive Footwork</option>
-                                                    <option data-subtext="">Fast Tracker</option>
-                                                    <option data-subtext="">Ferocious Minions (I - III)</option>
-                                                    <option data-subtext="">Fleet of Foot (I - III)</option>
-                                                    <option data-subtext="">Heightened Invocation (I - III)</option>
-                                                    <option data-subtext="">Hospitaler</option>
-                                                    <option data-subtext="">Indomitable Endurance (I - V)</option>
-                                                    <option data-subtext="">Inspiring Champion (I - III)</option>
-                                                    <option data-subtext="">Knowledge (I - III)</option>
-                                                    <option data-subtext="">Mimic</option>
-                                                    <option data-subtext="">Multi-Target Attack Specialist (I - V)</option>
-                                                    <option data-subtext="">Multi-Target Boon Specialist (I - V)</option>
-                                                    <option data-subtext="">Natural Defense (I - III)</option>
-                                                    <option data-subtext="">Overpowering Strike </option>
-                                                    <option data-subtext="">Reactionary Trance</option>
-                                                    <option data-subtext="">Skill Specialization (I - V)</option>
-                                                    <option data-subtext="">Tough as Nails (I - II)</option>
-                                                    <option data-subtext="">Two Weapon Defense</option>
-                                                    <option data-subtext="">Vicious Strike</option>
-                                                    <option data-subtext="">Well-Rounded </option>
-                                                </optgroup>
-                                                <optgroup label="3 points">
-                                                    <option data-subtext="">Alternate Form (I - II)</option>
-                                                    <option data-subtext="">Armor Mastery (I - II)</option>
-                                                    <option data-subtext="">Attack Redirection </option>
-                                                    <option data-subtext="">Attack Specialization (I - IX</option>
-                                                    <option data-subtext="">Bane Focus</option>
-                                                    <option data-subtext="">Battle Trance</option>
-                                                    <option data-subtext="">Battlefield Punisher</option>
-                                                    <option data-subtext="">Boon Focus (I - III)</option>
-                                                    <option data-subtext="">Craft Extraordinary Item (I - III)</option>
-                                                    <option data-subtext="">Crushing Blow</option>
-                                                    <option data-subtext="">Death Blow (I - II)</option>
-                                                    <option data-subtext="">Deathless Trance</option>
-                                                    <option data-subtext="">Defensive Mastery</option>
-                                                    <option data-subtext="">Destructive Trance</option>
-                                                    <option data-subtext="">Extraordinary Defense (I - III)</option>
-                                                    <option data-subtext="">Extraordinary Focus</option>
-                                                    <option data-subtext="">Extraordinary Healing</option>
-                                                    <option data-subtext="">Flying</option>
-                                                    <option data-subtext="">Hallucination</option>
-                                                    <option data-subtext="">Hallucination - Mass</option>
-                                                    <option data-subtext="">Impervious Trance</option>
-                                                    <option data-subtext="">Lethal Strike (I - IX)</option>
-                                                    <option data-subtext="">Martial Focus</option>
-                                                    <option data-subtext="">Multi-Attack Specialist (I - VI)</option>
-                                                    <option data-subtext="">Multi-Bane Specialist</option>
-                                                    <option data-subtext="">Multi-Target Boon Expert</option>
-                                                    <option data-subtext="">Potent Bane</option>
-                                                    <option data-subtext="">Reckless Attack</option>
-                                                    <option data-subtext="">Resilient</option>
-                                                    <option data-subtext="">Sentinel (I - III)</option>
-                                                    <option data-subtext="">Silencing Strike</option>
-                                                    <option data-subtext="">Superior Concentration (I - III)</option>
-                                                    <option data-subtext="">Two Weapon Brute</option>
-                                                    <option data-subtext="">Unending Charm</option>
-                                                    <option data-subtext="">Wealthy</option>
-                                                </optgroup>
-                                                <optgroup label="1-9 points">
-                                                    <option data-subtext="">Boon Access (1-9 points)</option>
-                                                </optgroup>
-                                            </select>
-                                        </form>
+                                        <select id="feats-select" multiple>
+                                            <optgroup label="1 point">
+                                                <option data-subtext="">Area Manipulation (I - V)</option>
+                                                <option data-subtext="">Brutal Intimidation</option>
+                                                <option data-subtext="">Climbing</option>
+                                                <option data-subtext="">Combat Momentum</option>
+                                                <option data-subtext="">Fast Draw</option>
+                                                <option data-subtext="">Great Leap (I - III)</option>
+                                                <option data-subtext="">Indomitable Resolve (I - III)</option>
+                                                <option data-subtext="">Lightning Reflexes (I - V)</option>
+                                                <option data-subtext="">Master Tracker </option>
+                                                <option data-subtext="">Longshot</option>
+                                                <option data-subtext="">Swimming</option>
+                                                <option data-subtext="">Sworn Enemy (I - IX)</option>
+                                                <option data-subtext="">Untrackable</option>
+                                            </optgroup>
+                                            <optgroup label="2 points">
+                                                <option data-subtext="">Attribute Substitution (I - II)</option>
+                                                <option data-subtext="">Battlefield Opportunist (I - V)</option>
+                                                <option data-subtext="">Battlefield Reflexes</option>
+                                                <option data-subtext="">Breakfall (I - II)</option>
+                                                <option data-subtext="">Combat Follow-through</option>
+                                                <option data-subtext="">Companion (I - III)</option>
+                                                <option data-subtext="">Craft Mundane Item (I - II)</option>
+                                                <option data-subtext="">Defensive Reflexes (I - IX)</option>
+                                                <option data-subtext="">Diehard</option>
+                                                <option data-subtext="">Energy Resistance (I - IV)</option>
+                                                <option data-subtext="">Evasive Footwork</option>
+                                                <option data-subtext="">Fast Tracker</option>
+                                                <option data-subtext="">Ferocious Minions (I - III)</option>
+                                                <option data-subtext="">Fleet of Foot (I - III)</option>
+                                                <option data-subtext="">Heightened Invocation (I - III)</option>
+                                                <option data-subtext="">Hospitaler</option>
+                                                <option data-subtext="">Indomitable Endurance (I - V)</option>
+                                                <option data-subtext="">Inspiring Champion (I - III)</option>
+                                                <option data-subtext="">Knowledge (I - III)</option>
+                                                <option data-subtext="">Mimic</option>
+                                                <option data-subtext="">Multi-Target Attack Specialist (I - V)</option>
+                                                <option data-subtext="">Multi-Target Boon Specialist (I - V)</option>
+                                                <option data-subtext="">Natural Defense (I - III)</option>
+                                                <option data-subtext="">Overpowering Strike </option>
+                                                <option data-subtext="">Reactionary Trance</option>
+                                                <option data-subtext="">Skill Specialization (I - V)</option>
+                                                <option data-subtext="">Tough as Nails (I - II)</option>
+                                                <option data-subtext="">Two Weapon Defense</option>
+                                                <option data-subtext="">Vicious Strike</option>
+                                                <option data-subtext="">Well-Rounded </option>
+                                            </optgroup>
+                                            <optgroup label="3 points">
+                                                <option data-subtext="">Alternate Form (I - II)</option>
+                                                <option data-subtext="">Armor Mastery (I - II)</option>
+                                                <option data-subtext="">Attack Redirection </option>
+                                                <option data-subtext="">Attack Specialization (I - IX</option>
+                                                <option data-subtext="">Bane Focus</option>
+                                                <option data-subtext="">Battle Trance</option>
+                                                <option data-subtext="">Battlefield Punisher</option>
+                                                <option data-subtext="">Boon Focus (I - III)</option>
+                                                <option data-subtext="">Craft Extraordinary Item (I - III)</option>
+                                                <option data-subtext="">Crushing Blow</option>
+                                                <option data-subtext="">Death Blow (I - II)</option>
+                                                <option data-subtext="">Deathless Trance</option>
+                                                <option data-subtext="">Defensive Mastery</option>
+                                                <option data-subtext="">Destructive Trance</option>
+                                                <option data-subtext="">Extraordinary Defense (I - III)</option>
+                                                <option data-subtext="">Extraordinary Focus</option>
+                                                <option data-subtext="">Extraordinary Healing</option>
+                                                <option data-subtext="">Flying</option>
+                                                <option data-subtext="">Hallucination</option>
+                                                <option data-subtext="">Hallucination - Mass</option>
+                                                <option data-subtext="">Impervious Trance</option>
+                                                <option data-subtext="">Lethal Strike (I - IX)</option>
+                                                <option data-subtext="">Martial Focus</option>
+                                                <option data-subtext="">Multi-Attack Specialist (I - VI)</option>
+                                                <option data-subtext="">Multi-Bane Specialist</option>
+                                                <option data-subtext="">Multi-Target Boon Expert</option>
+                                                <option data-subtext="">Potent Bane</option>
+                                                <option data-subtext="">Reckless Attack</option>
+                                                <option data-subtext="">Resilient</option>
+                                                <option data-subtext="">Sentinel (I - III)</option>
+                                                <option data-subtext="">Silencing Strike</option>
+                                                <option data-subtext="">Superior Concentration (I - III)</option>
+                                                <option data-subtext="">Two Weapon Brute</option>
+                                                <option data-subtext="">Unending Charm</option>
+                                                <option data-subtext="">Wealthy</option>
+                                            </optgroup>
+                                            <optgroup label="1-9 points">
+                                                <option data-subtext="">Boon Access (1-9 points)</option>
+                                            </optgroup>
+                                        </select>
                                     </td>
                                     <td></td>
                                     <td></td>
@@ -551,7 +552,7 @@
                         </div>
 
                         <table class="table tbl table-bordered">
-                            <thead>
+                            <thead class="two-cells">
                                 <tr>
                                     <th>Perks</th>
                                     <th>Flaws</th>
@@ -560,7 +561,7 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <select class="selectpicker" id="perks-select" multiple>
+                                        <select id="perks-select" multiple>
                                             <option data-subtext="">Ageless</option>
                                             <option data-subtext="">Artisan</option>
                                             <option data-subtext="">Ascetic</option>
@@ -598,12 +599,8 @@
                                             <option data-subtext="">Wisperer of the Wild</option>
                                         </select>
                                     </td>
-
-
-
                                     <td>
-
-                                        <select class="selectpicker" multiple>
+                                        <select id="flaws-select" multiple>
                                             <option data-subtext="">Absent-minded</option>
                                             <option data-subtext="">Addiction</option>
                                             <option data-subtext="">Ambitious</option>
@@ -1724,7 +1721,7 @@
                             <tr>
                                 <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-armor">ARMOR</a></th>
                                 <td>
-                                    <select class="selectpicker" id="armor-select" data-max-options="1" multiple>
+                                    <select id="armor-select">
                                         <optgroup label="LIGHT" data-subtext=" defense bonus: 1 ">
                                             <option class="wl1" data-subtext=" WL 1">Leather Armor</option>
                                             <option class="wl1" data-subtext=" WL 1">Steelsilk</option>
@@ -1749,7 +1746,7 @@
                             <tr>
                                 <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-weapons">WEAPONS</a></th>
                                 <td>
-                                    <select class="selectpicker" name="weapon-select" data-max-options="5" multiple>
+                                    <select id="weapon-select" multiple data-max-options="5" >
                                         <optgroup label="One-handed Melee">
                                             <option class="wl0" data-subtext=" WL 0">Unarmed strike</option>
                                             <option class="wl2" data-subtext=" WL 2">Bowie Knife</option>
@@ -1817,14 +1814,90 @@
                                             <option class="wl4" data-subtext=" WL 4">Phase Rifle</option>
                                             <option class="wl2" data-subtext=" WL 2">Cannon</option>
                                         </optgroup>
+
                                     </select>
+                                   
+                                    
+                                     <!--
+                                    <select id="weapon-select" name="weapon-select" data-max-options="5" >
+                                        <option>Choose weapons</option>
+                                       <optgroup label="One-handed Melee">
+                                            <option class="wl0" data-subtext=" WL 0">Unarmed strike</option>
+                                            <option class="wl2" data-subtext=" WL 2">Bowie Knife</option>
+                                            <option class="wl2" data-subtext=" WL 2">Shiv</option>
+                                            <option class="wl2" data-subtext=" WL 2">Multi-tool</option>
+                                            <option class="wl1" data-subtext=" WL 1">Scimitar</option>
+                                            <option class="wl1" data-subtext=" WL 1">Short Sword</option>
+                                            <option class="wl1" data-subtext=" WL 1">Machete</option>
+                                            <option class="wl1" data-subtext=" WL 1">Sawblade</option>
+                                            <option class="wl1" data-subtext=" WL 1">Blow Gun</option>
+                                            <option class="wl1" data-subtext=" WL 1">Dart</option>
+                                            <option class="wl2" data-subtext=" WL 2">Hatchet</option>
+                                            <option class="wl2" data-subtext=" WL 2">Dagger</option>
+                                            <option class="wl1" data-subtext=" WL 1">Mace</option>
+                                            <option class="wl1" data-subtext=" WL 1">Baseball Bat</option>
+                                            <option class="wl1" data-subtext=" WL 1">Club</option>
+                                            <option class="wl1" data-subtext=" WL 1">Improvised Weapon</option>
+                                            <option class="wl1" data-subtext=" WL 1">Warhammer</option>
+                                         </optgroup>
+                                        <optgroup label="Versitile Melee">
+                                            <option class="wl1" data-subtext=" WL 1">Longsword</option>
+                                            <option class="wl1" data-subtext=" WL 1">Katana</option>
+                                            <option class="wl1" data-subtext=" WL 1">Falcion</option>
+                                            <option class="wl1" data-subtext=" WL 1">Short Spear</option>
+                                        </optgroup>
+                                        <optgroup label="Two-handed Melee">
+                                            <option class="wl1" data-subtext=" WL 1">Greatsword</option>
+                                            <option class="wl1" data-subtext=" WL 1">No-dachi</option>
+                                            <option class="wl1" data-subtext=" WL 1">Claymore</option>
+                                            <option class="wl1" data-subtext=" WL 1">Bastard Sword</option>
+                                            <option class="wl1" data-subtext=" WL 1">Chainsaw</option>
+                                            <option class="wl1" data-subtext=" WL 1">Sledge Hammer</option>
+                                            <option class="wl1" data-subtext=" WL 1">Maul</option>
+                                            <option class="wl1" data-subtext=" WL 1">Great Axe</option>
+                                            <option class="wl2" data-subtext=" WL 2">Long Spear</option>
+                                            <option class="wl1" data-subtext=" WL 1">Pitchfork</option>
+                                            <option class="wl1" data-subtext=" WL 1">Staff</option>
+                                            <option class="wl2" data-subtext=" WL 2">Glaive</option>
+                                            <option class="wl2" data-subtext=" WL 2">Halberd</option>
+                                            <option class="wl2" data-subtext=" WL 2">Naginata</option>
+                                            <option class="wl3" data-subtext=" WL 3">Flamethrower</option>
+                                         <optgroup label="Close Ranged">
+                                            <option class="wl1" data-subtext=" WL 1">Laser Gun</option>
+                                            <option class="wl1" data-subtext=" WL 1">Revolver</option>
+                                            <option class="wl1" data-subtext=" WL 1">Handgun</option>
+                                            <option class="wl1" data-subtext=" WL 1">Grenade</option>
+                                            <option class="wl1" data-subtext=" WL 1">Firebomb</option>
+                                            <option class="wl1" data-subtext=" WL 1">Elexir</option>
+                                        </optgroup>
+                                        <optgroup label="Medium Ranged">
+                                            <option class="wl1" data-subtext=" WL 1">Light Crossbow</option>
+                                            <option class="wl1" data-subtext=" WL 1">Shortbow</option>
+                                            <option class="wl1" data-subtext=" WL 1">Pump Shotgun</option>
+                                            <option class="wl3" data-subtext=" WL 3">Submachine Gun</option>
+                                            <option class="wl3" data-subtext=" WL 3">M16</option>
+                                            <option class="wl1" data-subtext=" WL 1">Elexir</option>
+                                        </optgroup>
+                                        <optgroup label="Long Ranged">
+                                            <option class="wl1" data-subtext=" WL 1">Heavy Crossbow</option>
+                                            <option class="wl1" data-subtext=" WL 1">Longbow</option>
+                                            <option class="wl1" data-subtext=" WL 1">Rifle</option>
+                                        </optgroup>
+                                        <optgroup label="Extreme Ranged">
+                                            <option class="wl4" data-subtext=" WL 4">Sniper Rifle</option>
+                                            <option class="wl4" data-subtext=" WL 4">Phase Rifle</option>
+                                            <option class="wl2" data-subtext=" WL 2">Cannon</option>
+                                        </optgroup>
+
+                                    </select>
+-->
                                 </td>
                             </tr>
 
                             <tr>
                                 <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-items">SHIELD</a></th>
                                 <td>
-                                    <select id="shield-select" class="selectpicker" multiple data-max-options="1">
+                                    <select id="shield-select">
                                         <option class="wl2" data-subtext=" WL 2">Small Shield</option>
                                         <option class="wl3" data-subtext=" WL 3">Riot Shield</option>
                                         <option class="wl3" data-subtext=" WL 3">Tower Shield</option>
