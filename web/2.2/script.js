@@ -337,6 +337,7 @@ function hitPoints(){
 }
 
 function Armor(){
+    //sparar vald armor och returnerar värde till Guard och påverkar speed vid vissa val
 	var selectedArmor = $("#armor-select option:selected").val();
 	if (selectedArmor == "Leather Armor"){
 		$("#guard-armor").val(1);
@@ -376,6 +377,7 @@ function Armor(){
 }
 
 function Shield(){
+    //Tar ett värde ifrån valt shield och returnerar till Guard.
 	var selectedShield = $("#shield-select option:selected").val();
 	if(selectedShield == "Small Shield"){
 		$("#guard-shield").val(1);
@@ -390,6 +392,7 @@ function Shield(){
 }
 
 function guardAttr(){
+    //Räknar ihop atttributen som påverkar Guard och returnerar det till rätt ruta i Guard.
     var guardAgility = $("#input-agility").val();
     var guardMight = $("#input-might").val();
     var guardAttrCalc = Number(guardMight) + Number(guardAgility);
@@ -398,6 +401,7 @@ function guardAttr(){
 }
 
 function calcGuardTotal(){
+    //Kalkylerar totala värdet i Guard och returnerar det till rätt ruta
 	var guardArmor = $("#guard-armor").val();
 	var guardShield = $("#guard-shield").val();
 	var guardAttributes = $("#guard-attr").val();
