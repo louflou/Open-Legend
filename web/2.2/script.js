@@ -405,6 +405,7 @@ function calcGuardTotal(){
 }
 
 function toughnessAttr(){
+    //Räknar ihop atttributen som påverkar Toughness och returnerar det till rätt ruta i Toughness.
 	var toughnessFortitude = $("#input-fortitude").val();
 	var toughnessWill = $("#input-will").val();
 	var toughnessAttrCalc = Number(toughnessFortitude) + Number(toughnessWill);
@@ -413,6 +414,7 @@ function toughnessAttr(){
 }
 
 function calcToughnessTotal(){
+    //Kalkylerar totala värdet i Toughness och returnerar det till rätt ruta
 	var toughnessAttributes = $("#toughness-attr").val();
 	$("#toughness-total").val(10 + Number(toughnessAttributes));
 }
