@@ -445,3 +445,7 @@ function wealth(){
 	perks.push(selectedPerks);
 	console.log(perks);
 }*/
+function printFunction(){
+    window.print();
+
+}
