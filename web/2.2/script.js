@@ -418,6 +418,7 @@ function calcToughnessTotal(){
 }
 
 function resolveAttr(){
+    //Räknar ihop atttributen som påverkar Resolve och returnerar det till rätt ruta i Resolve.
 	var resolvePresence = $("#input-presence").val();
 	var resolveWill = $("#input-will").val();
 	var resolveAttrCalc = Number(resolvePresence) + Number(resolveWill);
@@ -426,6 +427,7 @@ function resolveAttr(){
 }
 
 function calcResolveTotal(){
+    //Kalkylerar totala värdet i Resolve och returnerar det till rätt ruta
 	var resolveAttributes = $("#resolve-attr").val();
 	$("#resolve-total").val(10 + Number(resolveAttributes));
 }
