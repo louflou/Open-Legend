@@ -38,7 +38,7 @@ $(document).ready(function(){
     });
     $("#feats-select").select2({
         placeholder: "Select Feats",
-        allowClear: true
+        allowClear: true,
     });
     $("#weapon-select").select2({
         placeholder: "Select Weapons",
@@ -46,7 +46,6 @@ $(document).ready(function(){
     });
     
 });
-
 
 function calcWealth(levelValue){
     if(levelValue == 1){
@@ -357,7 +356,7 @@ function updateArchetypeBuild(){
 }
 
 function hitPoints(){
-    // Räknar ut spelarens Hitpoints
+    // Beräknar Hitpoints
     var sumHp = 0;
     var hitPoints = $(".total-hitpoints").val();
         $(".total-hitpoints").each(function(){
@@ -369,7 +368,7 @@ function hitPoints(){
 }
 
 function Armor(){
-    //sparar vald armor och returnerar värde till Guard och påverkar speed vid vissa val
+    // sparar vald armor och returnerar värde till Guard och påverkar speed vid vissa val
 	var selectedArmor = $("#armor-select option:selected").val();
 	if (selectedArmor == "Leather Armor"){
 		$("#guard-armor").val(1);
@@ -424,7 +423,7 @@ function Shield(){
 }
 
 function guardAttr(){
-    //Räknar ihop atttributen som påverkar Guard och returnerar det till rätt ruta i Guard.
+    // Räknar ihop attributen som påverkar Guard och returnerar det till rätt ruta i Guard.
     var guardAgility = $("#input-agility").val();
     var guardMight = $("#input-might").val();
     var guardAttrCalc = Number(guardMight) + Number(guardAgility);
@@ -433,7 +432,7 @@ function guardAttr(){
 }
 
 function calcGuardTotal(){
-    //Kalkylerar totala värdet i Guard och returnerar det till rätt ruta
+    //Kalkulerar totala värdet i Guard och returnerar det till rätt ruta
 	var guardArmor = $("#guard-armor").val();
 	var guardShield = $("#guard-shield").val();
 	var guardAttributes = $("#guard-attr").val();
