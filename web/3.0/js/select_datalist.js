@@ -53,9 +53,9 @@ $(document).ready(function(){
         {text: 'Extreme Ranged', children: extremeRangedArray}
     ]
 
-    $('#archetype-select').select2({ data: archetypeArray });
-    $('#armor-select').select2({ data: armorArray });
-    $('#weapon-select').select2({ data: weaponArray });
+    $('#archetype-select').select2({ placeholder: 'Select Archetype', data: archetypeArray });
+    $('#armor-select').select2({ placeholder:'Select Armor', data: armorArray });
+    $('#weapon-select').select2({ placeholder:'Select Weapon', data: weaponArray });
 });
 
 
