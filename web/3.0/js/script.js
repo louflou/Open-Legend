@@ -77,10 +77,12 @@ function levelCalc(){
     var xpValue = levelToXp (levelValue);
     var totalPoints = leveltoAttributePoints (levelValue);
     var wealthValue = calcWealth(levelValue);
-
+    var featPoints = levelToFeatPoints (levelValue);
+    
     $("#xp-input").val(xpValue);
     $("#attr-totalt-points").val(totalPoints);
     $("#wealth-input").val(wealthValue);
+    $("#feat-total-points").val(featPoints);
     calcMaxAttrScore(levelValue);
     updateAttributePoints();
 }
@@ -107,6 +109,31 @@ function levelToXp (levelValue){
         return 24;
     }else if (levelValue == 10) {
         return 27;
+    }
+}
+
+function levelToFeatPoints(levelValue) {
+    
+    if (levelValue == 1){
+        return 6;
+    }else if (levelValue == 2){
+        return 9;
+    }else if (levelValue == 3){
+        return 12;
+    }else if (levelValue == 4){
+        return 15;
+    }else if (levelValue == 5){
+        return 18;
+    }else if (levelValue == 6){
+        return 21;
+    }else if (levelValue == 7){
+        return 24;
+    }else if (levelValue == 8){
+        return 27;
+    }else if (levelValue == 9){
+        return 30;
+    }else if (levelValue == 10){
+        return 33;
     }
 }
 
