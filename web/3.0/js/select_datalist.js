@@ -5,14 +5,14 @@ $(document).ready(function(){
     ]
     //armor array
     var lightArmorArray = [
-        {id: 'wl1', text: 'Leather Armor'}, {id: 'wl1', text: 'Steelsilk'}, {id: 'wl1', text: 'Padded Armor'} 
+        {id: 'Leather Armor', text: 'Leather Armor'}, {id: 'Steelsilk', text: 'Steelsilk'}, {id: 'Padded Armor', text: 'Padded Armor'} 
     
     ]
     var mediumArmorArray = [
-        {id: 'wl3', text: 'Armored Trench Coat'}, {id: 'wl3', text: 'Electropolymer Armor'}, {id: 'wl2', text: 'Chainmail'}, {id: 'wl3', text: 'Kevlar Vest'}, {id: 'wl3', text: 'Breastplate'}
+        {id: 'Armored Trench Coat', text: 'Armored Trench Coat'}, {id: 'Electropolymer Armor', text: 'Electropolymer Armor'}, {id: 'Chainmail', text: 'Chainmail'}, {id: 'Kevlar Vest', text: 'Kevlar Vest'}, {id: 'Breastplate', text: 'Breastplate'}
     ]
     var heavyArmorArray = [
-        {id: 'wl2', text: 'Yoroi Armor'}, {id: 'wl2', text: 'Plate Mail'}, {id: 'wl2', text: 'Riot Suit'}, {id: 'wl4', text: 'Power Armor'}, {id: 'wl4', text: 'Elven Plate Mail'} 
+        {id: 'Yoroi Armor', text: 'Yoroi Armor'}, {id: 'Plate Mail', text: 'Plate Mail'}, {id: 'Riot Suit', text: 'Riot Suit'}, {id: 'Power Armor', text: 'Power Armor'}, {id: 'Elven Plate Mail', text: 'Elven Plate Mail'} 
     
     ]
     var armorArray = [
@@ -23,25 +23,25 @@ $(document).ready(function(){
     
     // weapon array
     var oneHandedArray = [
-        {id: 'wl0', text: 'Unarmed Strike'}, {id: 'wl2', text: 'Bowie Knife'}, {id: 'wl2', text: 'Shiv'}, {id: 'wl2', text: 'Multi-tool'}, {id: 'wl1', text: 'Scimitar'}, {id: 'wl1', text: 'Short Sword'}, {id: 'wl1', text: 'Machete'}, {id: 'wl1', text: 'Sawblade'}, {id: 'wl1', text: 'Blow Gun'}, {id: 'wl1', text: 'Dart'}, {id: 'wl2', text: 'Hatchet'}, {id: 'wl2', text: 'Dagger'}, {id: 'wl1', text: 'Mace'}, {id: 'wl1', text: 'Baseball Bat'}, {id: 'wl1', text: 'Club'}, {id: 'wl1', text: 'Improvised Weapon'}, {id: 'wl1', text: 'Warhammer'}        
+        {id: 'Unarmed Strike', text: 'Unarmed Strike'}, {id: 'Bowie Knife', text: 'Bowie Knife'}, {id: 'Shiv', text: 'Shiv'}, {id: 'Multi-tool', text: 'Multi-tool'}, {id: 'Scimitar', text: 'Scimitar'}, {id: 'Short Sword', text: 'Short Sword'}, {id: 'Machete', text: 'Machete'}, {id: 'Sawblade', text: 'Sawblade'}, {id: 'Blow Gun', text: 'Blow Gun'}, {id: 'Dart', text: 'Dart'}, {id: 'Hatchet', text: 'Hatchet'}, {id: 'Dagger', text: 'Dagger'}, {id: 'Mace', text: 'Mace'}, {id: 'Baseball Bat', text: 'Baseball Bat'}, {id: 'Club', text: 'Club'}, {id: 'Improvised Weapon', text: 'Improvised Weapon'}, {id: 'Warhammer', text: 'Warhammer'}        
     ]
     var versitileArray = [
-         {id: 'wl1', text: 'Longsword'}, {id: 'wl1', text: 'Katana'}, {id: 'wl1', text: 'Falcion'}, {id: 'wl1', text: 'Short Spear'}
+         {id: 'Longsword', text: 'Longsword'}, {id: 'Katana', text: 'Katana'}, {id: 'Falcion', text: 'Falcion'}, {id: 'Short Spear', text: 'Short Spear'}
     ]
     var twoHandedArray = [
-         {id: 'wl1', text: 'Great Sword'}, {id: 'wl1', text: 'No-dachi'}, {id: 'wl1', text: 'Claymore'}, {id: 'wl1', text: 'Bastard Sword'}, {id: 'wl1', text: 'Chainsaw'}, {id: 'wl1', text: 'Sledge Hammer'}, {id: 'wl1', text: 'Maul'},  {id: 'wl1', text: 'Great Axe'}, {id: 'wl2', text: 'Long Spear'}, {id: 'wl1', text: 'Pitchfork'}, {id: 'wl1', text: 'Staff'}, {id: 'wl2', text: 'Glaive'},  {id: 'wl2', text: 'Halberd'}, {id: 'wl2', text: 'Nanginata'}, {id: 'wl3', text: 'Flamethrower'}
+         {id: 'Great Sword', text: 'Great Sword'}, {id: 'No-dachi', text: 'No-dachi'}, {id: 'Claymore', text: 'Claymore'}, {id: 'Bastard Sword', text: 'Bastard Sword'}, {id: 'Chainsaw', text: 'Chainsaw'}, {id: 'Sledge Hammer', text: 'Sledge Hammer'}, {id: 'Maul', text: 'Maul'},  {id: 'Great Axe', text: 'Great Axe'}, {id: 'Long Spear', text: 'Long Spear'}, {id: 'Pitchfork', text: 'Pitchfork'}, {id: 'Staff', text: 'Staff'}, {id: 'Glaive', text: 'Glaive'},  {id: 'Halberd', text: 'Halberd'}, {id: 'Naginata', text: 'Naginata'}, {id: 'Flamethrower', text: 'Flamethrower'}
     ]
     var closeRangedArray = [
-         {id: 'wl1', text: 'Laser Gun'}, {id: 'wl1', text: 'Revolver'}, {id: 'wl1', text: 'Handgun'}, {id: 'wl1', text: 'Grenade'}, {id: 'wl1', text: 'Firebomb'}, {id: 'wl1', text: 'Elexir'}
+         {id: 'Laser Gun', text: 'Laser Gun'}, {id: 'Revolver', text: 'Revolver'}, {id: 'Handgun', text: 'Handgun'}, {id: 'Grenade', text: 'Grenade'}, {id: 'Firebomb', text: 'Firebomb'}, {id: 'Elexir', text: 'Elexir'}
     ]
     var mediumRangedArray = [
-         {id: 'wl1', text: 'Light Crossbow'},  {id: 'wl1', text: 'Shortbow'},  {id: 'wl1', text: 'Pump Shotgun'},  {id: 'wl3', text: 'Submachine Gun'},  {id: 'wl3', text: 'M16'}
+         {id: 'Light Crossbow', text: 'Light Crossbow'},  {id: 'Shortbow', text: 'Shortbow'},  {id: 'Pump Shotgun', text: 'Pump Shotgun'},  {id: 'Submachine Gun', text: 'Submachine Gun'},  {id: 'M16', text: 'M16'}
     ]
     var longRangedArray = [
-         {id: 'wl1', text: 'Heavy Crossbow'}, {id: 'wl1', text: 'Longbow'}, {id: 'wl1', text: 'Rifle'}
+         {id: 'Heavy Crossbow', text: 'Heavy Crossbow'}, {id: 'Longbow', text: 'Longbow'}, {id: 'Rifle', text: 'Rifle'}
     ]
     var extremeRangedArray = [
-         {id: 'wl4', text: 'Sniper Rifle'}, {id: 'wl4', text: 'Phase Rifle'},  {id: 'wl2', text: 'Cannon'}
+         {id: 'Sniper Rifle', text: 'Sniper Rifle'}, {id: 'Phase Rifle', text: 'Phase Rifle'},  {id: 'Cannon', text: 'Cannon'}
     ]
     var weaponArray = [
         {text: 'One-handed Melee', children: oneHandedArray},
