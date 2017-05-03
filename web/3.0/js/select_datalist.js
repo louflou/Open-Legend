@@ -64,6 +64,22 @@ $(document).ready(function(){
 		{id: 'Stone Sense', text: 'Stone Sense'}, {id: 'Street Rat', text: 'Street Rat'}, {id: 'Upper Class', text: 'Upper Class'}, {id: 'Vagabond', text: 'Vagabond'}, {id: 'Warriors Code', text: 'Warriors Code'},
 		{id: 'Wisperer of the Wild', text: 'Wisperer of the Wild'}
     ]
+    
+    var flawsArray = [
+        
+        {id: 'Absent-minded', text: 'Absent-minded'}, {id: 'Addiction' text: 'Addiction'}, {id: 'Ambitious', text: 'Ambitious'}, 
+        {id: 'Bloodlust', text: 'Bloodlust'}, {id: 'Brash', text:'Brash'}, {id: 'Bravado', text: 'Bravado'}, 
+        {id: 'Cosmetic Deformity', text: ' Cosmetic Deformity'}, {id: 'Compulsion', text: 'Compulsion'}, {id: 'Cowardly', text: 'Cowardly'}, 
+        {id: 'Dimwitted', text: 'Dimwitted'}, {id: 'Disabled', text: 'Disabled'}, {id: 'Greedy', text: 'Greedy'}, 
+        {id: 'Honest', text: 'Honest'}, {id: 'Hot Tempered', text: 'Hot Tempered'}, {id: 'Illiterate', text: 'Illiterate'}, 
+        {id: 'Literal Minded', text: 'Literal Minded'}, {id: 'Mood Disorderd', text: 'Mood Disorderd'}, {id: 'Naive', text: 'Naive'}, 
+        {id: 'Overt', text: 'Overt'}, {id: 'Overweight', text: 'Overweight'}, {id: 'Pacifist', text: 'Pacifist'}, 
+        {id: 'Phobia', text: 'Phobia'}, {id: 'Proud', text: 'Proud'}, {id: 'Psychotic', text: 'Psychotic'}, 
+        {id: 'Short-winded', text: 'Short-winded'}, {id: 'Sick', text: 'Sick'}, {id: 'Socially Awkward', text: 'Socially Awkward'}, 
+        {id: 'Stubborn', text: 'Stubborn'}, {id: 'Unoordinated', text: 'Uncoordinated'}, {id: 'Vengful', text: 'Vengful'}, 
+        {id: 'Zealous', text: 'Zealous'}
+        
+    ]
 
 
     $('#archetype-select').select2({ placeholder: 'Select Archetype', data: archetypeArray });
