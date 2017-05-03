@@ -13,6 +13,7 @@ $(document).ready(function(){
     $("#input-will").on("change", toughnessAttr);
     $("#input-presence").on("change", resolveAttr);
     $("#input-will").on("change", resolveAttr);
+    $("#feats-select").on("change", calcFeats);
     wealth();
 });
 
@@ -545,4 +546,18 @@ function getPerks(){
     $("#perks-select")
 
 
+}
+function calcFeats(){
+    // Ändrar övriga värde i fälten baserat på feats
+    var getHp = $("#sum-hitpoints").val()
+    var getWealth = $("#wealth-input").val();
+    var getFeat = $("#feats-select").val();
+    if (getFeat == "Wealthy"){
+        $("#wealth-input").val(Number(getWealth) + 1);
+
+    }
+    if (getFeat == "Tough as Nails (I - II)"){
+        $("#sum-hitpoints").val(Number(getHp) + 5);
+
+    }
 }
