@@ -426,11 +426,10 @@ function Armor(){
         var currentSpeed = $("#speed-input").val();
         var actualSpeed = currentSpeed - 5;
         $("#speed-input").val(actualSpeed);
-
     }else if (selectedArmor == "Plate Mail"){
         $("#guard-armor").val(3);
         $("#speed-input").val(30);
-				calcGuardTotal();
+        calcGuardTotal();
     }else if (selectedArmor == "Riot Suit"){
 		$("#guard-armor").val(3);
         $("#speed-input").val(30);
@@ -438,7 +437,7 @@ function Armor(){
     }else if (selectedArmor == "Power Armor"){
         $("#guard-armor").val(3);
         $("#speed-input").val(30);
-				calcGuardTotal();
+        calcGuardTotal();
     }else if (selectedArmor == "Elven Plate Mail"){
 		$("#guard-armor").val(3);
         $("#speed-input").val(30);

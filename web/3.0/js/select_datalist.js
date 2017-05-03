@@ -1,8 +1,10 @@
 $(document).ready(function(){
+   
     // archetype array
     var archetypeArray = [
         {id: '0', text: 'Custom'}, {id: '1', text: 'Barbarian'}, {id: '2', text: 'Ranger'}, {id: '3', text: 'Monk'}, {id: '4', text: 'Paladin'}, {id: '5', text: 'Battle Mage'}, {id: '5', text: 'Mind Mage'}, {id: '6', text: 'Assassin'}, {id: '7', text: 'Cleric'}, {id: '8', text: 'Druid'}, {id: '9', text: 'Shadowdancer'}, {id: '10', text: 'Bard'}, {id: '11', text: 'Arcane Protector'}
     ]
+    
     //armor array
     var lightArmorArray = [
         {id: 'Leather Armor', text: 'Leather Armor'}, {id: 'Steelsilk', text: 'Steelsilk'}, {id: 'Padded Armor', text: 'Padded Armor'} 
@@ -52,6 +54,15 @@ $(document).ready(function(){
         {text: 'Long Ranged', children: longRangedArray},
         {text: 'Extreme Ranged', children: extremeRangedArray}
     ]
+    
+    //shield Array
+    var shieldArray = [
+        {id: 'Small Shield', text: 'Small Shield'},
+        {id: 'Riot Shield', text: 'Riot Shield'},
+        {id: 'Tower Shield', text: 'Tower Shield'}
+    ]
+    
+    // Perks Array
 
     var perksArray = [
     	{id: 'Ageless', text: 'Ageless'}, {id: 'Artisan', text:'Artisan'}, {id: 'Asctetic', text:'Asctetic'}, {id: 'Attractive', text:'Attractive'},
@@ -65,8 +76,8 @@ $(document).ready(function(){
 		{id: 'Wisperer of the Wild', text: 'Wisperer of the Wild'}
     ]
     
-    var flawsArray = [
-        
+    
+    var flawsArray = [    
         {id: 'Absent-minded', text: 'Absent-minded'}, {id: 'Addiction', text: 'Addiction'}, {id: 'Ambitious', text: 'Ambitious'}, 
         {id: 'Bloodlust', text: 'Bloodlust'}, {id: 'Brash', text:'Brash'}, {id: 'Bravado', text: 'Bravado'}, 
         {id: 'Cosmetic Deformity', text: ' Cosmetic Deformity'}, {id: 'Compulsion', text: 'Compulsion'}, {id: 'Cowardly', text: 'Cowardly'}, 
@@ -78,15 +89,54 @@ $(document).ready(function(){
         {id: 'Short-winded', text: 'Short-winded'}, {id: 'Sick', text: 'Sick'}, {id: 'Socially Awkward', text: 'Socially Awkward'}, 
         {id: 'Stubborn', text: 'Stubborn'}, {id: 'Unoordinated', text: 'Uncoordinated'}, {id: 'Vengful', text: 'Vengful'}, 
         {id: 'Zealous', text: 'Zealous'}
-        
     ]
 
+    
 
-    $('#archetype-select').select2({ placeholder: 'Select Archetype', data: archetypeArray });
-    $('#armor-select').select2({ placeholder:'Select Armor', data: armorArray });
-    $('#weapon-select').select2({ placeholder:'Select Weapon', data: weaponArray });
-    $('#perks-select').select2({ placeholder:'Select Perks', data: perksArray });
-    $('#flaws-select').select2({ placeholder:'Select Flaws', data:flawsArray });
+    
+    // Gives data to HTML select tags 
+    
+    $('#archetype-select').select2({
+        placeholder: 'Select Archetype', 
+        data: archetypeArray,
+        maximumSelectionLength: 1 
+    });
+    $('#armor-select').select2({
+        placeholder:'Select Armor', 
+        data: armorArray,
+        maximumSelectionLength: 1
+    });
+    $('#weapon-select').select2({
+        placeholder:'Select Weapon', 
+        data: weaponArray 
+    });
+    $('#shield-select').select2({
+        placeholder:'Select Shield',
+        data: shieldArray,
+        maximumSelectionLength: 1
+    });
+    
+    $('#archetype-select').select2({ 
+        placeholder: 'Select Archetype', 
+        data: archetypeArray 
+    });
+    $('#armor-select').select2({ 
+        placeholder:'Select Armor', 
+        data: armorArray 
+    });
+    $('#weapon-select').select2({ 
+        placeholder:'Select Weapon', 
+        data: weaponArray 
+    });
+    $('#perks-select').select2({ 
+        placeholder:'Select Perks', 
+        data: perksArray 
+    });
+    $('#flaws-select').select2({ 
+        placeholder:'Select Flaws', 
+        data:flawsArray 
+    });
+    
 });
 
 
