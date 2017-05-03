@@ -529,6 +529,6 @@ function getPerks(){
     // Hämtar valda perks och sparar ner de i en array.
     var perks = [];
     $("#perks-select")
-
+    
 
 }

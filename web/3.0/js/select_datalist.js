@@ -53,9 +53,23 @@ $(document).ready(function(){
         {text: 'Extreme Ranged', children: extremeRangedArray}
     ]
 
+    var perksArray = [
+    	{id: 'Ageless', text: 'Ageless'}, {id: 'Artisan', text:'Artisan'}, {id: 'Asctetic', text:'Asctetic'}, {id: 'Attractive', text:'Attractive'},
+    	{id: 'Brute', text:'Brute'}, {id: 'Courageous', text:'Courageous'}, {id: 'Crowd Favorite', text: 'Crowd Favorite'}, {id: 'Disease Immunity', text: 'Disease Immunity'},
+    	{id: 'Divine Agent', text: 'Divine Agent'}, {id: 'Divine Insight', text: 'Divine Insight'}, {id: 'Ear of the Emperor', text: 'Ear of the Emperor'},
+		{id: 'Extraordinary Presence', text: 'Extraordinary Presence'}, {id: 'Fugitive', text: 'Fugitive'}, {id: 'Idol', text: 'Idol'}, {id: 'Innocent', text: 'Innocent'}, {id: 'Jack of All Trades', text: 'Jack of All Trades'},
+		{id: 'Legendary Bloodline', text: 'Legendary Bloodline'}, {id: 'Local Hero', text: 'Local Hero'}, {id: 'Lucky', text: 'Lucky'}, {id: 'Merchant', text: 'Merchant'}, 
+		{id: 'Natures Ally', text: 'Natures Ally'}, {id: 'Observant', text: 'Observant'}, {id: 'Profession', text: 'Profession'}, {id: 'Pure-hearted', text: 'Pure-hearted'},     	
+		{id: 'Resilient', text: 'Resilient'}, {id: 'Scavenger', text: 'Scavenger'}, {id: 'Scent', text: 'Scent'}, {id: 'Scolar', text: 'Scolar'}, {id: 'Silver Tongue', text: 'Silver Tongue'},
+		{id: 'Stone Sense', text: 'Stone Sense'}, {id: 'Street Rat', text: 'Street Rat'}, {id: 'Upper Class', text: 'Upper Class'}, {id: 'Vagabond', text: 'Vagabond'}, {id: 'Warriors Code', text: 'Warriors Code'},
+		{id: 'Wisperer of the Wild', text: 'Wisperer of the Wild'}
+    ]
+
+
     $('#archetype-select').select2({ placeholder: 'Select Archetype', data: archetypeArray });
     $('#armor-select').select2({ placeholder:'Select Armor', data: armorArray });
     $('#weapon-select').select2({ placeholder:'Select Weapon', data: weaponArray });
+    $('#perks-select').select2({ placeholder:'Select Perks', data: perksArray});
 });
 
 
