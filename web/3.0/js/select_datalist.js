@@ -67,7 +67,7 @@ $(document).ready(function(){
     
     var flawsArray = [
         
-        {id: 'Absent-minded', text: 'Absent-minded'}, {id: 'Addiction' text: 'Addiction'}, {id: 'Ambitious', text: 'Ambitious'}, 
+        {id: 'Absent-minded', text: 'Absent-minded'}, {id: 'Addiction', text: 'Addiction'}, {id: 'Ambitious', text: 'Ambitious'}, 
         {id: 'Bloodlust', text: 'Bloodlust'}, {id: 'Brash', text:'Brash'}, {id: 'Bravado', text: 'Bravado'}, 
         {id: 'Cosmetic Deformity', text: ' Cosmetic Deformity'}, {id: 'Compulsion', text: 'Compulsion'}, {id: 'Cowardly', text: 'Cowardly'}, 
         {id: 'Dimwitted', text: 'Dimwitted'}, {id: 'Disabled', text: 'Disabled'}, {id: 'Greedy', text: 'Greedy'}, 
@@ -85,7 +85,8 @@ $(document).ready(function(){
     $('#archetype-select').select2({ placeholder: 'Select Archetype', data: archetypeArray });
     $('#armor-select').select2({ placeholder:'Select Armor', data: armorArray });
     $('#weapon-select').select2({ placeholder:'Select Weapon', data: weaponArray });
-    $('#perks-select').select2({ placeholder:'Select Perks', data: perksArray});
+    $('#perks-select').select2({ placeholder:'Select Perks', data: perksArray });
+    $('#flaws-select').select2({ placeholder:'Select Flaws', data:flawsArray });
 });
 
 
