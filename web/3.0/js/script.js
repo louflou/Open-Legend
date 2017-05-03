@@ -399,20 +399,28 @@ function Armor(){
 	var selectedArmor = $("#armor-select option:selected").val();
 	if (selectedArmor == "Leather Armor"){
 		$("#guard-armor").val(1);
+        $("#speed-input").val(30);
     }else if (selectedArmor == "Steelsilk"){
 		$("#guard-armor").val(1);
+        $("#speed-input").val(30);
     }else if (selectedArmor == "Padded Armor"){
 		$("#guard-armor").val(1);
+        $("#speed-input").val(30);
     }else if (selectedArmor == "Armored Trench Coat"){
 		$("#guard-armor").val(2);
+        $("#speed-input").val(30);
     }else if (selectedArmor == "Electropolymer Armor"){
 		$("#guard-armor").val(2);
+        $("#speed-input").val(30);
 	}else if (selectedArmor == "Chainmail"){
 	   $("#guard-armor").val(2);
+       $("#speed-input").val(30);
 	}else if (selectedArmor == "Kevlar Vest"){
 		$("#guard-armor").val(2);
+        $("#speed-input").val(30);
 	}else if (selectedArmor == "Breastplate"){
 		$("#guard-armor").val(2);
+        $("#speed-input").val(30);
     }else if (selectedArmor == "Yoroi Armor"){
         $("#guard-armor").val(3);
         var currentSpeed = $("#speed-input").val();
@@ -421,16 +429,23 @@ function Armor(){
 
     }else if (selectedArmor == "Plate Mail"){
         $("#guard-armor").val(3);
+        $("#speed-input").val(30);
 				calcGuardTotal();
     }else if (selectedArmor == "Riot Suit"){
 		$("#guard-armor").val(3);
+        $("#speed-input").val(30);
 		calcGuardTotal();
     }else if (selectedArmor == "Power Armor"){
         $("#guard-armor").val(3);
+        $("#speed-input").val(30);
 				calcGuardTotal();
     }else if (selectedArmor == "Elven Plate Mail"){
 		$("#guard-armor").val(3);
+        $("#speed-input").val(30);
 		calcGuardTotal();
+    }
+    else {
+        $("#speed-input").val(30);
     }
 }
 
@@ -529,6 +544,6 @@ function getPerks(){
     // Hämtar valda perks och sparar ner de i en array.
     var perks = [];
     $("#perks-select")
-    
+
 
 }
