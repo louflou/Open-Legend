@@ -586,9 +586,3 @@ function calcFeats(){
     }
 
 }
-
-function mainControl(){
-    level = $("#levelValue").val();
-    xp = $("#xp-input").val();
-    wealth = $("#wealth-input").val();
-}
