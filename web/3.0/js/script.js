@@ -552,6 +552,14 @@ function calcFeats(){
     var getHp = $("#sum-hitpoints").val()
     var getWealth = $("#wealth-input").val();
     var getFeat = $("#feats-select").val();
+    var getRes = $("#resolve-total").val();
+    var getTough = $("#toughness-total").val();
+    var getGuard = $("#guard-total").val()
+    var getSpeed = $("#speed-input").val();
+    var getArmor = $("#guard-armor").val();
+    
+
+
     if (getFeat == "Wealthy"){
         $("#wealth-input").val(Number(getWealth) + 1);
 
@@ -560,4 +568,21 @@ function calcFeats(){
         $("#sum-hitpoints").val(Number(getHp) + 5);
 
     }
+    if (getFeat == "Indomitable resolve"){
+        $("#resolve-total").val(Number(getRes) + 1);
+
+    }
+    if (getFeat == "Fleet of Foot (I - III)"){
+        $("#speed-input").val(Number(getSpeed) + 5);
+    }
+    if (getFeat == "Extraordinary Defense (I - III)"){
+        $("#resolve-total").val(Number(getRes) + 1);
+        $("#toughness-total").val(Number(getTough) + 1);
+        $("#guard-total").val(Number(getGuard) + 1);
+    }
+    if (getFeat == "Defensive Mastery"){
+        $("#guard-armor").val(Number(getArmor) + 1);
+
+    }
+
 }
