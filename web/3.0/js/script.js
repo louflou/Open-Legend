@@ -75,10 +75,10 @@ function calcWealth(levelValue){
 function levelCalc(){
     // Hanterar XP, ATTRIBUTE POINTS & maxvärdet för SCORE utifrån LEVEL.
     var levelValue = $(this).val();
-    var xpValue = levelToXp (levelValue);
-    var totalPoints = leveltoAttributePoints (levelValue);
+    var xpValue = levelToXp(levelValue);
+    var totalPoints = leveltoAttributePoints(levelValue);
     var wealthValue = calcWealth(levelValue);
-    var featPoints = levelToFeatPoints (levelValue);
+    var featPoints = levelToFeatPoints(levelValue);
     
     $("#xp-input").val(xpValue);
     $("#attr-totalt-points").val(totalPoints);
@@ -554,7 +554,7 @@ function calcFeats(){
     var getFeat = $("#feats-select").val();
     var getRes = $("#resolve-total").val();
     var getTough = $("#toughness-total").val();
-    var getGuard = $("#guard-total").val()
+    var getGuard = $("#guard-total").val();
     var getSpeed = $("#speed-input").val();
     var getArmor = $("#guard-armor").val();
     
@@ -585,4 +585,10 @@ function calcFeats(){
 
     }
 
+}
+
+function mainControl(){
+    level = $("#levelValue").val();
+    xp = $("#xp-input").val();
+    wealth = $("#wealth-input").val();
 }
