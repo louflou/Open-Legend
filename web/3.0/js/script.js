@@ -662,4 +662,442 @@ function calcFeatsCost(){
 	else if(selectedFeat == "Breakfall II"){
 		  $(this).parent().next().children().first().val(4);
 	}
+	else if(selectedFeat == "Brutal Intimidation"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Climbing"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Combat Follow-through"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Combat Momentum"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Companion I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Companion II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Companion III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Craft Mundane Item I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Craft Mundane Item II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Craft Craft Extraordinary Item I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Craft Craft Extraordinary Item II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Craft Craft Extraordinary Item III"){
+		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Crushing Blow"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Death Blow I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Death Blow II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Deathless Trance"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Defensive Mastery"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Defensive Reflexes I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Defensive Reflexes II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Defensive Reflexes III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Defensive Reflexes IV"){
+		  $(this).parent().next().children().first().val(8);
+	}
+	else if(selectedFeat == "Defensive Reflexes V"){
+		  $(this).parent().next().children().first().val(10);
+	}
+	else if(selectedFeat == "Defensive Reflexes VI"){
+		  $(this).parent().next().children().first().val(12);
+	}
+	else if(selectedFeat == "Defensive Reflexes VII"){
+		  $(this).parent().next().children().first().val(14);
+	}
+	else if(selectedFeat == "Defensive Reflexes VIII"){
+		  $(this).parent().next().children().first().val(16);
+	}
+	else if(selectedFeat == "Defensive Reflexes IX"){
+		  $(this).parent().next().children().first().val(18);
+	}
+	else if(selectedFeat == "Destructive Trance"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Diehard"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Energy Resistance I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Energy Resistance II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Energy Resistance III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Energy Resistance IV"){
+		  $(this).parent().next().children().first().val(8);
+	}
+	else if(selectedFeat == "Evasive Footwork"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Extraordinary Defense I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Extraordinary Defense II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Extraordinary Defense III"){
+		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Extraordinary Focus"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Extraordinary Healing"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Fast Draw"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Fast Tracker"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Ferocious Minions I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Ferocious Minions II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Ferocious Minions III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Fleet of Foot I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Fleet of Foot II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Fleet of Foot III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Flying"){
+				  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Great Leap I"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Great Leap II"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Great Leap III"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Hallucination"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Hallucination - Mass"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Heightened Invocation I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Heightened Invocation II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Heightened Invocation III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Hospitaler"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Impervious Trance"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Indomitable Endurance I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Indomitable Endurance II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Indomitable Endurance III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Indomitable EnduranceIV"){
+		  $(this).parent().next().children().first().val(8);
+	}
+	else if(selectedFeat == "Indomitable Endurance V"){
+		  $(this).parent().next().children().first().val(10);
+	}
+	else if(selectedFeat == "Indomitable Resolve I"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Indomitable Resolve II"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Indomitable Resolve III"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Inspiring Champion I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Inspiring Champion II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Inspiring Champion III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Knowledge I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Knowledge II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Knowledge III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Lethal Strike I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Lethal Strike II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Lethal Strike III"){
+		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Lethal Strike IV"){
+		  $(this).parent().next().children().first().val(12);
+	}
+	else if(selectedFeat == "Lethal Strike V"){
+		  $(this).parent().next().children().first().val(15);
+	}
+	else if(selectedFeat == "Lethal Strike VI"){
+		  $(this).parent().next().children().first().val(18);
+	}
+	else if(selectedFeat == "Lethal Strike VII"){
+		  $(this).parent().next().children().first().val(21);
+	}
+	else if(selectedFeat == "Lethal Strike VIII"){
+		  $(this).parent().next().children().first().val(24);
+	}
+	else if(selectedFeat == "Lethal Strike IX"){
+		  $(this).parent().next().children().first().val(27);
+	}
+	else if(selectedFeat == "Lightning Reflexes I"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Lightning Reflexes II"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Lightning Reflexes III"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Lightning Reflexes IV"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Lightning Reflexes V"){
+		  $(this).parent().next().children().first().val(5);
+	}
+	else if(selectedFeat == "Longshot"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Martial Focus"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Master Tracker"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Mimic"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Multi-Attack Specialist I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Multi-Attack Specialist II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Multi-Attack Specialist III"){
+		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Multi-Attack Specialist IV"){
+		  $(this).parent().next().children().first().val(12);
+	}
+	else if(selectedFeat == "Multi-Attack Specialist V"){
+		  $(this).parent().next().children().first().val(15);
+	}
+	else if(selectedFeat == "Multi-Attack Specialist VI"){
+		  $(this).parent().next().children().first().val(18);
+	}
+	else if(selectedFeat == "Multi-Bane Specialist"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Multi-Target Attack Specialist I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Multi-Target Attack Specialist II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Multi-Target Attack Specialist III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Multi-Target Attack Specialist IV"){
+		  $(this).parent().next().children().first().val(8);
+	}
+	else if(selectedFeat == "Multi-Target Boon Expert"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Multi-Target Boon Specialist I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Multi-Target Boon Specialist II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Multi-Target Boon Specialist III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Multi-Target Boon Specialist IV"){
+		  $(this).parent().next().children().first().val(8);
+	}
+	else if(selectedFeat == "Multi-Target Boon Specialist V"){
+		  $(this).parent().next().children().first().val(10);
+	}
+	else if(selectedFeat == "Natural Defense I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Natural Defense II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Natural Defense III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Overpowering Strike"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Potent Bane"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Reactionary Trance"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Reckless Attack"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Resilient"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Sentinel I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Sentinel II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Sentinel III"){
+		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Silencing Strike"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Skill Specialization I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Skill Specialization II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Skill Specialization III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Skill Specialization IV"){
+		  $(this).parent().next().children().first().val(8);
+	}
+	else if(selectedFeat == "Skill Specialization V"){
+		  $(this).parent().next().children().first().val(10);
+	}
+	else if(selectedFeat == "Superior Concentration I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Superior Concentration II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Superior Concentration III"){
+		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Swimming"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Sworn Enemy I"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Sworn Enemy II"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Sworn Enemy III"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Sworn Enemy IV"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Sworn Enemy V"){
+		  $(this).parent().next().children().first().val(5);
+	}
+	else if(selectedFeat == "Sworn Enemy VI"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Sworn Enemy VII"){
+		  $(this).parent().next().children().first().val(7);
+	}
+	else if(selectedFeat == "Sworn Enemy VIII"){
+		  $(this).parent().next().children().first().val(8);
+	}
+	else if(selectedFeat == "Sworn Enemy IX"){
+		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Tough as Nails I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Tough as Nails II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Tough as Nails III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Two Weapon Brute"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Two Weapon Defense"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Unending Charm"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Untrackable"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Vicious Strike"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Wealthy"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Well-Rounded"){
+		  $(this).parent().next().children().first().val(2);
+	}
 }
