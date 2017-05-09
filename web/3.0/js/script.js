@@ -549,13 +549,117 @@ function getPerks(){
 }
 
 function calcFeatsCost(){
-	if (".feats-select == Alternate Form I"){
+	//Skriver ut kostnaden för alla Feats och Tiers -Marika
+	var selectedFeat = $(this).val();
+	if (selectedFeat == "Alternate Form I"){
 		  $(this).parent().next().children().first().val(3);
 	}
-	else if(".feats-select == Alternate Form II"){
+	else if(selectedFeat == "Alternate Form II"){
 		  $(this).parent().next().children().first().val(6);
 	}
-	else if(".feats-select == Alternate Form III"){
+	else if(selectedFeat == "Area Manipulation I"){
+		  $(this).parent().next().children().first().val(1);
+	}
+	else if(selectedFeat == "Area Manipulation II"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Area Manipulation III"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Area Manipulation IV"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Area Manipulation V"){
+		  $(this).parent().next().children().first().val(5);
+	}
+	else if(selectedFeat == "Area Mastery I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Area Mastery II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Area Mastery III"){
 		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Attack Redirection"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Attack Specialization I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Attack Specialization II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Attack Specialization III"){
+		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Attack Specialization IV"){
+		  $(this).parent().next().children().first().val(12);
+	}
+	else if(selectedFeat == "Attack Specialization V"){
+		  $(this).parent().next().children().first().val(15);
+	}
+	else if(selectedFeat == "Attack Specialization VI"){
+		  $(this).parent().next().children().first().val(18);
+	}
+	else if(selectedFeat == "Attack Specialization VII"){
+		  $(this).parent().next().children().first().val(21);
+	}
+	else if(selectedFeat == "Attack Specialization VIII"){
+		  $(this).parent().next().children().first().val(24);
+	}
+	else if(selectedFeat == "Attack Specialization IX"){
+		  $(this).parent().next().children().first().val(27);
+	}
+	else if(selectedFeat == "Atribute Substitution I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Atribute Substitution II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Bane Focus"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Battle Trance"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Battlefield Oppurtunist I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Battlefield Oppurtunist II"){
+		  $(this).parent().next().children().first().val(4);
+	}
+	else if(selectedFeat == "Battlefield Oppurtunist III"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Battlefield Oppurtunist IV"){
+		  $(this).parent().next().children().first().val(8);
+	}
+	else if(selectedFeat == "Battlefield Oppurtunist V"){
+		  $(this).parent().next().children().first().val(10);
+	}
+	else if(selectedFeat == "Battlefield Punisher"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Battlefield Reflexes"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Battlefield Punisher"){
+		  alert("Vet inte hur denna ska programmeras i kostnad");
+	}
+	else if(selectedFeat == "Boon Focus I"){
+		  $(this).parent().next().children().first().val(3);
+	}
+	else if(selectedFeat == "Boon Focus II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(selectedFeat == "Boon Focus III"){
+		  $(this).parent().next().children().first().val(9);
+	}
+	else if(selectedFeat == "Breakfall I"){
+		  $(this).parent().next().children().first().val(2);
+	}
+	else if(selectedFeat == "Breakfall II"){
+		  $(this).parent().next().children().first().val(4);
 	}
 }
