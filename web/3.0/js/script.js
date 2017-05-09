@@ -552,4 +552,10 @@ function calcFeatsCost(){
 	if (".feats-select == Alternate Form I"){
 		  $(this).parent().next().children().first().val(3);
 	}
+	else if(".feats-select == Alternate Form II"){
+		  $(this).parent().next().children().first().val(6);
+	}
+	else if(".feats-select == Alternate Form III"){
+		  $(this).parent().next().children().first().val(9);
+	}
 }
