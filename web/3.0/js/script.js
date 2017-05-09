@@ -13,12 +13,12 @@ $(document).ready(function(){
     $("#input-will").on("change", toughnessAttr);
     $("#input-presence").on("change", resolveAttr);
     $("#input-will").on("change", resolveAttr);
-    $("#feats-select").on("change", calcFeats);
+		$(".feats-select").on("change", calcFeatsCost);
     wealth();
 });
 
 $(document).ready(function(){
-    $("select").select2(); 
+    $("select").select2();
     $("#shield-select").select2({
         placeholder: "Select Shield",
         allowClear: true,
@@ -45,7 +45,7 @@ $(document).ready(function(){
         placeholder: "Select Weapons",
         allowClear: true
     });
-    
+
 });
 
 function calcWealth(levelValue){
@@ -79,7 +79,7 @@ function levelCalc(){
     var totalPoints = leveltoAttributePoints(levelValue);
     var wealthValue = calcWealth(levelValue);
     var featPoints = levelToFeatPoints(levelValue);
-    
+
     $("#xp-input").val(xpValue);
     $("#attr-totalt-points").val(totalPoints);
     $("#wealth-input").val(wealthValue);
@@ -114,7 +114,7 @@ function levelToXp (levelValue){
 }
 
 function levelToFeatPoints(levelValue) {
-    
+
     if (levelValue == 1){
         return 6;
     }else if (levelValue == 2){
@@ -524,7 +524,7 @@ function wealth(){
         $('.wl1').attr('disabled', true);
         $('.wl2').attr('disabled', true);
         $('.wl3').attr('disabled', true);
-        $('.wl4').attr('disabled', true);    
+        $('.wl4').attr('disabled', true);
     }
 }
 
@@ -547,42 +547,9 @@ function getPerks(){
 
 
 }
-function calcFeats(){
-    // Ändrar övriga värde i fälten baserat på feats
-    var getHp = $("#sum-hitpoints").val()
-    var getWealth = $("#wealth-input").val();
-    var getFeat = $("#feats-select").val();
-    var getRes = $("#resolve-total").val();
-    var getTough = $("#toughness-total").val();
-    var getGuard = $("#guard-total").val();
-    var getSpeed = $("#speed-input").val();
-    var getArmor = $("#guard-armor").val();
-    
 
-
-    if (getFeat == "Wealthy"){
-        $("#wealth-input").val(Number(getWealth) + 1);
-
-    }
-    if (getFeat == "Tough as Nails (I - II)"){
-        $("#sum-hitpoints").val(Number(getHp) + 5);
-
-    }
-    if (getFeat == "Indomitable resolve"){
-        $("#resolve-total").val(Number(getRes) + 1);
-
-    }
-    if (getFeat == "Fleet of Foot (I - III)"){
-        $("#speed-input").val(Number(getSpeed) + 5);
-    }
-    if (getFeat == "Extraordinary Defense (I - III)"){
-        $("#resolve-total").val(Number(getRes) + 1);
-        $("#toughness-total").val(Number(getTough) + 1);
-        $("#guard-total").val(Number(getGuard) + 1);
-    }
-    if (getFeat == "Defensive Mastery"){
-        $("#guard-armor").val(Number(getArmor) + 1);
-
-    }
-
+function calcFeatsCost(){
+	if (".feats-select == Alternate Form I"){
+		  $(this).parent().next().children().first().val(3);
+	}
 }
