@@ -96,7 +96,6 @@ $(document).ready(function(){
         {id: 'Alternate Form I', text:'Alternate Form I'}, {id: 'Alternate Form II', text: 'Alternate Form II'}, {id: 'Area Manipulation I', text: 'Area Manipulation I'}, {id: 'Area Manipulation II', text: 'Area Manipulation II'}
     
     ]
-
     
     // Gives data to HTML select tags 
     
@@ -106,9 +105,7 @@ $(document).ready(function(){
         placeholder: 'Select Feats',
         data: feats1Array,
         maximumSelectionLength: 1
-    });
-    
-    
+    });    
     $('#archetype-select').select2({
         placeholder: 'Select Archetype', 
         data: archetypeArray,
