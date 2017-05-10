@@ -665,8 +665,8 @@
                             <tbody>
                                 <tr>
                                     <td><input class="my-input attr-total" id="attr-totalt-points" value="40" type="number" disabled></td>
-                                    <td><input class="my-input attr-invested" type="number" disabled></td>
-                                    <td><input class="my-input attr-available" type="number" disabled></td>
+                                    <td><input class="my-input attr-invested" id="attr-invested-points" type="number" disabled></td>
+                                    <td><input class="my-input attr-available" id="attr-available-points" type="number" disabled></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -703,10 +703,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score" id="input-agility" placeholder=" +">
                                     </td>
                                     <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-agility" disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-agility" disabled>
                                     </td>
                                 </tr>
                             </tbody>
@@ -739,10 +739,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score total-hitpoints" id="input-fortitude" placeholder=" +" />
                                     </td>
                                      <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-fortitude" disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-fortitude" disabled>
                                     </td>
                                 </tr>
                             </tbody>
@@ -775,10 +775,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score" id="input-might" placeholder=" +" />
                                     </td>
                                      <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-might" disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-might" disabled>
                                     </td>
                                 </tr>
                             </tbody>
@@ -815,10 +815,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score" id="input-deception" placeholder=" +" />
                                     </td>
                                     <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-deception"  disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-deception"  disabled>
                                     </td>
                                 </tr>
                             </tbody>
@@ -852,10 +852,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score total-hitpoints" id="input-presence" placeholder=" +" />
                                     </td>
                                     <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-presence" disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-presence" disabled>
                                     </td>
                                 </tr>
                             </tbody>
@@ -888,10 +888,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score" id="input-persuasion" placeholder=" +" />
                                     </td>
                                     <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-persuasion" disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-persuasion" disabled>
                                     </td>
                                 </tr>
                             </tbody>
@@ -927,10 +927,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score" id="input-learning" placeholder=" +" />
                                     </td>
                                      <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-learning" disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-learning" disabled>
                                     </td>
                                 </tr>
                             </tbody>
@@ -963,10 +963,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score" id="input-logic" placeholder=" +" />
                                     </td>
                                     <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-logic" disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-logic" disabled>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1000,10 +1000,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score" id="input-perception" placeholder=" +" />
                                     </td>
                                     <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-perception" disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-perception" disabled>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1036,10 +1036,10 @@
                                         <input min="0" max="5" type="number" class="my-input attr-score total-hitpoints" id="input-will" placeholder=" +" />
                                     </td>
                                     <td>
-                                        <input type="number" class="my-input attr-cost" disabled>
+                                        <input type="number" class="my-input attr-cost" id="cost-will" disabled>
                                     </td>
                                     <td>
-                                        <input type="text" class="my-input attr-dice" disabled>
+                                        <input type="text" class="my-input attr-dice" id="dice-will" disabled>
                                     </td>
                                 </tr>
                             </tbody>

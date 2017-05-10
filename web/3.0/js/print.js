@@ -21,8 +21,39 @@ $(document).ready(function(){
        invested: $('#feat-invested-points').val(),
        available: $('#feat-available-points').val()
    }
+   var feats = {
+       selected: $('#feats-select1').val(),
+       cost: $('#feats-cost1').val(),
+   }
+   var attributePoints = {
+       total: $('#attr-total-points').val(),
+       invested: $('#attr-invested-points').val(),
+       available: $('#attr-available-points').val()       
+   }
+   var agility = {
+       score: $('#input-agility').val(),
+       cost: $('#cost-agility').val(),
+       dice: $('#dice-agility').val()       
+   }
+   var fortitude = {
+       score: $('#input-fortitude').val(),
+       cost: $('#cost-fortitude').val(),
+       dice: $('#dice-fortitude').val()       
+   }
+   var might = {
+       score: $('#input-might').val(),
+       cost: $('#cost-might').val(),
+       dice: $('#dice-might').val()       
+   }
+   var deception = {
+       score: $('#input-deception').val(),
+       cost: $('#cost-deception').val(),
+       dice: $('#dice-deception').val()
+   }
    
-   $('#perks-select').on('select', alert(perksFlaws.perks));
+   
+   
+  
    
    
 });
