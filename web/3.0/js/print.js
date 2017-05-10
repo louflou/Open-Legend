@@ -80,6 +80,51 @@ $(document).ready(function(){
        cost: $('#cost-will').val(),
        dice: $('#dice-will').val()
    }
+   var alteration = {
+       score: $('#input-alteration').val(),
+       cost: $('#cost-alteration').val(),
+       dice: $('#dice-alteration').val()
+   }
+   var creation = {
+       score: $('#input-creation').val(),
+       cost: $('#cost-creation').val(),
+       dice: $('#dice-creation').val()
+   }
+   var energy = {
+       score: $('#input-energy').val(),
+       cost: $('#cost-energy').val(),
+       dice: $('#dice-energy').val()
+   }
+   var entropy = {
+       score: $('#input-entropy').val(),
+       cost: $('#cost-entropy').val(),
+       dice: $('#dice-entropy').val()
+   }
+   var influence = {
+       score: $('#input-influence').val(),
+       cost: $('#cost-influence').val(),
+       dice: $('#dice-influence').val()
+   }
+   var movement = {
+       score: $('#input-movement').val(),
+       cost: $('#cost-movement').val(),
+       dice: $('#dice-movement').val()
+   }
+   var prescience = {
+       score: $('#input-prescience').val(),
+       cost: $('#cost-prescience').val(),
+       dice: $('#dice-prescience').val()
+   }
+   var protection = {
+       score: $('#input-protection').val(),
+       cost: $('#cost-protection').val(),
+       dice: $('#dice-protection').val()
+   }
+   
+   
+   
+   
+   
    
    
    
