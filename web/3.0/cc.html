@@ -137,26 +137,24 @@
                             <table class="table table-bordered tbl">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <td><input type="text" class="my-input" placeholder="Character name"></td>
+                                        <th><label for="c-name">Name</label></th>
+                                        <td><input type="text" class="my-input" id="c-name" placeholder="Character name"></td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th>Player</th>
-                                        <td><input type="text" class="my-input" placeholder="Player name"></td>
+                                        <th><label for="p-name">Player</label></th>
+                                        <td><input type="text" class="my-input" id="p-name" placeholder="Player name"></td>
                                     </tr>
                                     <tr>
-                                        <th>Archetype</th>
+                                        <th><label for="#archetype-select">Archetype</label></th>
                                         <td>
-                                            <select id="archetype-select">
-
-                                            </select>
+                                            <select id="archetype-select"></select>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>Description</th>
-                                        <td><textarea class="form-control"></textarea></td>
+                                        <th><label for="description-text">Description</label></th>
+                                        <td><textarea class="form-control" id="description-text"></textarea></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -454,14 +452,10 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <select id="perks-select" multiple>
-
-                                        </select>
+                                        <select id="perks-select" multiple></select>
                                     </td>
                                     <td>
-                                        <select id="flaws-select" multiple>
-
-                                        </select>
+                                        <select id="flaws-select" multiple></select>
                                     </td>
                                 </tr>
                             </tbody>
@@ -503,8 +497,8 @@
                       <tbody>
                           <tr>
                               <td><input class="my-input featpoints-total" id="feat-total-points" value="6" type="number" disabled></td>
-                              <td><input class="my-input featpoints-invested" type="number" disabled></td>
-                              <td><input class="my-input featpoints-available" type="number" disabled></td>
+                              <td><input class="my-input featpoints-invested" id="feat-invested-points" type="number" disabled></td>
+                              <td><input class="my-input featpoints-available" id="feat-available-points" type="number" disabled></td>
                           </tr>
                       </tbody>
                   </table>
