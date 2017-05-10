@@ -1,5 +1,11 @@
 $(document).ready(function(){
-  // Character Info 
+    getAllValues();
+      $('#save-btn').on('click', getAllValues);
+   
+});
+
+function getAllValues(){
+    // Character Info 
     var stats = {
        level: $('#levelValue').val(),
        xp: $('#xp-input').val(),
@@ -25,8 +31,9 @@ $(document).ready(function(){
        selected: $('#feats-select1').val(),
        cost: $('#feats-cost1').val(),
    }
+   // Attributes
    var attributePoints = {
-       total: $('#attr-total-points').val(),
+       total: $('#attr-totalt-points').val(),
        invested: $('#attr-invested-points').val(),
        available: $('#attr-available-points').val()       
    }
@@ -120,15 +127,84 @@ $(document).ready(function(){
        cost: $('#cost-protection').val(),
        dice: $('#dice-protection').val()
    }
+   // Defenses
+   var hitPoints = {
+       total: $('#sum-hitpoints').val(),
+       current: $('#current-hitpoints').val()
+   }
+   var equipment = {
+       armor: $('#armor-select').val(),
+       weapons: $('#weapon-select').val(),
+       shield: $('#shield-select').val()
+   }
+   var armorClass = {
+       // Guard
+       guardTotal: $('#guard-total').val(),
+       guardArmor: $('#guard-armor').val(),
+       guardShield: $('#guard-shield').val(),
+       guardAttr: $('#guard-attr').val(),
+       guardFeats: $('#guard-feats').val(),
+       // Toughness
+       toughTotal: $('#toughness-total').val(),
+       toughAttr: $('#toughness-attr').val(),
+       toughFeats: $('#toughness-feats').val(),
+       // Resolve
+       resolveTotal: $('#resolve-total').val(),
+       resolveAttr: $('#resolve-attr').val(),
+       resolveFeats: $('#resolve-feats').val()
+   }
+   var statsValues = [
+        stats.level, 
+        stats.xp, 
+        stats.wealth, 
+        stats.speed,
+                   ]
+   var infoValues = [
+       info.cName,
+       info.pName,
+       info.archetype,
+       info.description
+   ]
+   var perksFlawsValues = [
+       perksFlaws.perks,
+       perksFlaws.flaws
+   ]
+   var featPointsValues = [
+       featPoints.total,
+       featPoints.invested,
+       featPoints.available
+   ]
+   var featsValues = [
+       feats.selected,
+       feats.cost
+   ]
+   var attributePointsValues = [
+       attributePoints.total,
+       attributePoints.invested,
+       attributePoints.available
+   ]
+   var attributeValues = [
+       agility.score, agility.cost, agility.dice,
+       fortitude.score, fortitude.cost, fortitude.dice,
+       might.score, might.cost, might.dice,
+       deception.score, deception.cost, deception.dice,
+       presence.score, presence.cost, presence.dice,
+       persuasion.score, persuasion.cost, persuasion.dice,
+       learning.score, learning.cost, learning.dice,
+       logic.score, logic.cost, logic.dice,
+       perception.score, perception.cost, perception.dice,
+       will.score, will.cost, will.dice,
+       alteration.score, alteration.cost, alteration.dice,
+       creation.score, creation.cost, creation.dice,
+       energy.score, energy.cost, energy.dice,
+       entropy.score, entropy.cost, entropy.dice,
+       influence.score, influence.cost, influence.dice,
+       movement.score, movement.cost, movement.dice,
+       prescience.score, prescience.cost, prescience.dice,
+       protection.score, protection.cost, protection.dice
+   ]
    
+   alert(attributePointsValues);
+
    
-   
-   
-   
-   
-   
-   
-  
-   
-   
-});
+}
