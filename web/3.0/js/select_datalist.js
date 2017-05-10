@@ -91,10 +91,23 @@ $(document).ready(function(){
         {id: 'Zealous', text: 'Zealous'}
     ]
 
+    var feats1Array = [
+        
+        {id: 'Alternate Form I', text:'Alternate Form I'}, {id: 'Alternate Form II', text: 'Alternate Form II'}, {id: 'Area Manipulation I', text: 'Area Manipulation I'}, {id: 'Area Manipulation II', text: 'Area Manipulation II'}
     
+    ]
 
     
     // Gives data to HTML select tags 
+    
+    
+    
+    $('#feats-select1').select2({
+        placeholder: 'Select Feats',
+        data: feats1Array,
+        maximumSelectionLength: 1
+    });
+    
     
     $('#archetype-select').select2({
         placeholder: 'Select Archetype', 
