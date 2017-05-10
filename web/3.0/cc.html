@@ -1382,7 +1382,7 @@
                             <tbody>
                                 <tr>
                                     <td><input value="10" type="number" class="my-input" id="sum-hitpoints" disabled /></td>
-                                    <td><input type="number" class="my-input" /></td>
+                                    <td><input type="number" class="my-input" id="current-hitpoints"/></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1692,14 +1692,12 @@
                             <tr>
                                 <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-armor">ARMOR</a></th>
                                 <td>
-                                    <select id="armor-select" multiple data-max-options="1">
-                                    </select>
+                                    <select id="armor-select" multiple data-max-options="1"></select>
                                 </td>
                             <tr>
                                 <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-weapons">WEAPONS</a></th>
                                 <td>
-                                    <select id="weapon-select" multiple data-max-options="5" >
-                                    </select>
+                                    <select id="weapon-select" multiple data-max-options="5" ></select>
 
                                 </td>
                             </tr>
@@ -1707,8 +1705,7 @@
                             <tr>
                                 <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-items">SHIELD</a></th>
                                 <td>
-                                    <select id="shield-select" multiple>
-                                    </select>
+                                    <select id="shield-select" multiple></select>
                                 </td>
                             </tr>
 
@@ -1750,7 +1747,7 @@
                                     <td><input id="guard-armor" type="number" class="my-input" disabled></td>
                                     <td><input id="guard-shield" type="number" class="my-input" disabled></td>
                                     <td><input type="number" class="my-input" id="guard-attr" disabled></td>
-                                    <td><input type="number" class="my-input" disabled></td>
+                                    <td><input id="guard-feats" type="number" class="my-input" disabled></td>
                                 </tr>
                                 <tr>
                                     <th>Toughness</th>
@@ -1758,7 +1755,7 @@
                                     <td><input placeholder="No" type="number" class="my-input" disabled></td>
                                     <td><input placeholder="No"  type="number" class="my-input" disabled></td>
                                     <td><input type="number" class="my-input" id="toughness-attr" disabled></td>
-                                    <td><input type="number" class="my-input" disabled></td>
+                                    <td><input type="number" class="my-input" id="toughness-feats" disabled></td>
                                 </tr>
                                 <tr>
                                     <th>Resolve</th>
@@ -1766,7 +1763,7 @@
                                     <td><input placeholder="No"  type="number" class="my-input" disabled></td>
                                     <td><input  placeholder="No" type="number" class="my-input" disabled></td>
                                     <td><input type="number" class="my-input" id="resolve-attr" disabled></td>
-                                    <td><input type="number" class="my-input"></td>
+                                    <td><input type="number" class="my-input" id="resolve-feats"></td>
                                 </tr>
                             </tbody>
                         </table>
