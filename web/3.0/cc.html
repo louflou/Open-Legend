@@ -1931,12 +1931,31 @@
                         <div id="clps-armorclass" class="panel-collapse collapse">
                             <div class="panel-body text-justify">
                                 <div class="col-sm-12">
-                                    Majken :)
-                                    Beskriv rutan med defenses så man fattar vad det betyder ;)))
+                                    <p>When an enemy tries to attack you–whether with the shot of a rifle, a deft sword thrust, or a mental assault–it will first need to overcome your defense. You have three defense scores, and each one protects you from different types of attacks. The higher your defense, the better you are at avoiding or shrugging off whatever your foes throw at you.</p>
                                 </div>
                             </div>
                         </div>
-
+                        <div id="clps-guard" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <H5>Guard</H5>
+                                <p>Guard protects you from attacks that can either be dodged, deflected, or directly withstood via raw physical power. Your enemies would need to overcome your guard in order to hit you with a grenade, shoot you with an arrow, or smash you with a maul.</p>
+                                <p>Guard = 10 + Armor + Shield + Agility + Might + Feats</p>
+                            </div>
+                        </div>
+                        <div id="clps-toughness" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <H5>Toughness</H5>
+                                <p>Toughness protects you from attacks that test your endurance, bodily health, sturdiness, and survivability. For example, foes attempting to poison you, drain your life force, or stun you will target your toughness.</p>
+                                <p>Toughness = 10 + Fortitude + Will + Feats</p>
+                            </div>
+                        </div>
+                        <div id="clps-resolve" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <H5>Resolve</H5>
+                                <p>Resolve represents your character’s ability to resist mental domination and stand brave in the face of danger. Enemies who wish to charm you, deceive you with illusions, or frighten you must target your resolve.</p>
+                                <p>Resolve = 10 + Presence + Will + Feats</p>
+                            </div>
+                        </div>
                         <table class="table table-bordered tbl">
                             <thead class="six-cells">
                                 <tr>
@@ -1950,7 +1969,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th>Guard</th>
+                                    <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-guard">Guard</a></th>
                                     <td><input type="number" class="my-input" id="guard-total" disabled></td>
                                     <td><input id="guard-armor" type="number" class="my-input" disabled></td>
                                     <td><input id="guard-shield" type="number" class="my-input" disabled></td>
@@ -1958,7 +1977,7 @@
                                     <td><input id="guard-feats" type="number" class="my-input" disabled></td>
                                 </tr>
                                 <tr>
-                                    <th>Toughness</th>
+                                    <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-toughness">Toughness</a></th>
                                     <td><input type="number" class="my-input" id="toughness-total" disabled></td>
                                     <td><input placeholder="No" type="number" class="my-input" disabled></td>
                                     <td><input placeholder="No"  type="number" class="my-input" disabled></td>
@@ -1966,7 +1985,7 @@
                                     <td><input type="number" class="my-input" id="toughness-feats" disabled></td>
                                 </tr>
                                 <tr>
-                                    <th>Resolve</th>
+                                    <th><a data-toggle="collapse" data-parent="#accordion3" href="#clps-resolve">Resolve</a></th>
                                     <td><input type="number" class="my-input" id="resolve-total" disabled></td>
                                     <td><input placeholder="No"  type="number" class="my-input" disabled></td>
                                     <td><input  placeholder="No" type="number" class="my-input" disabled></td>
