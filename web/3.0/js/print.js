@@ -1,11 +1,10 @@
 $(document).ready(function(){
-    getAllValues();
-      $('#save-btn').on('click', getAllValues);
-   
+    $('#save-btn').on('click', getAllValues);
 });
 
 function getAllValues(){
     // Character Info 
+    
     var stats = {
        level: $('#levelValue').val(),
        xp: $('#xp-input').val(),
@@ -184,27 +183,36 @@ function getAllValues(){
        attributePoints.available
    ]
    var attributeValues = [
-       agility.score, agility.cost, agility.dice,
-       fortitude.score, fortitude.cost, fortitude.dice,
-       might.score, might.cost, might.dice,
-       deception.score, deception.cost, deception.dice,
-       presence.score, presence.cost, presence.dice,
-       persuasion.score, persuasion.cost, persuasion.dice,
-       learning.score, learning.cost, learning.dice,
-       logic.score, logic.cost, logic.dice,
-       perception.score, perception.cost, perception.dice,
-       will.score, will.cost, will.dice,
-       alteration.score, alteration.cost, alteration.dice,
-       creation.score, creation.cost, creation.dice,
-       energy.score, energy.cost, energy.dice,
-       entropy.score, entropy.cost, entropy.dice,
-       influence.score, influence.cost, influence.dice,
-       movement.score, movement.cost, movement.dice,
-       prescience.score, prescience.cost, prescience.dice,
-       protection.score, protection.cost, protection.dice
+       // 18 * 3 = 54 (= 53)
+       [agility.score, agility.cost, agility.dice],
+       [fortitude.score, fortitude.cost, fortitude.dice],
+       [might.score, might.cost, might.dice],
+       [deception.score, deception.cost, deception.dice],
+       [presence.score, presence.cost, presence.dice],
+       [persuasion.score, persuasion.cost, persuasion.dice],
+       [learning.score, learning.cost, learning.dice],
+       [logic.score, logic.cost, logic.dice],
+       [perception.score, perception.cost, perception.dice],
+       [will.score, will.cost, will.dice],
+       [alteration.score, alteration.cost, alteration.dice],
+       [creation.score, creation.cost, creation.dice],
+       [energy.score, energy.cost, energy.dice],
+       [entropy.score, entropy.cost, entropy.dice],
+       [influence.score, influence.cost, influence.dice],
+       [movement.score, movement.cost, movement.dice],
+       [prescience.score, prescience.cost, prescience.dice],
+       [protection.score, protection.cost, protection.dice]
    ]
    
-   alert(attributePointsValues);
+   if (perksFlaws.perks.length > perksFlaws.flaws.length){
+       alert('You need the same amount of Perks as Flaws. Please add some Flaws or remove some Perks!');
+   }else if (perksFlaws.perks.length < perksFlaws.flaws.length){
+       alert('You need the same amount of Perks as Flaws. Please remove some Flaws or add some Perks!');
+        
+   }
 
+   
+   
+   
    
 }

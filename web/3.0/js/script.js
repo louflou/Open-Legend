@@ -13,7 +13,7 @@ $(document).ready(function(){
     $("#input-will").on("change", toughnessAttr);
     $("#input-presence").on("change", resolveAttr);
     $("#input-will").on("change", resolveAttr);
-		$(".feats-select").on("change", calcFeatsCost);
+    $(".feats-select").on("change", calcFeatsCost);
     wealth();
 });
 
@@ -545,12 +545,23 @@ function getPerks(){
     var perks = [];
     $("#perks-select")
 
-
 }
+
+/*
+gör en lista med alla som kostar 1, 2, 3... etc. och sen IF selectedFeat in list ---> thisparentnextchildrenfirstval(det den kostar)
+
+function calcfeatcost(fn1, fn2, fn3, fn4, fn5, fn6){
+    var selectedFeat = $(this).val();
+    if selectedFeat in== fn3{
+        $()
+    }
+}
+*/
 
 function calcFeatsCost(){
 	//Skriver ut kostnaden för alla Feats och Tiers -Marika
 	var selectedFeat = $(this).val();
+    //var featsCost = $(this).parent().next().children().first().val();
 	if (selectedFeat == "Alternate Form I"){
 		  $(this).parent().next().children().first().val(3);
 	}

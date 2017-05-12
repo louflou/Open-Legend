@@ -1,28 +1,23 @@
 $(document).ready(function(){
-   
     // archetype array
     var archetypeArray = [
         {id: '0', text: 'Custom'}, {id: '1', text: 'Barbarian'}, {id: '2', text: 'Ranger'}, {id: '3', text: 'Monk'}, {id: '4', text: 'Paladin'}, {id: '5', text: 'Battle Mage'}, {id: '5', text: 'Mind Mage'}, {id: '6', text: 'Assassin'}, {id: '7', text: 'Cleric'}, {id: '8', text: 'Druid'}, {id: '9', text: 'Shadowdancer'}, {id: '10', text: 'Bard'}, {id: '11', text: 'Arcane Protector'}
     ]
-    
     //armor array
     var lightArmorArray = [
         {id: 'Leather Armor', text: 'Leather Armor'}, {id: 'Steelsilk', text: 'Steelsilk'}, {id: 'Padded Armor', text: 'Padded Armor'} 
-    
     ]
     var mediumArmorArray = [
         {id: 'Armored Trench Coat', text: 'Armored Trench Coat'}, {id: 'Electropolymer Armor', text: 'Electropolymer Armor'}, {id: 'Chainmail', text: 'Chainmail'}, {id: 'Kevlar Vest', text: 'Kevlar Vest'}, {id: 'Breastplate', text: 'Breastplate'}
     ]
     var heavyArmorArray = [
         {id: 'Yoroi Armor', text: 'Yoroi Armor'}, {id: 'Plate Mail', text: 'Plate Mail'}, {id: 'Riot Suit', text: 'Riot Suit'}, {id: 'Power Armor', text: 'Power Armor'}, {id: 'Elven Plate Mail', text: 'Elven Plate Mail'} 
-    
     ]
     var armorArray = [
         {text: 'Light', children: lightArmorArray}, 
         {text: 'Medium', children: mediumArmorArray}, 
         {text: 'Heavy',children: heavyArmorArray}     
     ] 
-    
     // weapon array
     var oneHandedArray = [
         {id: 'Unarmed Strike', text: 'Unarmed Strike'}, {id: 'Bowie Knife', text: 'Bowie Knife'}, {id: 'Shiv', text: 'Shiv'}, {id: 'Multi-tool', text: 'Multi-tool'}, {id: 'Scimitar', text: 'Scimitar'}, {id: 'Short Sword', text: 'Short Sword'}, {id: 'Machete', text: 'Machete'}, {id: 'Sawblade', text: 'Sawblade'}, {id: 'Blow Gun', text: 'Blow Gun'}, {id: 'Dart', text: 'Dart'}, {id: 'Hatchet', text: 'Hatchet'}, {id: 'Dagger', text: 'Dagger'}, {id: 'Mace', text: 'Mace'}, {id: 'Baseball Bat', text: 'Baseball Bat'}, {id: 'Club', text: 'Club'}, {id: 'Improvised Weapon', text: 'Improvised Weapon'}, {id: 'Warhammer', text: 'Warhammer'}        
@@ -54,16 +49,13 @@ $(document).ready(function(){
         {text: 'Long Ranged', children: longRangedArray},
         {text: 'Extreme Ranged', children: extremeRangedArray}
     ]
-    
     //shield Array
     var shieldArray = [
         {id: 'Small Shield', text: 'Small Shield'},
         {id: 'Riot Shield', text: 'Riot Shield'},
         {id: 'Tower Shield', text: 'Tower Shield'}
     ]
-    
     // Perks Array
-
     var perksArray = [
     	{id: 'Ageless', text: 'Ageless'}, {id: 'Artisan', text:'Artisan'}, {id: 'Asctetic', text:'Asctetic'}, {id: 'Attractive', text:'Attractive'},
     	{id: 'Brute', text:'Brute'}, {id: 'Courageous', text:'Courageous'}, {id: 'Crowd Favorite', text: 'Crowd Favorite'}, {id: 'Disease Immunity', text: 'Disease Immunity'},
@@ -75,8 +67,6 @@ $(document).ready(function(){
 		{id: 'Stone Sense', text: 'Stone Sense'}, {id: 'Street Rat', text: 'Street Rat'}, {id: 'Upper Class', text: 'Upper Class'}, {id: 'Vagabond', text: 'Vagabond'}, {id: 'Warriors Code', text: 'Warriors Code'},
 		{id: 'Wisperer of the Wild', text: 'Wisperer of the Wild'}
     ]
-    
-    
     var flawsArray = [    
         {id: 'Absent-minded', text: 'Absent-minded'}, {id: 'Addiction', text: 'Addiction'}, {id: 'Ambitious', text: 'Ambitious'}, 
         {id: 'Bloodlust', text: 'Bloodlust'}, {id: 'Brash', text:'Brash'}, {id: 'Bravado', text: 'Bravado'}, 
@@ -90,10 +80,7 @@ $(document).ready(function(){
         {id: 'Stubborn', text: 'Stubborn'}, {id: 'Unoordinated', text: 'Uncoordinated'}, {id: 'Vengful', text: 'Vengful'}, 
         {id: 'Zealous', text: 'Zealous'}
     ]
-
-   
-    var featsArray = [
-        
+    var featsArray = [   
         {id: 'Alternate Form I', text:'Alternate Form I'}, {id: 'Alternate Form II', text: 'Alternate Form II'}, {id: 'Area Manipulation I', text: 'Area Manipulation I'}, {id: 'Area Manipulation II', text: 'Area Manipulation II'},
         {id:'Area Manipulation III', text:'Area Manipulation III'}, {id:'Area Manipulation IV', text:'Area Manipulation IV'}, {id:'Area Manipulation V', text:'Area Manipulation V'}, {id:'Armor Mastery I', text:'Armor Mastery I'},
         {id:'Armor Mastery II', text:'Armor Mastery II'}, {id:'Attack Redirection', text:'Attack Redirection'}, {id:'Attack Specialization I', text:'Attack Specialization I'}, {id:'Attack Specialization II', text:'Attack Specialization II'},
@@ -141,14 +128,8 @@ $(document).ready(function(){
         {id:'Sworn Enemy VII', text:'Sworn Enemy VII'}, {id:'Sworn Enemy VIII', text:'Sworn Enemy VIII'}, {id:'Sworn Enemy IX', text:'Sworn Enemy IX'}, {id:'Sworn Enemy X', text:'Sworn Enemy X'},
         {id:'Tough as Nails I', text:'Tough as Nails I'}, {id:'Tough as Nails II', text:'Tough as Nails II'}, {id:'Two Weapon Brute', text:'Two Weapon Brute'}, {id:'Two Weapon Defense', text:'Two Weapon Defense'},
         {id:'Unending Charm', text:'Unending Charm'}, {id:'Untrackable', text:'Untrackable'}, {id:'Vicious Strike', text:'Vicious Strike'}, {id:'Wealthy', text:'Wealthy'}, {id:'Well-Rounded', text:'Well-Rounded'}
-
-
-    ]
-        
-    
+    ]  
     // Gives data to HTML select tags 
-    
-    
     $('#feats-select1').select2({
         placeholder: 'Select Feats',
         data: featsArray,
@@ -159,7 +140,6 @@ $(document).ready(function(){
         placeholder: 'Select Feats',
         data: featsArray,
         maximumSelectionLength: 1
-
     });
     
     $('#feats-select3').select2({
@@ -210,7 +190,6 @@ $(document).ready(function(){
         maximumSelectionLength: 1
     });
    
-    
     $('#archetype-select').select2({
         placeholder: 'Select Archetype', 
         data: archetypeArray,
