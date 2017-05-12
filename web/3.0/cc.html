@@ -85,7 +85,7 @@
                             </div>
                             <!--Collapse som innehåller tabeller som kort förklarar vad Level, XP, Wealth och Speed betyder-->
                             <div id="clps-stats" class="panel-collapse collapse">
-                                <div class="panel-body">
+                                <div class="panel-body col-sm-12">
                                     <div class="col-sm-6 text-justify">
                                       <div class="text-center">
                                         <a href="#clps-level" data-toggle="collapse" data-parent="#accordion5" class="btn btn-default">Level</a>
@@ -97,6 +97,7 @@
                                         <p>Your level is used to determine your maximum attribute score as well as to provide a general indication of
                                            your power compared to other characters and enemy or ally NPCs.</p>
                                     </div>
+
                                     <div class="col-sm-6 text-justify">
                                       <div class="text-center">
                                         <a href="#clps-wealth" data-toggle="collapse" data-parent="#accordion5" class="btn btn-default">Wealth</a>
@@ -108,6 +109,8 @@
                                         and spend your riches. Your wealth score provides a general description of how well-off you are and the typical types of
                                         goods and services you can acquire.</p>
                                     </div>
+                                  </div>
+                                  <div class="panel-body col-sm-12">
                                     <div class="col-sm-6 text-justify">
                                       <h5>XP</h5>
                                       <p>As the legend you are creating unfolds and grows in danger and magnitude, your character’s power will grow to
@@ -119,108 +122,8 @@
                                       <h5>Speed</h5>
                                       <p>Speed indicates how far your character can move using a single move action. Your base speed is 30 feet (just over 9 meters). Other effects, such as banes, boons, and feats may cause your speed to increase or decrease.</p>
                                     </div>
-
                                 </div>
 
-                                <!--Collapse med tabell som förklarar hur många poäng varje level ger-->
-                                <div id="clps-level" class="panel-collapse collapse">
-                                    <div class="panel-body ">
-                                        <table class="table table-hover col-sm-6">
-                                            <thead>
-                                                <tr>
-                                                <th>Level</th>
-                                                <th>XP</th>
-                                                <th>Attribute points</th>
-                                                <th>Max Attribute</th>
-                                                <th>Feat Points</th>
-                                                <th>Wealth Score</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th>1</th>
-                                                    <td>0</td>
-                                                    <td>40</td>
-                                                    <td>5</td>
-                                                    <td>6</td>
-                                                    <td>2</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>2</th>
-                                                    <td>3</td>
-                                                    <td>49</td>
-                                                    <td>5</td>
-                                                    <td>9</td>
-                                                    <td>2</td>
-                                                </tr>
-                                                <tr>
-                                                  <th>3</th>
-                                                  <td>6</td>
-                                                  <td>58</td>
-                                                  <td>6</td>
-                                                  <td>12</td>
-                                                  <td>3</td>
-                                                </tr>
-                                                <tr>
-                                                  <th>4</th>
-                                                  <td>9</td>
-                                                  <td>67</td>
-                                                  <td>6</td>
-                                                  <td>15</td>
-                                                  <td>4</td>
-                                                </tr>
-                                                <tr>
-                                                  <th>5</th>
-                                                  <td>12</td>
-                                                  <td>76</td>
-                                                  <td>7</td>
-                                                  <td>18</td>
-                                                  <td>4</td>
-                                                </tr>
-                                                <tr>
-                                                  <th>6</th>
-                                                  <td>15</td>
-                                                  <td>85</td>
-                                                  <td>7</td>
-                                                  <td>21</td>
-                                                  <td>5</td>
-                                                </tr>
-                                                <tr>
-                                                  <th>7</th>
-                                                  <td>18</td>
-                                                  <td>94</td>
-                                                  <td>8</td>
-                                                  <td>24</td>
-                                                  <td>6</td>
-                                                </tr>
-                                                <tr>
-                                                  <th>8</th>
-                                                  <td>21</td>
-                                                  <td>103</td>
-                                                  <td>8</td>
-                                                  <td>27</td>
-                                                  <td>6</td>
-                                                </tr>
-                                                <tr>
-                                                  <th>9</th>
-                                                  <td>24</td>
-                                                  <td>112</td>
-                                                  <td>9</td>
-                                                  <td>30</td>
-                                                  <td>7</td>
-                                                </tr>
-                                                <tr>
-                                                  <th>10</th>
-                                                  <td>27</td>
-                                                  <td>121</td>
-                                                  <td>9</td>
-                                                  <td>33</td>
-                                                  <td>8</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
                             <!--Collapse med tabell som förklarar vad Wealth Score betyder-->
                             <div id="clps-wealth" class="panel-collapse collapse">
                                 <div class="panel-body ">
@@ -330,6 +233,8 @@
                                         <h5>Player</h5>
                                         <p>This is where you put the name of the person who plays the character. Leave this empty if you are making a template for future use.</p>
                                       </div>
+                                    </div>
+                                    <div class="col-sm-12 text-justify">
                                       <div class="col-sm-6 text-justify">
                                         <h5>Archetype</h5>
                                         <p>This section contains an assortment of characters built for a variety of genres. If you do not want to create your own character from scratch, you can use these as is. Just add your own perks, flaws, and descriptive traits and you are ready to go. Alternatively, you might use one of these archetypes to get you started, swapping out attributes and feats to develop your own unique character concept for the setting that you will be playing in.</p>
@@ -733,7 +638,8 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>Alternate Form I</td>
-                                                        <td><b>Description:</b> You have the ability to transform from one persona to another, whether that be through bodily transformation like a werewolf or through exterior mechanisms, such as a cybernetically enhanced soldier who can call forth a symbiotic mech suit.
+                                                        <td><b>Prerequisites: </b> None.
+                                                        <br><b>Description:</b> You have the ability to transform from one persona to another, whether that be through bodily transformation like a werewolf or through exterior mechanisms, such as a cybernetically enhanced soldier who can call forth a symbiotic mech suit.
                                                         <br><b> Tier: </b>Upon taking this feat, you build a single alternate form using the normal character creation rules, though your attribute and feat points are determined by your tier in this feat: Half of your primary form's attribute points (rounded up), and 3 feat points.
                                                         <br><b> Effect: </b>Whenever your primary form gains new attribute points or levels up, your alternate form also gains points according to the above formulas.
                                                         As a focus action, you may change between any two forms (including your primary form or any alternate form). You maintain this capability in all of your forms.
