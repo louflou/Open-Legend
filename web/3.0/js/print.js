@@ -1,11 +1,11 @@
 $(document).ready(function(){
     getAllValues();
       $('#save-btn').on('click', getAllValues);
-
+   
 });
 
 function getAllValues(){
-    // Character Info
+    // Character Info 
     var stats = {
        level: $('#levelValue').val(),
        xp: $('#xp-input').val(),
@@ -20,7 +20,7 @@ function getAllValues(){
    }
    var perksFlaws = {
        perks: $('#perks-select').val(),
-       flaws: $('#flaws-select').val()
+       flaws: $('#flaws-select').val()  
    }
    var featPoints = {
        total: $('#feat-total-points').val(),
@@ -35,22 +35,22 @@ function getAllValues(){
    var attributePoints = {
        total: $('#attr-totalt-points').val(),
        invested: $('#attr-invested-points').val(),
-       available: $('#attr-available-points').val()
+       available: $('#attr-available-points').val()       
    }
    var agility = {
        score: $('#input-agility').val(),
        cost: $('#cost-agility').val(),
-       dice: $('#dice-agility').val()
+       dice: $('#dice-agility').val()       
    }
    var fortitude = {
        score: $('#input-fortitude').val(),
        cost: $('#cost-fortitude').val(),
-       dice: $('#dice-fortitude').val()
+       dice: $('#dice-fortitude').val()       
    }
    var might = {
        score: $('#input-might').val(),
        cost: $('#cost-might').val(),
-       dice: $('#dice-might').val()
+       dice: $('#dice-might').val()       
    }
    var deception = {
        score: $('#input-deception').val(),
@@ -154,9 +154,9 @@ function getAllValues(){
        resolveFeats: $('#resolve-feats').val()
    }
    var statsValues = [
-        stats.level,
-        stats.xp,
-        stats.wealth,
+        stats.level, 
+        stats.xp, 
+        stats.wealth, 
         stats.speed,
                    ]
    var infoValues = [
@@ -203,8 +203,8 @@ function getAllValues(){
        prescience.score, prescience.cost, prescience.dice,
        protection.score, protection.cost, protection.dice
    ]
+   
+   alert(attributePointsValues);
 
-  
-
-
+   
 }
