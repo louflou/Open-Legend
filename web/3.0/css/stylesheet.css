@@ -115,9 +115,6 @@ p {
 .panel {
     overflow: hidden;
 }
-.twenty {
-    width:20%;
-}
 .panel-heading a {
     text-transform: uppercase;
     color: black;

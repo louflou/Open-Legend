@@ -198,7 +198,7 @@ $(document).ready(function(){
     $('#armor-select').select2({
         placeholder:'Select Armor', 
         data: armorArray,
-        maximumSelectionLength: 3
+        maximumSelectionLength: 1
     });
     $('#weapon-select').select2({
         placeholder:'Select Weapon', 

@@ -13,8 +13,7 @@ $(document).ready(function(){
     $("#input-will").on("change", toughnessAttr);
     $("#input-presence").on("change", resolveAttr);
     $("#input-will").on("change", resolveAttr);
-    //$(".feats-select").on("change", calcFeatsCost);
-    $(".feats-select").on("change", calcFeatCost);
+    $(".feats-select").on("change", calcFeatsCost);
     wealth();
 });
 
@@ -548,33 +547,16 @@ function getPerks(){
 
 }
 
-function inArray(needle, haystack) {
-    var length = haystack.length;
-    for(var i = 0; i < length; i++) {
-        if(haystack[i] == needle) return true;
-    }
-    return false;
-}
-
-function calcFeatCost(){
-    var fn1 = ["Area Manipulation I", "Brutal Intimidation", "Climbing", "Combat Follow-through", "Combat Momentum", "Fast Draw", "Great Leap I", "Indomitable Resolve I", "Lightning Reflexes I", "Longshot", "Master Tracker", "Swimming", "Sworn Enemy I", "Untrackable"];
-    var fn2 = ["Area Manipulation II"];
-    var selectedFeat = $(this).val(); 
-    console.log(selectedFeat);
-    
-    if(inArray(selectedFeat, fn1) = true) {
-        console.log('hej');
-        $(this).parent().next().children().first().val(1);
-    } 
-}
-
-
-
-
-
 /*
+gör en lista med alla som kostar 1, 2, 3... etc. och sen IF selectedFeat in list ---> thisparentnextchildrenfirstval(det den kostar)
 
-
+function calcfeatcost(fn1, fn2, fn3, fn4, fn5, fn6){
+    var selectedFeat = $(this).val();
+    if selectedFeat in== fn3{
+        $()
+    }
+}
+*/
 
 function calcFeatsCost(){
 	//Skriver ut kostnaden för alla Feats och Tiers -Marika
@@ -1130,4 +1112,3 @@ function calcFeatsCost(){
 		  $(this).parent().next().children().first().val(2);
 	}
 }
-*/
