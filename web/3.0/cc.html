@@ -4,8 +4,9 @@
   <head>
     <title>CharacterKey</title>
 
-    <!-- home made css file -->
+    <!-- home made css files -->
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/print.css">
 
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -671,7 +672,7 @@
                       <div class="panel panel-default">
                         <div class="panel-heading">
                           <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#clps-featpoints">Feat Points</a>
+                            <a data-toggle="collapse" data-parent="#accordion5" href="#clps-featpoints">Feat Points</a>
                           </h4>
                         </div>
 
@@ -2199,27 +2200,7 @@
                                                     <p>Effect. This entry indicates the mechanical effects of the bane on the rules of the game.</p>
                                                   </div>
 
-                                                  <!-- Lista med förklaringar till hur man räknar banes & boons
-
-                                                  <div class="col-sm-2"></div>
-                                                  <div class="col-sm-8">
-                                                  <ul class="list-group">
-                                                  <li class="list-group-item">
-                                                  <h5>VS</h5> What attribute is used when invoking the Bane or Boon and what attribute the foe uses to defend.
-                                                </li>
-                                                <li class="list-group-item">
-                                                <h5>Dice</h5> The attribute dice.
-                                              </li>
-                                              <li class="list-group-item">
-                                              <h5>Description</h5> Effects of the Bane or Boon, for example your foe cannot see anything for 1 turn.
-                                            </li>
-                                            <li class="list-group-item">
-                                            <h5>Special</h5> Special conditions that influences the Bane or Boon. For example how to remove the bane or wether other character's can be affected by it.
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <div class="col-sm-2"></div>
-                                    -->
+                                                  
                                   </div>
                                 </div>
 
@@ -2227,7 +2208,27 @@
                                   <div class="panel-body text-justify">
                                     <div class="col-sm-12">
                                       <h5>Boons</h5>
-                                      <p>Booo</p>
+                                      
+                                      <p>Reading a Boon Description
+
+Below, each boon description includes the following elements.
+
+Power Level. This number indicates the required attribute score needed to invoke the boon. If multiple power levels are listed (such as 2 / 4 / 6), then the boon can be invoked at multiple tiers of power. The Heal boon, for example, heals more damage as you invoke it at higher power levels. The power level of a boon also determines the Challenge Rating of the attribute roll to invoke the boon. The CR equals 10 + 2 x Power Level.
+
+Attributes. This is a list of the attribute or attributes that can be used to invoke the boon. As long as you possess at least one of the listed attributes at a score greater than or equal to the Power Level, then you can invoke the boon.
+
+Invocation Time. The required time that it takes to invoke the boon. Most boons have an invocation time of 1 normal action. For boons that have a longer time, you must spend the entire invocation time concentrating on nothing other than invoking the boon. If you are interrupted, you must start the casting over.
+
+Duration. Most boons have a duration of “sustain persists”, which indicates that the caster must use a sustain action every round in order to keep the boon in effect. If you have a boon in effect and don’t sustain it, the boon is dispelled at the end of your turn. Because sustaining a boon is a minor action, which can only be taken once per turn, you can typically sustain only one boon at a time.
+
+Description. This entry simply provides a general idea of what the boon could look like in the story.
+
+Effect. This entry indicates the mechanical effects of the boon on the rules of the game.</p>
+                                        
+                                        
+                                        
+                                        
+                                        
                                     </div>
                                   </div>
                                 </div>
@@ -2284,11 +2285,375 @@
                                   </tbody>
                                 </table>
                               </div>
+                              
+                            
+<!-- Trigger the modal with a button -->
+<button type="button" id="save-btn" class="btn btn-info btn-lg">Save to Sheet</button>  
+<button type="button" id="modall" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Print Sheet</button>
 
-                              <div class="col-sm-12">
-                                <br>
-                                <a class="btn btn-default" id="save-btn"> Save Values </a>
-                              </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content modal-lg">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Character Sheet</h4>
+        </div>
+        <div class="col-sm-12"><br>
+            <div class="col-sm-4">
+                <!-- Attribute Points -->
+                <table class="table tbl table-bordered">
+                    <h5>ATTRIBUTES</h5>
+                    <thead class="three-cells">
+                        <th>Total</th>
+                        <th>Invested</th>
+                        <th>Available</th>
+                    </thead>
+                    <tbody>
+                        <td id="a-total"></td>
+                        <td id="a-invested"></td>
+                        <td id="a-available"></td>
+                    </tbody>
+                </table>
+                <!-- Attributes -->
+                <table class="table tbl table-bordered">
+                    <thead class="four-cells">
+                        <th>PHYSICAL</th>
+                        <th>Score</th>
+                        <th>Cost</th>
+                        <th>Dice</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Agility</th>
+                            <td id="agility.s"></td>
+                            <td id="agility.c"></td>
+                            <td id="agility.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Fortitude</th>
+                            <td id="fortitude.s"></td>
+                            <td id="fortitude.c"></td>
+                            <td id="fortitude.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Might</th>
+                            <td id="might.s"></td>
+                            <td id="might.c"></td>
+                            <td id="might.d"></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <th>SOCIAL</th>
+                        <th>Score</th>
+                        <th>Cost</th>
+                        <th>Dice</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Deception</th>
+                            <td id="deception.s"></td>
+                            <td id="deception.c"></td>
+                            <td id="deception.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Presence</th>
+                            <td id="presence.s"></td>
+                            <td id="presence.c"></td>
+                            <td id="presence.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Persuasion</th>
+                            <td id="persuasion.s"></td>
+                            <td id="persuasion.c"></td>
+                            <td id="persuasion.d"></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <th>MENTAL</th>
+                        <th>Score</th>
+                        <th>Cost</th>
+                        <th>Dice</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Learning</th>
+                            <td id="learning.s"></td>
+                            <td id="learning.c"></td>
+                            <td id="learning.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Logic</th>
+                            <td id="logic.s"></td>
+                            <td id="logic.c"></td>
+                            <td id="logic.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Perception</th>
+                            <td id="perception.s"></td>
+                            <td id="perception.c"></td>
+                            <td id="perception.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Will</th>
+                            <td id="will.s"></td>
+                            <td id="will.c"></td>
+                            <td id="will.d"></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <th>SUPERNATURAL</th>
+                        <th>Score</th>
+                        <th>Cost</th>
+                        <th>Dice</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Alteration</th>
+                            <td id="alteration.s"></td>
+                            <td id="alteration.c"></td>
+                            <td id="alteration.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Creation</th>
+                            <td id="creation.s"></td>
+                            <td id="creation.c"></td>
+                            <td id="creation.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Energy</th>
+                            <td id="energy.s"></td>
+                            <td id="energy.c"></td>
+                            <td id="energy.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Entropy</th>
+                            <td id="entropy.s"></td>
+                            <td id="entropy.c"></td>
+                            <td id="entropy.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Influence</th>
+                            <td id="influence.s"></td>
+                            <td id="influence.c"></td>
+                            <td id="influence.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Movement</th>
+                            <td id="movement.s"></td>
+                            <td id="movement.c"></td>
+                            <td id="movement.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Prescience</th>
+                            <td id="prescience.s"></td>
+                            <td id="prescience.c"></td>
+                            <td id="prescience.d"></td>
+                        </tr>
+                        <tr>
+                            <th>Protection</th>
+                            <td id="protection.s"></td>
+                            <td id="protection.c"></td>
+                            <td id="protection.d"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col col-sm-4">
+                <!-- Info -->
+                <table class="table tbl table-bordered">
+                    <h5>INFO</h5>
+                    <tr>
+                        <th class="twenty">Name</th>
+                        <td id="info-name"></td>
+                    </tr>
+                    <tr>
+                        <th>Player</th>
+                        <td id="info-player"></td>
+                    </tr>
+                    <tr>
+                        <th>Archetype</th>
+                        <td id="info-archetype"></td> 
+                    </tr>
+                    <tr>
+                        <th>Description</th>
+                        <td id="info-description"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-sm-4">
+                <!-- STATS -->
+                <table class="table tbl table-bordered">
+                    <h5>STATS</h5>
+                    <thead class="four-cells">
+                        <th>Level</th>
+                        <th>XP</th>
+                        <th>Wealth</th>
+                        <th>Speed</th>
+                    </thead>
+                    <tbody class="center">
+                        <td id="stats-level"></td>
+                        <td id="stats-xp"></td>
+                        <td id="stats-wealth"></td>
+                        <td id="stats-speed"></td>
+                    </tbody>
+                </table>
+                <!-- Hit Points -->
+                <table class="table tbl table-bordered">
+                    <thead class="two-cells">
+                        <th>Total HP</th>
+                        <th>Current HP</th>
+                    </thead>
+                    <tbody>
+                        <td id="hp.t"></td>
+                        <td id="hp.c"></td>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-sm-8">
+                <!-- Armor Class -->
+                <table class="table tbl table-bordered">
+                    <thead class="six-cells">
+                        <tr>
+                            <th>DEFENCE</th>
+                            <th>Total</th>
+                            <th>Armor</th>
+                            <th>Shield</th>
+                            <th>Attribute</th>
+                            <th>Feats</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Guard</th>
+                            <td id="ac.guard.t"></td>
+                            <td id="ac.guard.a"></td>
+                            <td id="ac.guard.s"></td>
+                            <td id="ac.guard.attr"></td>
+                            <td id="ac.guard.f"></td>
+                        </tr>
+                        <tr>
+                            <th>Toughness</th>
+                            <td id="ac.tough.t"></td>
+                            <td></td>
+                            <td></td>
+                            <td id="ac.tough.attr"></td>
+                            <td id="ac.tough.f"></td>
+                        </tr>
+                        <tr>
+                            <th>Resolve</th>
+                            <td id="ac.resolve.t"></td>
+                            <td></td>
+                            <td></td>
+                            <td id="ac.resolve.attr"></td>
+                            <td id="ac.resolve.f"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Actions -->
+                <table class="table tbl table-bordered">
+                    <thead class="six-cells">
+                        <th>Actions</th>
+                        <th>Type</th>
+                        <th>vs</th>
+                        <th>Dice</th>
+                        <th>Description</th>
+                        <th>Special</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Banes</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Boons</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                
+                <!-- Equipment -->
+                <table class="table tbl table-bordered">
+                    <thead class="four-cells">
+                        <th>Armor</th>
+                        <th>Weapons</th>
+                        <th>Shield</th>
+                        <th>Items</th>
+                    </thead>
+                    <tbody>
+                        <td id="armor-cell"></td>
+                        <td id="weapons-cell"></td>
+                        <td id="shield-cell"></td>
+                        <td></td>
+                    </tbody>
+                </table>
+            </div>
+           
+
+            <div class="col-sm-4">
+                
+                <!-- Perks & Flaws -->
+                <table class="table tbl table-bordered">
+                    <thead class="two-cells">
+                        <th>Perks</th>
+                        <th>Flaws</th>
+                    </thead>
+                    <tbody>
+                        <td id="pf-perks"></td>
+                        <td id="pf-flaws"></td>
+                    </tbody>
+                </table>
+                
+                
+                <!-- Feat Points -->
+                <table class="table tbl table-bordered">
+                    <h5>Feats</h5>
+                    <thead class="three-cells">
+                        <th>Total</th>
+                        <th>Invested</th>
+                        <th>Available</th>
+                    </thead>    
+                    <tbody>
+                        <td id="fp-total"></td>
+                        <td id="fp-invested"></td>
+                        <td id="fp-available"></td>
+                    </tbody>
+                </table>
+                <!-- Feats -->
+                <table class="table tbl table-bordered">
+                    <thead class="two-cells">
+                        <th>Feats</th>
+                        <th>Cost</th>
+                    </thead>
+                    <tbody>
+                        <td id="feat-feats"></td>
+                        <td id="feat-cost"></td>
+                    </tbody>
+                </table>
+            </div>
+        </div><!-- End modal-body -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div><!--end div modal -->
+
 
 
                             </div> <!-- End #accordion3 -->
